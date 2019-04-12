@@ -1,0 +1,130 @@
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  color: #2d374b;
+  text-decoration: none
+}
+
+a:hover {
+  color: #cd0200;
+  text-decoration: underline
+}
+
+em {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+
+.hidden {
+  display: none;
+}
+
+.pull-right {
+  float: right;
+}
+
+.bg-blue-linear {
+  background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+}
+
+.search-input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background-color: #fff;
+  background-image: none;
+  border: 0px solid #dcdfe6;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  outline: none;
+  padding: 0 15px;
+  transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+}
+
+.main-content {
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+header.nav-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 641px) {
+  header.nav-topbar {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  /* .app-logo {
+    height: 50px;
+    background-image: url(../img/text-back.png);
+    background-repeat: no-repeat;
+  } */
+
+  .nav-topbar .topbar-container,
+  .main-content>div {
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    padding: 0 12px;
+  }
+
+  .main-content>div {
+    padding-top: 50px;
+  }
+
+  .topbar-brand {
+    display: inline-block;
+  }
+
+  .topbar-right-tools {
+    float: right;
+  }
+
+  .search-input {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  header.nav-topbar {
+    width: 100%;
+    line-height: 50px;
+  }
+
+  .nav-topbar .topbar-container,
+  .main-content>div {
+    padding: 12px;
+  }
+
+  .topbar-right-tools {
+    /* padding: 12px 12px; */
+  }
+}

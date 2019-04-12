@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>仙人指路</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
-  <div>导航入口</div>
+  <header class="nav-topbar bg-blue-linear">
+    <div class="topbar-container">
+      <div class="topbar-brand app-logo">
+        <!-- <img src="img/text-back.png" alt="仙人指路"  height="50"> -->
+        <a href="#" class="topbar-title">
+          仙人指路
+        </a>
+      </div>
+      <div class="topbar-right-tools">
+        <input type="text" class="search-input" placeholder="搜索">
+      </div>
+    </div>
+  </header>
+
+  <section class="main-content">
+    <div id="container">
+      <div class="navigation-classify">
+      </div>
+      <div class="navigation-content">
+
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <!-- <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>
+  <script src="script/config.js"></script>
+  <script>
+    requirejs(["script/index"], function (index) {
+        
+      })
+  </script>
 </body>
+
 </html>
