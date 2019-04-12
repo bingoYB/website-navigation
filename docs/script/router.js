@@ -9,6 +9,8 @@ define([
     // 默认加载页面
     defaultHashPage: CONF.defaultPage,
 
+
+    
     init(addUrl) {
 
       // 页面刷新时检查页面路由
