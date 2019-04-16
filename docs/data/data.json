@@ -44,6 +44,42 @@
         "icon": "http://ttyyy.vip/favicon.ico",
         "name": "天天云影",
         "desc": "天天云影原云影院,天天看影为您提供手机电脑免插件软件即可在线点2018最新的高清电影,高清电视请记住我们的网址(www.TTYYY.vip)"
+      },
+      {
+        "url": "http://www.kkkkmao.com/",
+        "icon": "http://www.kkkkmao.com/favicon.ico",
+        "name": "4K屋",
+        "desc": "提供最全的最新电视剧，2019最新电影，韩国电视剧、香港TVB电视剧、日本动漫、日剧、美剧、综艺的在线观看和剧集交流场所"
+      },
+      {
+        "url": "https://www.d6080.com/",
+        "icon": "https://www.d6080.com/favicon.ico",
+        "name": "骑士影院",
+        "desc": "提供全网视频支持电脑和手机在线观看。"
+      },
+      {
+        "url": "https://www.007ts.co/",
+        "icon": "https://ae01.alicdn.com/kf/HTB15Y9eX2vsK1Rjy0Fi762wtXXaa.png",
+        "name": "零零七影视",
+        "desc": "免VIP抢先观看最新好看的电影和电视剧"
+      },
+      {
+        "url": "https://www.halihali.tv/",
+        "icon": "https://www.halihali.tv/favicon.ico",
+        "name": "哈哩哈哩(H站)",
+        "desc": "哈哩哈哩爱不离手的视频放映厅，二次元暖暖的综合视频站，拥有最新最全的电影,电视剧,综艺,动漫资源视频,全站无广告播放,完美支持电脑手机观看，赶快加入哈哩哈哩。"
+      },
+      {
+        "url": "http://www.77dvds.com/",
+        "icon": "http://www.77dvds.com/favicon.ico",
+        "name": "琪琪影院",
+        "desc": "2018最新电影,最新电视剧,韩国伦理电影"
+      },
+      {
+        "url": "https://www.yeziyy.com/",
+        "icon": "https://www.yeziyy.com/favicon.ico",
+        "name": "椰子影院",
+        "desc": "免VIP看全网最新最全视频！"
       }
     ]
   },
@@ -86,7 +122,13 @@
         "icon": "http://kmeiju7.com/favicon.ico",
         "name": "AG美剧",
         "desc": "在线免费观看高清美剧的中文美剧网，播放速度快，热门美剧第一时间更新，美剧迷们最喜欢的中文字幕在线免费观看美剧网站。"
+      },{
+        "url": "https://www.taijula.com/",
+        "icon": "https://www.taijula.com/favicon.ico",
+        "name": "泰剧啦",
+        "desc": "泰剧啦 - 最新热门泰剧泰国电影免费在线观看"
       }
+      
     ]
   },
   {
@@ -145,6 +187,18 @@
         "icon": "http://bddn.cn/favicon.ico",
         "name": "全国电视直播",
         "desc": "全国电视直播"
+      },
+      {
+        "url": "http://www.qmaile.com/",
+        "icon": "http://www.qmaile.com/favicon.ico",
+        "name": "全民解析",
+        "desc": "vip视频在线解析 方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看"
+      },
+      {
+        "url": "http://www.administrator5.com/",
+        "icon": "http://www.administrator5.com/favicon.ico",
+        "name": "无名小站",
+        "desc": "★【全能会员视频解析_视频云解析平台_视频解析云平台_无名小站解析网站】"
       }
     ]
   }
