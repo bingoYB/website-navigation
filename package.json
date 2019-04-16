@@ -1,0 +1,22 @@
+{
+  "name": "website-navigation",
+  "version": "1.0.0",
+  "description": "**个人网址导航**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingoYB/website-navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bingoYB/website-navigation/issues"
+  },
+  "homepage": "https://github.com/bingoYB/website-navigation#readme"
+}

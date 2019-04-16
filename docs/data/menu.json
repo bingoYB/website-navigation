@@ -1,0 +1,31 @@
+{
+  "menu": [
+    {
+      "title": "首页",
+      "icon": "icon-home",
+      "id": "home",
+      "hashUrl": "#",
+      "sub": []
+    },
+    {
+      "title": "导航",
+      "icon": "icon-router",
+      "id": "nav",
+      "hashUrl": "#nav",
+      "sub": [
+        {
+          "title": "影视"
+        },
+        {
+          "title": "学习"
+        },
+        {
+          "title": "工具"
+        },
+        {
+          "title": "资源"
+        }
+      ]
+    }
+  ]
+}
