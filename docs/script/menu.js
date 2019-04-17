@@ -1,13 +1,13 @@
 define([
   'require',
   'script/router'
-], function (require,router) {
+], function (require, router) {
   'use strict';
-    var isMobile = window.CONF.isMobile
+  var isMobile = window.CONF.isMobile
   // 页面交互部分
   var Interactive = {
-    menuClick(){
-      $('#menu').on('click','.item', function () {
+    menuClick() {
+      $('#menu').on('click', '.item', function () {
         $(this).addClass('active').siblings().removeClass('active')
         // 标题更改
         let icon = $(this).find('.item-text .iconfont')
@@ -20,17 +20,28 @@ define([
         }
       });
     },
-    subMenuClick(){
+    subMenuClick() {
       $('#menu').on('click', '.sub-item', function () {
         $(this).addClass('active').siblings().removeClass('active')
-        
-        if(isMobile()){
+
+        // scrollto
+        let text = $(this).find('.sub-item-text').text()
+        if ($('[data-title="' + text + '"').length) {
+          let scrollTop = $('[data-title="' + text + '"')[0].offsetTop
+          // smooth scrollto
+          $('html, body').animate({ scrollTop: scrollTop }, '500')
+        }
+
+        let top = $(this).position().top
+        $(this).siblings().find('.nonius').css('top', top)
+
+        if (isMobile()) {
           $('.side').toggleClass('active')
         }
       });
     },
     // 移动版菜单的显隐
-    toogleMenu(){
+    toogleMenu() {
       $('.btn-menu').on('click', function () {
         $('.side').toggleClass('active')
       });
@@ -42,12 +53,12 @@ define([
   }
 
   var Render = {
-    menuList(){
-      $.get('data/menu.json').then((menu)=>{
-        $.get('template/menu.html').then(tpl=>{
+    menuList() {
+      $.get('data/menu.json').then((menu) => {
+        $.get('template/menu.tpl').then(tpl => {
           //预编译模板
           var template = Handlebars.compile(tpl)
-           //匹配json内容
+          //匹配json内容
           let html = template(menu.menu)
           //输入模板
           $('#menu').html(html)
@@ -56,12 +67,12 @@ define([
       })
     }
   }
-  
+
   return function () {
     Interactive.menuClick()
     Interactive.subMenuClick()
-    
-    if (isMobile){
+
+    if (isMobile) {
       Interactive.toogleMenu()
     }
     Render.menuList()

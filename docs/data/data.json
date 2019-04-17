@@ -127,6 +127,51 @@
         "icon": "https://www.taijula.com/favicon.ico",
         "name": "泰剧啦",
         "desc": "泰剧啦 - 最新热门泰剧泰国电影免费在线观看"
+      },{
+        "url": "http://www.ttmeiju.me/",
+        "icon": "http://www.ttmeiju.me/favicon.ico",
+        "name": "天天美剧",
+        "desc": "您的高清美剧下载中心,美剧爱好者的天堂"
+      },{
+        "url": "https://www.meijutt.com/",
+        "icon": "https://www.meijutt.com/favicon.ico",
+        "name": "美剧天堂",
+        "desc": "好看的美剧,美剧下载,美剧在线观看,美剧网"
+      },{
+        "url": "https://fantopia.club/",
+        "icon": "https://fantopia.club/wp-content/uploads/2018/05/cropped-fan-icon-192x192.png",
+        "name": "翻托邦字幕组",
+        "desc": "各种冷番高分剧独家制作。我们不求最快最好，但一定做到问心无愧！"
+      },{
+        "url": "https://www.icezmz.com/",
+        "icon": "https://www.icezmz.com/favicon.ico",
+        "name": "冰冰字幕组",
+        "desc": "最新英剧下载 英剧字幕 英剧在线观看"
+      },{
+        "url": "http://sskzmz.com/",
+        "icon": "http://sskzmz.com/favicon.ico",
+        "name": "SSK字幕组",
+        "desc": "SSK字幕组是最好的字幕组之一"
+      },{
+        "url": "http://dbfansub.com/",
+        "icon": "http://dbfansub.com/uploads/2012/12/favicon.ico",
+        "name": "电波字幕组",
+        "desc": "诚心诚译，带给您最优质的英文影视字幕。"
+      },{
+        "url": "http://www.orangesub.com/",
+        "icon": "http://www.orangesub.com/static/img/Orange-logo%40300.png",
+        "name": "Orange字幕组",
+        "desc": "中文电影字幕下载网站"
+      },{
+        "url": "http://oabt004.com/",
+        "icon": "http://oabt004.com/favicon.ico",
+        "name": "磁力下载站",
+        "desc": "最新美剧下载,日剧下载,电影下载,韩剧下载"
+      },{
+        "url": "http://www.zimuxia.cn/",
+        "icon": "http://www.zimuxia.cn/wp-content/uploads/2016/03/cropped-logo2-32x32.png",
+        "name": "FIX字幕侠",
+        "desc": "做国内最好的字幕组"
       }
       
     ]
@@ -169,6 +214,12 @@
         "icon": "http://www.languang.co/wp-content/uploads/2017/05/caf5e0ffa8ae62.ico",
         "name": "蓝光网",
         "desc": "分享高清，给爱电影的人！"
+      },
+      {
+        "url": "http://www.yyets.com/",
+        "icon": "http://www.yyets.com/favicon.ico",
+        "name": "人人影视",
+        "desc": "美剧下载,字幕下载,日剧下载,高清电影下载,韩剧下载,美剧时间表,字幕组"
       }
     ]
   },

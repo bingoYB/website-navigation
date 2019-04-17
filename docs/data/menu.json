@@ -2,7 +2,7 @@
   "menu": [
     {
       "title": "首页",
-      "icon": "icon-home",
+      "icon": "icon-shouye-",
       "id": "home",
       "hashUrl": "#",
       "sub": []
@@ -14,16 +14,22 @@
       "hashUrl": "#nav",
       "sub": [
         {
-          "title": "影视"
+          "title": "综合"
         },
         {
-          "title": "学习"
+          "title": "电影"
         },
         {
-          "title": "工具"
+          "title": "动漫"
         },
         {
-          "title": "资源"
+          "title": "国外"
+        },
+        {
+          "title": "下载"
+        },
+        {
+          "title": "其他"
         }
       ]
     },

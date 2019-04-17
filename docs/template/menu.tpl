@@ -9,14 +9,12 @@
   {{#if sub}}
   <div class="item-subs">
     <div class="item-subs-wrapper">
-      <div id="positioner">
-        <div id="nonius" style="top:0px;"></div>
+      <div class="positioner">
+        <div class="nonius" style="top:0px;"></div>
       </div>
       {{#each sub}}
       <div class="sub-item">
-        <div class="sub-item-text">
-          {{title}}
-        </div>
+        <div class="sub-item-text">{{title}}</div>
       </div>
       {{/each}}
     </div>

@@ -144,11 +144,11 @@ p {
   position: relative;
 }
 
-.item.active #positioner {
+.item.active .positioner {
   opacity: 1;
 }
 
-#positioner {
+.positioner {
   position: absolute;
   left: 56px;
   top: 10px;
@@ -198,7 +198,7 @@ p {
   display: block;
 }
 
-#nonius {
+.nonius {
   position: absolute;
   top: 0;
   left: 0;
