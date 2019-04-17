@@ -42,8 +42,22 @@ p {
   outline: none;
 }
 
+.btn-menu .iconfont {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.icon-logo {
+  background-image: url(../img/text.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+}
+
 .logo {
-  background-image: url(../img/text.png)
+  background-image: url(../img/text.png);
 }
 
 .side {
@@ -180,7 +194,7 @@ p {
   overflow: auto;
 }
 
-.active .item-subs {
+.item.active .item-subs {
   display: block;
 }
 
@@ -766,7 +780,7 @@ main {
   .card {
     margin: 17px 0 0;
     width: 100%;
-    height: 100px;
+    height: 70px;
   }
 
   .card-default {
@@ -791,31 +805,32 @@ main {
   #search {
     width: calc(100% - 100px);
   }
+}
 
-  @media (max-width: 856px) {
-    .side.active {
-      left: 0;
-      opacity: 1;
-      box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, .6);
-    }
-
-    .side {
-      position: fixed;
-      left: -224px;
-      top: 0;
-      z-index: 2;
-      opacity: 0;
-      transition: left .3s ease-out;
-    }
-
-    #container {
-      padding-left: 0;
-      padding-top: 50px;
-    }
+@media (max-width: 856px) {
+  .side.active {
+    left: 0;
+    opacity: 1;
+    box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, .6);
   }
 
-  @media screen and (max-height: 699px) and (min-height: 600px) {
-    .item-subs {
-      max-height: 210px;
-    }
+  .side {
+    position: fixed;
+    left: -224px;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: left .3s ease-out;
   }
+
+  #container {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-height: 699px) and (min-height: 600px) {
+  .item-subs {
+    max-height: 210px;
+  }
+}

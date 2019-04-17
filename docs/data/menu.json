@@ -8,8 +8,48 @@
       "sub": []
     },
     {
-      "title": "导航",
-      "icon": "icon-router",
+      "title": "影视",
+      "icon": "icon-yingshi",
+      "id": "nav",
+      "hashUrl": "#nav",
+      "sub": [
+        {
+          "title": "影视"
+        },
+        {
+          "title": "学习"
+        },
+        {
+          "title": "工具"
+        },
+        {
+          "title": "资源"
+        }
+      ]
+    },
+    {
+      "title": "学习",
+      "icon": "icon-yingshi",
+      "id": "nav",
+      "hashUrl": "#nav",
+      "sub": [
+        {
+          "title": "影视"
+        },
+        {
+          "title": "学习"
+        },
+        {
+          "title": "工具"
+        },
+        {
+          "title": "资源"
+        }
+      ]
+    },
+    {
+      "title": "生活",
+      "icon": "icon-yingshi",
       "id": "nav",
       "hashUrl": "#nav",
       "sub": [

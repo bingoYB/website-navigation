@@ -1,3 +1,4 @@
 {
-  "previewServer.port": 8111
+  "liveServer.settings.port": 8111,
+  "eslint.enable": false
 }
