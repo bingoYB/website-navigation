@@ -1,0 +1,39 @@
+module.exports = function (grunt) {
+  // Project configuration.
+  grunt.initConfig({
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015']
+      },
+      dist: {
+        files: [{
+          src: ['src/**/index.js'], //所有js文件
+          dest: './dist/'  //输出到此目录下
+        }]
+      }
+    },
+    requirejs: {
+      compile: {
+        options: {
+          name: "script/index",
+          baseUrl: "src/",
+          // mainConfigFile: "src/script/config.js",
+          out: "public/js/index.js"
+        }
+      },
+      page: {
+        options: {
+          baseUrl: "src/page",
+          // mainConfigFile: "src/script/config.js",
+          out: "public/js/page.js"
+        }
+      }
+    }
+  })
+
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.registerTask('babelTrans',['babel'])
+  grunt.registerTask('require', ['babel','requirejs']);
+
+};

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仙人指路</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/icon.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+  <div class="top">
+    <div class="nav">
+      <div class="btn-menu"><i class="iconfont icon-menu"></i></div>
+      <div class="nav-logo"><i class="iconfont icon-logo"></i></div>
+      <div class="btn-account"><i class="iconfont icon-user"></i>
+      </div>
+    </div>
+  </div>
+  <menu>
+    <div class="side"><a href="/" class="logo-link"><i class="iconfont icon-logo-slogan"></i></a>
+      <div class="logo"><i class="iconfont icon-logo-slogan"></i></div>
+      <div id="menu" class="menu">
+        <div id="menu-item-daily" class="item"><a href="/daily/411" class="item-text zh"><span class="item-icon"><i
+                class="iconfont icon-recommendation"></i></span><span>
+              每日一粒
+            </span></a></div>
+        <div id="menu-item-pioneer" class="item"><a href="/pioneer" class="item-text zh"><span class="item-icon"><i
+                class="iconfont icon-sprout"></i></span><span>
+              播种者
+            </span></a></div>
+        <div id="menu-item-like" class="item"><a href="/seed" class="item-text zh"><span class="item-icon"><i
+                class="iconfont icon-seed"></i></span><span>
+              我的种子
+            </span></a></div>
+        <div id="menu-item-design" class="item active"><a href="/"
+            class="item-text router-link-exact-active router-link-active zh"><span class="item-icon"><i
+                class="iconfont icon-design"></i></span><span>
+              设计
+            </span></a>
+          <div class="item-subs">
+            <div class="item-subs-wrapper">
+              <div id="positioner">
+                <div id="nonius" style="top:0px;"></div>
+              </div>
+              <div class="sub-item active">
+                <div class="sub-item-text">
+                  必看
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  灵感
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  资讯
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  UI-UX
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  图标
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  图库
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  配色
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  字体
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  素材
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  规范
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  工具
+                </div>
+              </div>
+              <div class="sub-item">
+                <div class="sub-item-text">
+                  社区
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-side-close"><i class="iconfont icon-menu-close"></i></div>
+      <div class="btn-lang-side"><i class="iconfont icon-lang" style="font-size:28px;color:#aaa;"></i></div>
+      <div class="mask"></div>
+    </div>
+  </menu>
+  <div id="container">
+    <main>
+      <div id="header">
+        <div class="header">
+          <div class="row">
+            <div class="header-title">
+              <div class="header-title-icon"><i class="iconfont icon-design"></i></div>
+              <h1 class="header-title-text zh">导航</h1>
+            </div>
+            <div class="btn-share">
+              <div class="icon-shadow"></div><i class="iconfont icon-share-hole"></i>
+              <div class="pop-wechat-code" style="display:none;">
+                <div style="height:40px;display:flex;justify-content:center;align-items:center;">
+                  分享站点到微信
+                </div><img src="/public/img/header/qrcode_zh.png" alt="">
+              </div>
+            </div>
+            <div class="btn-lang">
+              <div class="icon-shadow"></div><a href="/en"><i class="iconfont icon-lang"></i></a>
+            </div>
+            <div class="btn-account">
+              <div class="btn-login">
+                <div class="icon-shadow"></div><i class="iconfont icon-user"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="block block-list">
+          <section class="section">
+            <div class="title">
+              <div class="title-icon"><i class="iconfont icon-see"></i></div>
+              <h2 class="title-text">必看</h2>
+            </div>
+            <div class="list">
+              <div class="card-wrapper">
+                <div class="card"><a href="https://dribbble.com/" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/c/9/c9b7f57c73de88708c08979e3a7bd50b.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Dribbble
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="全球优秀设计师最佳交流展示平台">
+                          <div class="card-des">全球优秀设计师最佳交流展示平台</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">2188</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">161941</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://www.behance.net/" rel="nofollow" target="_blank"
+                    class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/2/5/258baa8e974e71c9ff14a3d56c7fbfba.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Behance
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="Adobe旗下设计师交流平台">
+                          <div class="card-des">Adobe旗下设计师交流平台</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">1349</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">133571</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://www.pinterest.com/" rel="nofollow" target="_blank"
+                    class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/6/7/676ab4e7604b7749e95a0a31a12e632b.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Pinterest
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="从优美的图海中洞见全球设计创意">
+                          <div class="card-des">从优美的图海中洞见全球设计创意</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">1048</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">143776</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://seeseed-img.oss-cn-shanghai.aliyuncs.com/sqqrcode.png "
+                    rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/6/6/660c7dace2c19ca9c0e4c748b14d5be0.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          设计达人社群
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="干货分享，和BAT大牛聊设计">
+                          <div class="card-des">干货分享，和BAT大牛聊设计</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">92</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">22968</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="http://huaban.com/" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/4/1/411bf28e63f7f90bf683125d1573586e.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          花瓣
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="优美图集 点亮灵感">
+                          <div class="card-des">优美图集 点亮灵感</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">869</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">104300</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://www.designup.cn/" rel="" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/b/e/bee62b8557478e4c87162e5200926fe6.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Designup
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="为设计师打开新世界的大门">
+                          <div class="card-des">为设计师打开新世界的大门</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">287</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">77251</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://unsplash.com/" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/4/7/470a962973158f10750e279cc350b5d8.jpg?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Unsplash
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="美好大尺寸原图任意下载">
+                          <div class="card-des">美好大尺寸原图任意下载</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">384</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">82241</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="http://collectui.com/" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/e/1/e1735bd25f16c43b17782df0d3beed75.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Collect UI
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="每日搜集UI 设计灵感">
+                          <div class="card-des">每日搜集UI 设计灵感</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">246</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">44152</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://www.iconfinder.com/" rel="nofollow" target="_blank"
+                    class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/8/7/87b215f3ff6b95a816fb0025d1365560.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Iconfinder
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="百万优质图标搜索下载">
+                          <div class="card-des">百万优质图标搜索下载</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">242</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">34636</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="https://smallpdf.com/cn" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/a/d/adc15f6ff352fece2383d08c94104107.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Smallpdf
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="玩转PDF 格式互转与压缩">
+                          <div class="card-des">玩转PDF 格式互转与压缩</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">200</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">20325</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="http://dbfreebies.co/icons" rel="nofollow" target="_blank"
+                    class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/a/0/a0fbb9210b793bde7aac427407f1fc70.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          DBF
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce"
+                          aria-label="一站收尽 Dribbble Behance免费素材">
+                          <div class="card-des">一站收尽 Dribbble Behance免费素材</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">178</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">40087</div>
+                      </div>
+                    </div>
+                  </a></div>
+                <div class="card"><a href="http://www.coverr.co/" rel="nofollow" target="_blank" class="card-default">
+                    <div>
+                      <div class="bg-img round card-icon"
+                        style="background-image: url(&quot;https://img.seeseed.com/4/4/4401bdc320e71074ab4c3ae9fafdbb63.png?x-oss-process=image/resize,w_40,h_40,m_mfit&quot;); width: 32px; height: 32px;">
+                      </div>
+
+                      <div class="card-main">
+                        <div class="card-name">
+                          Coverr
+
+                        </div>
+                        <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="高质量网页影片背景素材">
+                          <div class="card-des">高质量网页影片背景素材</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-count">
+                      <div class="like">
+                        <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
+                          class="count-num">91</span>
+                      </div>
+                      <div class="view">
+                        <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
+                        <div class="count-num">29818</div>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- <header class="nav-topbar">
+    <div class="topbar-container">
+      <div class="topbar-brand app-logo">
+        <a href="#" class="topbar-title">
+          仙人指路
+        </a>
+      </div>
+      <div class="topbar-right-tools">
+        <input type="text" class="search-input" autocomplete="off" spellcheck="false" role="combobox"
+          aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+          placeholder="搜索">
+      </div>
+    </div>
+  </header> -->
+
+  <!-- <section class="main-content">
+    <div id="container">
+      <div class="side">
+          <ul>
+            <li>综合</li>
+            <li>影视</li>
+            <li>学习</li>
+            <li>资源</li>
+            <li>工具</li>
+          </ul>
+      </div>
+      <div class="navigation-content">
+
+      </div>
+    </div>
+  </section> -->
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/handlebars.js/4.1.0/handlebars.js"></script>
+  <!-- <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>
+  <script src="script/config.js"></script>
+  <script>
+    requirejs(["script/index"], function (index) {
+
+    })
+  </script>
+</body>
+
+</html>

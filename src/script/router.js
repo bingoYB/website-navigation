@@ -1,17 +1,16 @@
-'use strict';
-
-define(['require'], function (require) {
+define([
+  'require'
+], function (require) {
   'use strict';
-
   var Router = {
     // 承载页面容器
     container: '#page-content',
     // 默认加载页面
     defaultHashPage: CONF.defaultPage,
 
-    baseUrl: 'page/',
+    baseUrl:'page/',
 
-    init: function init() {
+    init() {
       // 页面刷新时检查页面路由
       this.checkURL();
       // 过滤空的路由链接
@@ -25,13 +24,12 @@ define(['require'], function (require) {
       });
     },
 
-
     /**
      * checkURL 解析路由
      * @method checkURL
      * @desc: 解析浏览器路由，当为空时，加载默认页面，否则加载解析出的页面
      */
-    checkURL: function checkURL() {
+    checkURL: function () {
       var thiz = this;
       var url = location.href;
       var arr = url.split("#");
@@ -52,24 +50,24 @@ define(['require'], function (require) {
      * @param {String}
      *            url 页面请求地址
      */
-    loadURL: function loadURL(url) {
+    loadURL: function (url) {
       var thiz = this;
-      var pageurl = this.baseUrl + url + '.html';
+      var pageurl = this.baseUrl+url+'.html'
       // 调用Ajax加载页面，默认开启缓存，可进行配置
       $.get(pageurl, function (html, state) {
-        if (state == 'success') {
-          $(thiz.container).html(html);
+        if (state =='success') {
+          $(thiz.container).html(html)
           // 加载页面对应的JS模块，并初始化
           requirejs([pageurl.split('.')[0]], function (render) {
-            render ? render() : 1;
-          });
+            render?render():1
+          })
         } else {
           $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");
         }
       }, thiz.cache);
     },
 
-    getPageData: function getPageData() {
+    getPageData() {
       var thiz = this;
       var depositData = $(thiz.container).data("data");
       if (depositData) {
@@ -94,7 +92,8 @@ define(['require'], function (require) {
         return obj;
       }
     }
-  };
 
-  return Router;
+  }
+
+  return Router
 });
