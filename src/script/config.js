@@ -18,7 +18,7 @@ require.config(
     baseUrl: window.CONF.requireBase[CONF.getEnv()],
     // 文本插件
     paths: {
-      text: "lib/text"
+      text: "lib/text",
     }
   }
 )

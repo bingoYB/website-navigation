@@ -11,7 +11,7 @@
       "title": "影视",
       "icon": "icon-yingshi",
       "id": "nav",
-      "hashUrl": "#nav",
+      "hashUrl": "#nav?class=film",
       "sub": [
         {
           "title": "综合"
@@ -37,7 +37,7 @@
       "title": "学习",
       "icon": "icon-xuexi1",
       "id": "nav",
-      "hashUrl": "#nav",
+      "hashUrl": "#nav?class=study",
       "sub": [
         {
           "title": "影视"
@@ -57,7 +57,7 @@
       "title": "生活",
       "icon": "icon-yingshi",
       "id": "nav",
-      "hashUrl": "#nav",
+      "hashUrl": "#nav?class=life",
       "sub": [
         {
           "title": "影视"
@@ -77,7 +77,7 @@
       "title": "工具",
       "icon": "icon-Tools",
       "id": "nav",
-      "hashUrl": "#nav",
+      "hashUrl": "#nav?class=tools",
       "sub": [
         {
           "title": "影视"

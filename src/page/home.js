@@ -1,12 +1,16 @@
 define([
   'require',
-  'text!template/item.tpl'
-], function (require, tpl) {
+  'text!template/item.tpl',
+  'script/search'
+], function (require, tpl,s) {
   'use strict';
   // 页面交互事件
   let Interactive = {
     searchInput() {
-
+      $('#search').on('keyup', function (e) {
+        console.log(s.queryArrayMap)
+          console.log(s.search(this.value))
+      });
     },
     searchEnter() {
 

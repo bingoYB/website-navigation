@@ -35,7 +35,7 @@ define([
       var arr = url.split("#");
       var hash = '';
       if (arr.length > 1) {
-        hash = arr[1];
+        hash = arr[1].split('?')[0];
       }
       if (hash !== '') {
         thiz.loadURL(hash);
@@ -67,7 +67,7 @@ define([
       }, thiz.cache);
     },
 
-    getPageData() {
+    getPageParam() {
       var thiz = this;
       var depositData = $(thiz.container).data("data");
       if (depositData) {
