@@ -1,6 +1,6 @@
-<ul class="local-data">
+<ul>
   {{#each local}}
-  <li>
+  <li class="local-data">
     <div class="result-icon">
       <i style="background-image: url({{icon}});"></i>
     </div>

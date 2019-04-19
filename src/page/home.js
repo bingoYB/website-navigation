@@ -147,7 +147,7 @@ define([
     rstClick() {
       $('.search-result').on('click', 'li', function (e) {
         e.stopPropagation()
-        let islocal = $(this).parent().hasClass('local-data')
+        let islocal = $(this).hasClass('local-data')
         let url = ''
         if (islocal) {
           url = $(this).find('.result-url').data('url')
