@@ -86,8 +86,9 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
         $('.search-result').show();
 
         searchRst.local = s.search(searchText);
+
         $.ajax({
-          url: "//suggestion.baidu.com/su",
+          url: "http://suggestion.baidu.com/su",
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',
