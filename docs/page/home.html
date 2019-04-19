@@ -1,21 +1,54 @@
-<div class="search">
-  <div class="searchChoice">
-    <div title="切换搜索引擎" class="sChoiceBtn"></div>
-    <div class="scBigBox" style="height: 0px; display: none;">
-      <div class="scSmallBox"><img src="img/scbaidu.png" class="scImg">
-        <span class="scName">百度</span>
-      </div>
-      <div class="scSmallBox"><img src="img/scbing.png" class="scImg">
-        <span class="scName">必应</span>
-      </div>
-      <div class="scSmallBox"><img src="img/scgoogle.png" class="scImg">
-        <span class="scName">Google</span>
-      </div>
+<div class="search inputing">
+  <div style="overflow:hidden;">
+    <div class="searchChoice">
+      <div title="切换搜索引擎" class="sChoiceBtn"></div>
+    </div>
+    <input type="text" value="" x-webkit-speech="" lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
+      id="search" autocomplete="off" class="textb">
+    <input type="submit" value=" " id="searchBtn" class="subb">
+  </div>
+  <div class="scBigBox" style="height: 0px; display: none;">
+    <div class="scSmallBox"><img src="img/scbaidu.png" class="scImg">
+      <span class="scName">百度</span>
+    </div>
+    <div class="scSmallBox"><img src="img/scbing.png" class="scImg">
+      <span class="scName">必应</span>
+    </div>
+    <div class="scSmallBox"><img src="img/scgoogle.png" class="scImg">
+      <span class="scName">Google</span>
     </div>
   </div>
-  <input type="text" value="" x-webkit-speech="" lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
-    id="search" autocomplete="off" class="textb">
-  <input type="submit" value=" " id="searchBtn" class="subb">
+  <div class="search-result" style="display:none;">
+    <ul class="local-data">
+      <li class="active">
+        <div class="result-icon">
+          <i style="background-image: url(https://b-gold-cdn.xitu.io/favicons/v2/favicon.ico);"></i>
+        </div>
+        <div class="result-text">
+          <span>妮可影视</span>
+          <span class="desc">-宅男腐女们最喜爱的动漫交流互动平台</span>
+        </div>
+        
+        <div class="result-url">
+          -
+          http://www.nicotv.me/
+        </div>
+      </li>
+    </ul>
+    <ul class="search-engine">
+      <li>
+        <div class="result-icon">
+          <i class="engine-icon" style="background-image: url(img/searchBtn.png?v=2.0);"></i>
+        </div>
+        <div class="result-text">
+          <span>{{this}}</span>
+        </div>
+        <div class="result-type">
+          -百度搜索
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 <div class="often">
 
