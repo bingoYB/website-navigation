@@ -17,8 +17,8 @@ define([
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
-    console.log(datas)
-    searchRst.engine = datas.s
+    console.log(datas.AS.Results[0].Suggests)
+    searchRst.engine = datas.AS.Results[0].Suggests
     Interactive.loadRst()
   }
 
@@ -90,16 +90,20 @@ define([
 
         searchRst.local = s.search(searchText)
         
+        // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
-          url: "http://suggestion.baidu.com/su",
+          url: "//api.bing.com/qsonhs.aspx",
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',
           async: false,
           timeout: 5000,//请求超时
           data: {
-            "wd": searchText,
-            "cb": "dealSearchReturn"
+            type:'cb',
+            q:searchText,
+            cb:'dealSearchReturn'
+            // "wd": searchText,
+            // "cb": "dealSearchReturn"
           },
           success: function (json) {
 

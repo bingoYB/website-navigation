@@ -20,7 +20,7 @@
       <i class="engine-icon" style="background-image: url(img/searchBtn.png?v=2.0);"></i>
     </div>
     <div class="result-text">
-      <span>{{this}}</span>
+      <span>{{Txt}}</span>
     </div>
     <div class="result-type">
       - {{../type}}搜索
