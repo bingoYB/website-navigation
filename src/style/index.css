@@ -629,6 +629,8 @@ main {
   padding-left: 0;
   color: #15120e;
   border-left: 0;
+  /* ios系统的浏览器边框默认有圆角 */
+  border-radius: 0;
 }
 
 #search_bg #button_bg .subb {
