@@ -40,16 +40,19 @@
       "hashUrl": "#nav?class=study",
       "sub": [
         {
-          "title": "影视"
+          "title": "社区"
         },
         {
-          "title": "学习"
+          "title": "前端"
         },
         {
-          "title": "工具"
+          "title": "设计"
         },
         {
-          "title": "资源"
+          "title": "系统"
+        },
+        {
+          "title": "其他"
         }
       ]
     },
@@ -80,16 +83,16 @@
       "hashUrl": "#nav?class=tools",
       "sub": [
         {
-          "title": "影视"
+          "title": "开发"
         },
         {
-          "title": "学习"
+          "title": "图片工具"
         },
         {
-          "title": "工具"
+          "title": "在线"
         },
         {
-          "title": "资源"
+          "title": "软件应用"
         }
       ]
     }
