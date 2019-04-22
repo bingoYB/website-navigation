@@ -2,8 +2,9 @@ define([
   'require',
   'text!template/item.tpl',
   'script/search',
-  'text!template/searchResult.tpl'
-], function (require, tpl, s, searchTpl) {
+  'text!template/searchResult.tpl',
+  'script/lazyLoad'
+], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
   let searchUrl = {
     '百度': 'https://www.baidu.com/s?wd=',
@@ -179,6 +180,11 @@ define([
           let html = template(data)
           //输入模板
           $('.often').html(html)
+
+          new lazyLoad({
+            content: window,
+            imgs: $('.often')[0].querySelectorAll('img')
+          })
         }
       );
     },
@@ -189,7 +195,6 @@ define([
 
   return function () {
     Render.getOften()
-    Interactive.searchEnter()
     Interactive.searchKeydown()
     Interactive.changeSearch()
     Interactive.rstClick()

@@ -758,6 +758,11 @@ main {
   color: #333;
 }
 
+.desc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .result-url {
   color: #2e96ff;
 }

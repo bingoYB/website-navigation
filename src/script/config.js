@@ -1,5 +1,5 @@
 window.CONF = {
-  requireBase: ['/src/', '/website-navigation/'],
+  requireBase: ['/docs/', '/website-navigation/'],
   defaultPage: 'home',
   // 根据端口获取联调环境状态：本地=8888 else 联调环境
   getEnv: function () {

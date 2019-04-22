@@ -2,8 +2,9 @@ define([
   'require',
   'text!template/item.tpl',
   'script/data',
-  'script/router'
-], function (require, tpl, data, router) {
+  'script/router',
+  'script/lazyLoad'
+], function (require, tpl, data, router,lazyLoad) {
   'use strict';
   // 页面加载渲染
   let Render = {
@@ -15,6 +16,11 @@ define([
       let html = template(data[key])
       //输入模板
       $('.my-nav').html(html)
+
+      new lazyLoad({
+        content:window,
+        imgs: $('.my-nav')[0].querySelectorAll('img')
+      })
     }
   }
   return function () {

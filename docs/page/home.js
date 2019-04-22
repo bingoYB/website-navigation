@@ -1,6 +1,6 @@
 'use strict';
 
-define(['require', 'text!template/item.tpl', 'script/search', 'text!template/searchResult.tpl'], function (require, tpl, s, searchTpl) {
+define(['require', 'text!template/item.tpl', 'script/search', 'text!template/searchResult.tpl', 'script/lazyLoad'], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
 
   var searchUrl = {
@@ -171,6 +171,11 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
         var html = template(data);
         //输入模板
         $('.often').html(html);
+
+        new lazyLoad({
+          content: window,
+          imgs: $('.often')[0].querySelectorAll('img')
+        });
       });
     },
     getSearchRst: function getSearchRst() {}
@@ -178,7 +183,6 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
 
   return function () {
     Render.getOften();
-    Interactive.searchEnter();
     Interactive.searchKeydown();
     Interactive.changeSearch();
     Interactive.rstClick();
