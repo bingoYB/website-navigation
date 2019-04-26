@@ -752,19 +752,29 @@ main {
   text-align: center;
 }
 
-.result-text {
+.search-result .result-text {
+  overflow: hidden;
+  display: inline-table;
   max-width: 60%;
   font-size: 14px;
   color: #333;
 }
 
-.desc {
+.search-result .result-text>span {
+  display: table-cell;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
+.desc {
+  max-width: 500px;
+  overflow: hidden;
+}
+
 .result-url {
   color: #2e96ff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .scBigBox {

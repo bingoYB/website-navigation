@@ -10,7 +10,7 @@ define(['require', 'text!template/item.tpl', 'script/data', 'script/router', 'sc
       //预编译模板
       var template = Handlebars.compile(tpl);
       //匹配json内容
-      var html = template(data[key]);
+      var html = template(data[key].sub);
       //输入模板
       $('.my-nav').html(html);
 

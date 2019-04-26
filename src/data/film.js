@@ -90,14 +90,7 @@ define([
           "icon": "http://www.moonbt.com/favicon.ico",
           "name": "月影点播网",
           "desc": "电影|剧集|综艺|月影动漫在线看"
-        }
-      ]
-    },
-    {
-      "title": "电影",
-      "icon": "icon-yingshi",
-      "item": [
-        {
+        }, {
           "url": "https://www.gqyys.com/",
           "icon": "http://gaoqing.la/wp-content/themes/Loostrive/images/favicon.ico",
           "name": "高清云影视",

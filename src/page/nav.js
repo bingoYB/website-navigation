@@ -13,7 +13,7 @@ define([
       //预编译模板
       let template = Handlebars.compile(tpl)
       //匹配json内容
-      let html = template(data[key])
+      let html = template(data[key].sub)
       //输入模板
       $('.my-nav').html(html)
 

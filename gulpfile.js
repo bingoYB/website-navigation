@@ -47,7 +47,7 @@ gulp.task('data', function () {
     .pipe(gulp.dest('docs/script/'));
 });
 
-gulp.task('default', gulp.series('clean','copy', 'es6','rjs','data',function (done) {
+gulp.task('default', gulp.series('clean','copy', 'es6','rjs',function (done) {
     console.log('success')
     done()
 }))

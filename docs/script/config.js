@@ -1,7 +1,7 @@
 'use strict';
 
 window.CONF = {
-  requireBase: ['/docs/', '/website-navigation/'],
+  requireBase: ['/src/', '/website-navigation/'],
   defaultPage: 'home',
   // 根据端口获取联调环境状态：本地=8888 else 联调环境
   getEnv: function getEnv() {
@@ -20,4 +20,5 @@ require.config({
   paths: {
     text: "lib/text"
   }
+
 });

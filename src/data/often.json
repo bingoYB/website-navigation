@@ -38,6 +38,11 @@
         "icon": "http://img.kingsnug.cn/favicon.ico",
         "name": "妮可",
         "desc": "宅男腐女们最喜爱的动漫交流互动平台"
+      },{
+        "url": "https://segmentfault.com/",
+        "icon": "https://segmentfault.com/favicon.ico",
+        "name": "SegmentFault思否",
+        "desc": "SegmentFault 思否 为开发者提供问答、学习与交流编程知识的平台，创造属于开发者的时代！"
       }
     ]
   }

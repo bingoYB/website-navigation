@@ -2,7 +2,7 @@
   {{#each local}}
   <li class="local-data">
     <div class="result-icon">
-      <i style="background-image: url({{icon}});"></i>
+      <i style="background-image: url({{icon}}),url(img/404-1.png);"></i>
     </div>
     <div class="result-text">
       <span>{{name}}</span>

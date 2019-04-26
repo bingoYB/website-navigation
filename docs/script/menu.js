@@ -1,6 +1,6 @@
 'use strict';
 
-define(['require', 'script/router', 'text!template/menu.tpl'], function (require, router, tpl) {
+define(['require', 'script/router', 'text!template/menu.tpl', 'script/data'], function (require, router, tpl, data) {
   'use strict';
 
   var isMobile = window.CONF.isMobile;
@@ -55,14 +55,14 @@ define(['require', 'script/router', 'text!template/menu.tpl'], function (require
 
   var Render = {
     menuList: function menuList() {
-      $.get('data/menu.json').then(function (menu) {
-        //预编译模板
-        var template = Handlebars.compile(tpl);
-        //匹配json内容
-        var html = template(menu.menu);
-        //输入模板
-        $('#menu').html(html);
-      });
+      // $.get('data/menu.json').then((menu) => {
+      //预编译模板
+      var template = Handlebars.compile(tpl);
+      //匹配json内容
+      var html = template(data);
+      //输入模板
+      $('#menu').html(html);
+      // })
     }
   };
 

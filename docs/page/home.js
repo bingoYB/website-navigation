@@ -11,9 +11,12 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
 
   var searchRst = {
     type: '百度'
+  };
 
-    // 搜索引擎返回处理
-  };window.dealSearchReturn = function (datas) {
+  var suggestUrl = '//api.bing.com/qsonhs.aspx';
+
+  // 搜索引擎返回处理
+  window.dealSearchReturn = function (datas) {
     console.log(datas.AS.Results[0].Suggests);
     searchRst.engine = datas.AS.Results[0].Suggests;
     Interactive.loadRst();
@@ -89,7 +92,7 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
 
         // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
-          url: "//api.bing.com/qsonhs.aspx",
+          url: suggestUrl,
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',

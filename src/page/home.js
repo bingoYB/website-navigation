@@ -16,6 +16,8 @@ define([
     type: '百度'
   }
 
+    let suggestUrl = '//api.bing.com/qsonhs.aspx'
+
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
     console.log(datas.AS.Results[0].Suggests)
@@ -93,7 +95,7 @@ define([
         
         // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
-          url: "//api.bing.com/qsonhs.aspx",
+          url: suggestUrl,
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',
