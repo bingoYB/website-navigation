@@ -13,6 +13,8 @@ define([
     init() {
       // 页面刷新时检查页面路由
       this.checkURL();
+
+      NProgress.configure({ parent: '#page-content' });
       // 过滤空的路由链接
       $(document).on("click", 'a.router[href="#"]', function (e) {
         e.preventDefault();
@@ -53,9 +55,11 @@ define([
     loadURL: function (url) {
       var thiz = this;
       var pageurl = this.baseUrl + url + '.html'
-      
+
+      NProgress.start()
+
       $(thiz.container).html('')
-      $('#loading').show()
+      // $('#loading').show()
       
       // 调用Ajax加载页面，默认开启缓存，可进行配置
       $.get(pageurl, function (html, state) {
@@ -64,7 +68,8 @@ define([
           // 加载页面对应的JS模块，并初始化
           requirejs([pageurl.split('.')[0]], function (render) {
             render?render():1
-            $('#loading').hide()
+            // $('#loading').hide()
+            NProgress.done()
           })
         } else {
           $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");
