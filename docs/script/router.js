@@ -12,10 +12,9 @@ define(['require'], function (require) {
     baseUrl: 'page/',
 
     init: function init() {
+      NProgress.configure({ parent: '#page-content' });
       // 页面刷新时检查页面路由
       this.checkURL();
-
-      NProgress.configure({ parent: '#page-content' });
       // 过滤空的路由链接
       $(document).on("click", 'a.router[href="#"]', function (e) {
         e.preventDefault();

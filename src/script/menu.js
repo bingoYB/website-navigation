@@ -9,7 +9,7 @@ define([
   // 页面交互部分
   var Interactive = {
     menuClick() {
-      $('#menu').on('click', '.item', function () {
+      $('menu').on('click', '.item', function (e) {
         $(this).addClass('active').siblings().removeClass('active')
         // 标题更改
         let icon = $(this).find('.item-text .iconfont')

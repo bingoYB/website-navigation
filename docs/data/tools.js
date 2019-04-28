@@ -159,6 +159,11 @@ define(['require'], function (require) {
       "name": "ToolFk程序员在线开发工具",
       "desc": "在线开发工具,Linux在线命令,在线脑图,JSON代码格式化,PHP混淆/加密/解密工具,在线并发,在线JS/CSS/HTML格式化/压缩。 ,程序猿的在线工具箱"
     }, {
+      "url": "http://tool.c7sky.com/",
+      "icon": "http://tool.c7sky.com//favicon.ico",
+      "name": "Toolbox",
+      "desc": "小影的工具箱"
+    }, {
       "url": "https://smallpdf.com/",
       "icon": "https://smallpdf.com/favicon.ico",
       "name": "PDF文件转换",

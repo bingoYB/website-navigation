@@ -144,10 +144,89 @@ define(['require'], function (require) {
     "title": "设计",
     "icon": "icon-router",
     "item": [{
-      "url": "https://weibo.com/u/3816118370/home?topnav=1&wvr=6",
-      "icon": "https://weibo.com/favicon.ico",
-      "name": "微博",
-      "desc": "随时随地发现新鲜事"
+      "tag": "导航",
+      "url": "https://www.seeseed.com/",
+      "icon": "https://www.seeseed.com/favicon.png",
+      "name": "seeseed",
+      "desc": "设计导航"
+    }, {
+      "tag": "导航",
+      "url": "http://hao.shejidaren.com/",
+      "icon": "http://hao.shejidaren.com/favicon.png",
+      "name": "设计导航",
+      "desc": "设计导航"
+    }, {
+      "tag": "导航",
+      "url": "https://hao.uisdc.com/",
+      "icon": "https://hao.uisdc.com/favicon.png",
+      "name": "优设导航 - 学设计从这里开始！",
+      "desc": "设计导航"
+    }, {
+      "tag": "图标",
+      "url": "https://www.iconfont.cn/",
+      "icon": "https://www.iconfont.cn/favicon.ico",
+      "name": "iconfont 阿里图标库",
+      "desc": "阿里图标库"
+    }, {
+      "tag": "图标",
+      "url": "https://iconsvg.xyz/",
+      "icon": "https://iconsvg.xyz/favicon-32.png",
+      "name": "svg图标",
+      "desc": "Simple tool to find, customize and generate common SVG icons for your project"
+    }, {
+      "tag": "图标",
+      "url": "https://iconscout.com/unicons",
+      "icon": "https://iconscout.com/favicon-96x96.png",
+      "name": "Unicons",
+      "desc": "1000+ Pixel-perfect vector icons and Iconfont for your next project.--在线图标库"
+    }, {
+      "tag": "图标",
+      "url": "https://www.flaticon.com/",
+      "icon": "https://www.flaticon.com/media/img/favicon.ico",
+      "name": "flaticon",
+      "desc": "最大的免费图标库（ PNG, SVG, EPS, PSD and BASE 64 formats）"
+    }, {
+      "tag": "图标",
+      "url": "https://thenounproject.com/",
+      "icon": "https://static.production.thenounproject.com/img/favicons/favicon-32x32.015f779a87e7.png",
+      "name": "Icons for everything",
+      "desc": "超过200万的图标（免费下载原图，自定义收费）"
+    }, {
+      "tag": "配色",
+      "url": "http://www.peise.net/",
+      "icon": "http://www.peise.net/favicon.ico",
+      "name": "配色软件园",
+      "desc": "色彩搭配,安卓软件,颜色搭配,配色软件园"
+    }, {
+      "tag": "配色",
+      "url": "https://flatuicolors.com/",
+      "icon": "https://flatuicolors.com/static/favicon.ico",
+      "name": "flatuicolors",
+      "desc": "扁平化色彩配色方案"
+    }, {
+      "tag": "配色",
+      "url": "https://webgradients.com/",
+      "icon": "https://webgradients.com/favicons/favicon-32x32.png",
+      "name": "webgradients",
+      "desc": "收藏了180种渐变色"
+    }, {
+      "tag": "配色",
+      "url": "http://color.uisdc.com/",
+      "icon": "http://color.uisdc.com/favicon.ico",
+      "name": "中国传统色彩",
+      "desc": "中国传统色彩"
+    }, {
+      "tag": "配色",
+      "url": "http://tool.c7sky.com/webcolor/",
+      "icon": "http://tool.c7sky.com/favicon.ico",
+      "name": "配色表",
+      "desc": "网页设计常用色彩搭配表"
+    }, {
+      "tag": "平台",
+      "url": "https://www.uisdc.com/",
+      "icon": "http://color.uisdc.com/favicon.ico",
+      "name": "优设网 - UISDC",
+      "desc": "设计师交流学习平台 - 看设计文章，学软件教程，找灵感素材，尽在优设网！"
     }]
   }, {
     "title": "系统",
@@ -162,10 +241,28 @@ define(['require'], function (require) {
     "title": "其他",
     "icon": "icon-router",
     "item": [{
-      "url": "https://weibo.com/u/3816118370/home?topnav=1&wvr=6",
-      "icon": "https://weibo.com/favicon.ico",
-      "name": "微博",
-      "desc": "随时随地发现新鲜事"
+      "tag": "书籍",
+      "url": "http://www.ruanyifeng.com/survivor/collapse/index.html",
+      "icon": "http://www.ruanyifeng.com/favicon.ico",
+      "name": "未来世界的幸存者",
+      "desc": "未来世界的幸存者--阮一峰"
+    }, {
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjAxOTU4MA==&mid=3009206495&idx=1&sn=baff9e3b99ac1dba95cdb5ff324e0370&chksm=9047d4cca7305dda34408955807ed666c4bcc3552d9122063e045b25d59e813c961dc64e7f56&mpshare=1&scene=21#wechat_redirect",
+      "icon": "https://mp.weixin.qq.com/favicon.ico",
+      "name": "听熟100首古典名曲，让孩子迷上音乐",
+      "desc": "精选100首适合孩子的古典名曲，帮孩子爱上古典音乐"
+    }, {
+      "tag": "书籍",
+      "url": "http://mbmlbook.com/toc.html",
+      "icon": "http://mbmlbook.com/images/favicon.ico",
+      "name": "Model-Based Machine Learning (Early Access)",
+      "desc": "基于模型的机器学习（英文电子书）"
+    }, {
+      "tag": "书籍",
+      "url": "https://book.systemsapproach.org/",
+      "icon": "https://book.systemsapproach.org/gitbook/images/favicon.ico",
+      "name": "计算机网络",
+      "desc": "计算机网络相关（英文电子书）"
     }]
   }];
 });

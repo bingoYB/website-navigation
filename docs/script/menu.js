@@ -7,7 +7,7 @@ define(['require', 'script/router', 'text!template/menu.tpl', 'script/data'], fu
   // 页面交互部分
   var Interactive = {
     menuClick: function menuClick() {
-      $('#menu').on('click', '.item', function () {
+      $('menu').on('click', '.item', function (e) {
         $(this).addClass('active').siblings().removeClass('active');
         // 标题更改
         var icon = $(this).find('.item-text .iconfont');
