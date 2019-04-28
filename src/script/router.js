@@ -52,7 +52,11 @@ define([
      */
     loadURL: function (url) {
       var thiz = this;
-      var pageurl = this.baseUrl+url+'.html'
+      var pageurl = this.baseUrl + url + '.html'
+      
+      $(thiz.container).html('')
+      $('#loading').show()
+      
       // 调用Ajax加载页面，默认开启缓存，可进行配置
       $.get(pageurl, function (html, state) {
         if (state =='success') {
@@ -60,6 +64,7 @@ define([
           // 加载页面对应的JS模块，并初始化
           requirejs([pageurl.split('.')[0]], function (render) {
             render?render():1
+            $('#loading').hide()
           })
         } else {
           $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");

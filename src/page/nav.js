@@ -21,6 +21,9 @@ define([
         content:window,
         imgs: $('.my-nav')[0].querySelectorAll('img')
       })
+      // title render
+      $('#header-title').find('h1').html(data[key].title)
+      $('#header-title').find('.iconfont').removeClass().addClass('iconfont '+data[key].icon)
     }
   }
   return function () {

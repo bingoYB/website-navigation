@@ -180,6 +180,9 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
           imgs: $('.often')[0].querySelectorAll('img')
         });
       });
+
+      $('#header-title').find('h1').html('首页');
+      $('#header-title').find('.iconfont').removeClass().addClass('iconfont icon-shouye');
     },
     getSearchRst: function getSearchRst() {}
   };
