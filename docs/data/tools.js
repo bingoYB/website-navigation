@@ -146,6 +146,60 @@ define(['require'], function (require) {
       "desc": "提供正版软件限时免费信息为途径,引导用户养成使用正版软件的习惯,以此促进国内版权氛围的改进。"
     }]
   }, {
+    "title": "导航",
+    "icon": "icon-router",
+    "item": [{
+      "url": "https://navisec.it/",
+      "icon": "https://navisec.it/favicon.ico",
+      "name": "纳威安全导航",
+      "desc": "网络安全人员的上网导航"
+    }, {
+      "url": "http://hao.xsldh.com/",
+      "icon": "http://hao.xsldh.com/favicon.ico",
+      "name": "小森林导航",
+      "desc": "收录600多实用网站，整合200多个搜索引擎，包括了电影资源，电视剧资源，音乐，阅读，模板素材，软件工具，知识文库等各大分类。页面清爽，酷炫，无广告，是一个类目齐全，功能强大，非常实用的导航网站"
+    }, {
+      "url": "http://ilxdh.com/",
+      "icon": "http://ilxdh.com/favicon.ico",
+      "name": "龙轩导航",
+      "desc": "龙轩导航提供最快捷的资源平台，让你迅速找到想要的资源，准确又方便快捷"
+    }, {
+      "url": "http://www.alloyteam.com/nav/",
+      "icon": "http://www.alloyteam.com/favicon.ico",
+      "name": "Web前端导航",
+      "desc": "Web前端导航"
+    }, {
+      "url": "http://www.gkbang.cn/link/",
+      "icon": "http://www.gkbang.cn/favicon.ico",
+      "name": "果壳任意门",
+      "desc": "发现你最爱的网站"
+    }, {
+      "url": "http://www.qkankan.com/index.html",
+      "icon": "http://www.qkankan.com/favicon.ico",
+      "name": "国外网站大全",
+      "desc": "提供实用且人性化的国外网址服务"
+    }, {
+      "url": "http://www.1nami.com/",
+      "icon": "http://www.1nami.com/favicon.ico",
+      "name": "1纳米学习网站导航",
+      "desc": "学习网站，学习网站导航，1纳米"
+    }, {
+      "url": "http://guozhivip.com/nav/",
+      "icon": "http://guozhivip.com/favicon.ico",
+      "name": "果汁导航",
+      "desc": "果汁导航"
+    }, {
+      "url": "http://hao.199it.com/",
+      "icon": "http://hao.199it.com/favicon.ico",
+      "name": "大数据导航",
+      "desc": "，以大数据产业为主，大数据工具为辅，给用户提供一个更加快速找到大数据相关的工具"
+    }, {
+      "url": "http://www.nani.online/",
+      "icon": "http://www.nani.online/favicon.ico",
+      "name": "纳尼导航-上网如此简单",
+      "desc": "最快速的及时收录电影、影视、音乐、娱乐、新闻等高质量网址"
+    }]
+  }, {
     "title": "在线工具",
     "icon": "icon-router",
     "item": [{
@@ -247,6 +301,30 @@ define(['require'], function (require) {
       "icon": "https://api.ihint.me/shuang/favicon.ico",
       "name": "双拼练习",
       "desc": "双拼练习"
+    }]
+  },, {
+    "title": "其他工具",
+    "icon": "icon-router",
+    "item": [{
+      "url": "http://24mail.chacuo.net/",
+      "icon": "http://24mail.chacuo.net/favicon.ico",
+      "name": "临时邮箱、临时邮、临时电子邮箱、24小时邮箱",
+      "desc": "临时邮箱、临时邮、临时电子邮箱、24小时邮箱"
+    }, {
+      "url": "http://receivefreesms.com/",
+      "icon": "http://receivefreesms.com/favicon.ico",
+      "name": "Receive FREE SMS online",
+      "desc": "Receive FREE SMS online 国外手机号免费接收短信"
+    }, {
+      "url": "https://www.pdflibr.com/",
+      "icon": "https://www.pdflibr.com/favicon.ico",
+      "name": "在线短信接收",
+      "desc": "在线短信接收-国内+国外"
+    }, {
+      "url": "https://helloliuliu.top/",
+      "icon": "https://helloliuliu.top/favicon.ico",
+      "name": "在线免费接收短信",
+      "desc": "在线短信接收-国内+国外"
     }]
   }];
 });

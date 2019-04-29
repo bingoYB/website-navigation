@@ -22,6 +22,12 @@ define([
           "icon": "http://www.daqianduan.com/favicon.ico",
           "name": "大前端-关注前端开发",
           "desc": "大前端是一个关注前端开发、用户体验设计、HTML5、CSS3、Javascript的前端开发独立博客。"
+        }, {
+          "tag": "",
+          "url": "https://www.ibm.com/developerworks/cn/",
+          "icon": "https://www.ibm.com/favicon.ico",
+          "name": "IBM Developer 中国",
+          "desc": "学习资源，开发工具，和技术社区"
         }
       ]
     }, {
@@ -244,7 +250,12 @@ define([
           "icon": "https://xinqiu.gitbooks.io/linux-insides-cn/content/gitbook/images/favicon.ico",
           "name": "Linux内核揭秘",
           "desc": "一系列关于 Linux 内核和其内在机理的帖子。"
-        },
+        }, {
+          "url": "http://linux.vbird.org/",
+          "icon": "http://linux.vbird.org/favicon.ico",
+          "name": "鳥哥的 Linux 私房菜",
+          "desc": "鳥哥的 Linux 私房菜"
+        }
 
       ]
     }, {
@@ -274,6 +285,18 @@ define([
           "icon": "https://book.systemsapproach.org/gitbook/images/favicon.ico",
           "name": "计算机网络",
           "desc": "计算机网络相关（英文电子书）"
+        }, {
+          "tag": "书籍",
+          "url": "https://www.yuque.com/ham/base",
+          "icon": "https://www.yuque.com/favicon.ico",
+          "name": "无线电基础",
+          "desc": "无线电基础"
+        }, {
+          "tag": "数学",
+          "url": "https://www.shuxuele.com/index.html",
+          "icon": "https://www.shuxuele.com/favicon.ico",
+          "name": "数学乐",
+          "desc": "数学基础可视化教程"
         }
 
       ]

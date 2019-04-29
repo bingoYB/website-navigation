@@ -84,6 +84,11 @@ define(['require'], function (require) {
       "icon": "http://you.163.com/favicon.ico",
       "name": "严选",
       "desc": "为中国消费者甄选天下优品"
+    }, {
+      "url": "https://www.anyknew.com/#/",
+      "icon": "https://www.anyknew.com/favicon.ico",
+      "name": "anyknew",
+      "desc": "AnyKnew - 效率资讯 - 高效读新闻, 5分钟遍历全网热点"
     }]
   }, {
     "title": "生活工具",
@@ -103,6 +108,11 @@ define(['require'], function (require) {
       "icon": "https://www.kuaidi100.com/favicon.ico",
       "name": "快递查询",
       "desc": "快递100-查快递,寄快递,上快递100"
+    }, {
+      "url": "http://www.mvyxws.com/",
+      "icon": "http://www.mvyxws.com/favicon.ico",
+      "name": "医学微视",
+      "desc": "医学微视-中国医学科普微视频百科全书"
     }]
   }];
 });
