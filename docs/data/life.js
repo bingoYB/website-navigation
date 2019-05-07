@@ -15,7 +15,7 @@ define(['require'], function (require) {
     }, {
       "tag": "互联网",
       "url": "https://readhub.cn/topics",
-      "icon": "https://readhub.cn/favicon.ico",
+      "icon": "https://cdn.readhub.cn/static/assets/png/readhub_logo.95007f61.png",
       "name": "Readhub",
       "desc": "每天三分钟的科技新闻聚合阅读"
     }, {
@@ -32,7 +32,7 @@ define(['require'], function (require) {
     }, {
       "tag": "财经",
       "url": "https://wallstreetcn.com/",
-      "icon": "https://wallstreetcn.com/favicon.ico",
+      "icon": "https://static-alpha.wallstreetcn.com/ivanka-pc-prod/d4bb8b4dbefdc9c2584dbfe140871554.png",
       "name": "华尔街见闻",
       "desc": "中国领先的商业和金融信息提供商，首创商业和金融信息“实时”模式，重要信息秒级推送。7*24小时全年不间断为用户提供资讯、数据、行情、研究和社区等服务"
     }, {
@@ -113,6 +113,11 @@ define(['require'], function (require) {
       "icon": "http://www.mvyxws.com/favicon.ico",
       "name": "医学微视",
       "desc": "医学微视-中国医学科普微视频百科全书"
+    }, {
+      "url": "http://www.5h.com/",
+      "icon": "http://www.5h.com/favicon.ico",
+      "name": "5号网-养生美容亲子-为健康美丽播种",
+      "desc": "5号网-养生美容亲子-为健康美丽播种"
     }]
   }];
 });

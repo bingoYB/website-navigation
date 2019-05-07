@@ -329,7 +329,7 @@ define([
           "desc": "双拼练习"
         },
       ]
-    }, , {
+    }, {
       "title": "其他工具",
       "icon": "icon-router",
       "item": [
