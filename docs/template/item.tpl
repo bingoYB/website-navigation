@@ -2,7 +2,7 @@
   {{#each this}}
   <section class="section" data-title="{{title}}">
     <div class="title">
-      <div class="title-icon"><i class="iconfont {{icon}}"></i></div>
+      {{!-- <div class="title-icon"><i class="iconfont {{icon}}"></i></div> --}}
       <h2 class="title-text">{{title}}</h2>
     </div>
     <div class="list">
