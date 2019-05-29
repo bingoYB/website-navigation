@@ -343,12 +343,33 @@ main {
   font-size: inherit !important;
 }
 
-.btn-share {
+.btn-git {
+  /* position: relative; */
+}
+
+.btn-git>a {
+  padding: 0.75em 1em 0.75em 3em;
+  border-radius: 2em;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
   position: relative;
-  float: right;
-  margin-right: 32px;
-  width: 24px;
-  height: 24px;
+  text-indent: 1.4em;
+  margin: 1em 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  min-width: 8em;
+  text-align: center;
+  background-color: #f6f6f6;
+  color: #7f8c8d;
+  border-color: #f6f6f6;
+}
+
+.btn-git>a>svg {
+  position: absolute;
+  left: 0.4em;
+  top: 0.4em;
+  width: 2em;
 }
 
 .btn-lang {
