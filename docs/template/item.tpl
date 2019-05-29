@@ -11,9 +11,8 @@
         <div class="card">
           <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
             <div>
-              <div class="bg-img round card-icon"
-                style="background-image: url(&quot;{{icon}}&quot;); width: 32px; height: 32px;">
-              </div>
+              <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="this.src='img/404-1.png'">
+              {{!-- <div class="bg-img round card-icon" style="background-image: url(&quot;&quot;);"></div> --}}
               <div class="card-main">
                 <div class="card-name">
                   {{name}}

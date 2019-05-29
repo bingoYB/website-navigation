@@ -28,10 +28,21 @@ gulp.task('rjs', function () {
         baseUrl: "docs/",
         name: "script/index",
         paths: {
-          text: 'lib/text',
-          nav:'page/nav',
-          home: 'page/home',
-        }
+          text: 'lib/text'
+        },
+        removeCombined: true
+      }))
+    .pipe(gulp.dest('docs/script/'));
+});
+
+// 数据 打包
+gulp.task('data', function () {
+  return gulp.src('docs/script/data.js')
+    .pipe(
+      requirejsOptimize({
+        baseUrl: "docs/",
+        name: "script/data",
+        removeCombined:true
       }))
     .pipe(gulp.dest('docs/script/'));
 });

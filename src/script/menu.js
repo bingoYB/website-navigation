@@ -1,14 +1,15 @@
 define([
   'require',
   'script/router',
-  'text!template/menu.tpl'
-], function (require, router, tpl) {
+  'text!template/menu.tpl',
+  'script/data'
+], function (require, router, tpl, data) {
   'use strict';
   var isMobile = window.CONF.isMobile
   // 页面交互部分
   var Interactive = {
     menuClick() {
-      $('#menu').on('click', '.item', function () {
+      $('menu').on('click', '.item', function (e) {
         $(this).addClass('active').siblings().removeClass('active')
         // 标题更改
         let icon = $(this).find('.item-text .iconfont')
@@ -55,14 +56,14 @@ define([
 
   var Render = {
     menuList() {
-      $.get('data/menu.json').then((menu) => {
-        //预编译模板
-        var template = Handlebars.compile(tpl)
-        //匹配json内容
-        let html = template(menu.menu)
-        //输入模板
-        $('#menu').html(html)
-      })
+      // $.get('data/menu.json').then((menu) => {
+      //预编译模板
+      var template = Handlebars.compile(tpl)
+      //匹配json内容
+      let html = template(data)
+      //输入模板
+      $('#menu').html(html)
+      // })
     }
   }
 

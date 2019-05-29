@@ -63,7 +63,7 @@ define(['require', 'script/data'], function (require, data) {
         var m = this.queryArrayMap = new Map();
         var sks = this.option.searchKeys;
         for (var key in data) {
-          var el = data[key];
+          var el = data[key].sub;
           for (var i = 0; i < el.length; i++) {
             var item = el[i].item;
 

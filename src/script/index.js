@@ -1,9 +1,8 @@
 define([
   'require',
   'script/router',
-  'script/menu',
-  'script/data'
-], function(require, Router,menu,data) {
+  'script/menu'
+], function(require, Router,menu) {
   'use strict';
   menu();
   Router.init()

@@ -1,6 +1,6 @@
 'use strict';
 
-define(['require', 'text!template/item.tpl', 'script/search', 'text!template/searchResult.tpl'], function (require, tpl, s, searchTpl) {
+define(['require', 'text!template/item.tpl', 'script/search', 'text!template/searchResult.tpl', 'script/lazyLoad'], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
 
   var searchUrl = {
@@ -11,9 +11,12 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
 
   var searchRst = {
     type: '百度'
+  };
 
-    // 搜索引擎返回处理
-  };window.dealSearchReturn = function (datas) {
+  var suggestUrl = '//api.bing.com/qsonhs.aspx';
+
+  // 搜索引擎返回处理
+  window.dealSearchReturn = function (datas) {
     console.log(datas.AS.Results[0].Suggests);
     searchRst.engine = datas.AS.Results[0].Suggests;
     Interactive.loadRst();
@@ -89,7 +92,7 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
 
         // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
-          url: "//api.bing.com/qsonhs.aspx",
+          url: suggestUrl,
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',
@@ -171,14 +174,20 @@ define(['require', 'text!template/item.tpl', 'script/search', 'text!template/sea
         var html = template(data);
         //输入模板
         $('.often').html(html);
+
+        new lazyLoad({
+          content: window,
+          imgs: $('.often')[0].querySelectorAll('img')
+        });
       });
-    },
-    getSearchRst: function getSearchRst() {}
+
+      $('#header-title').find('h1').html('首页');
+      $('#header-title').find('.iconfont').removeClass().addClass('iconfont icon-shouye');
+    }
   };
 
   return function () {
     Render.getOften();
-    Interactive.searchEnter();
     Interactive.searchKeydown();
     Interactive.changeSearch();
     Interactive.rstClick();

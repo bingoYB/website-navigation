@@ -26,7 +26,7 @@ define([
       let m = this.queryArrayMap = new Map()
       let sks = this.option.searchKeys
       for (const key in data) {
-        const el = data[key]
+        const el = data[key].sub
         for (let i = 0; i < el.length; i++) {
           const item = el[i].item
           for (let j = 0; j < item.length; j++) {

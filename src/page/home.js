@@ -2,8 +2,9 @@ define([
   'require',
   'text!template/item.tpl',
   'script/search',
-  'text!template/searchResult.tpl'
-], function (require, tpl, s, searchTpl) {
+  'text!template/searchResult.tpl',
+  'script/lazyLoad'
+], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
   let searchUrl = {
     '百度': 'https://www.baidu.com/s?wd=',
@@ -14,6 +15,8 @@ define([
   let searchRst = {
     type: '百度'
   }
+
+    let suggestUrl = '//api.bing.com/qsonhs.aspx'
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
@@ -92,7 +95,7 @@ define([
         
         // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
-          url: "//api.bing.com/qsonhs.aspx",
+          url: suggestUrl,
           type: "GET",
           dataType: "jsonp",
           jsonp: 'jsoncallback',
@@ -179,17 +182,21 @@ define([
           let html = template(data)
           //输入模板
           $('.often').html(html)
+
+          new lazyLoad({
+            content: window,
+            imgs: $('.often')[0].querySelectorAll('img')
+          })
         }
       );
-    },
-    getSearchRst() {
 
+      $('#header-title').find('h1').html('首页')
+      $('#header-title').find('.iconfont').removeClass().addClass('iconfont icon-shouye')
     }
   }
 
   return function () {
     Render.getOften()
-    Interactive.searchEnter()
     Interactive.searchKeydown()
     Interactive.changeSearch()
     Interactive.rstClick()

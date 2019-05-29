@@ -84,14 +84,13 @@ define([
           "icon": "https://www.yeziyy.com/favicon.ico",
           "name": "椰子影院",
           "desc": "免VIP看全网最新最全视频！"
-        }
-      ]
-    },
-    {
-      "title": "电影",
-      "icon": "icon-yingshi",
-      "item": [
+        },
         {
+          "url": "http://www.moonbt.com/",
+          "icon": "http://www.moonbt.com/favicon.ico",
+          "name": "月影点播网",
+          "desc": "电影|剧集|综艺|月影动漫在线看"
+        }, {
           "url": "https://www.gqyys.com/",
           "icon": "http://gaoqing.la/wp-content/themes/Loostrive/images/favicon.ico",
           "name": "高清云影视",
@@ -114,6 +113,56 @@ define([
           "icon": "http://img.kingsnug.cn/favicon.ico",
           "name": "妮可",
           "desc": "宅男腐女们最喜爱的动漫交流互动平台"
+        }, {
+          "url": "http://www.kisssub.org/",
+          "icon": "http://www.kisssub.org/favicon.ico",
+          "name": "爱恋动漫BT下载",
+          "desc": "爱恋BT分享站，动画～漫画～游戏～动漫音乐～片源（RAW）～各类ACG资源聚集地"
+        }, {
+          "url": "http://www.acfun.cn/",
+          "icon": "http://www.acfun.cn/favicon.ico",
+          "name": "A站",
+          "desc": "AcFun是一家弹幕视频网站，致力于为每一个人带来欢乐"
+        }, {
+          "url": "https://www.bilibili.com/",
+          "icon": "https://www.bilibili.com/favicon.ico",
+          "name": "B站",
+          "desc": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围。"
+        }, {
+          "url": "http://www.dilidili.name/",
+          "icon": "http://www.dilidili.name/favicon.ico",
+          "name": "D站",
+          "desc": "嘀哩嘀哩会筛选经典作品并将新作经典轮番推荐，为您带来一场美妙的动漫盛宴"
+        }, {
+          "url": "https://www.missevan.com/",
+          "icon": "https://www.missevan.com/images/index/favicon.ico",
+          "name": "M站",
+          "desc": "M站(猫耳FM)是第一家弹幕音图站,同时也是中国声优基地,在这里可以听电台,音乐,翻唱,小说和广播剧,用二次元声音连接三次元."
+        }, {
+          "url": "https://mikanani.me/",
+          "icon": "https://mikanani.me/Images/favicon.ico?v=2",
+          "name": "蜜柑计划",
+          "desc": "新一代的动漫下载站"
+        }, {
+          "url": "https://www.36dm.com/",
+          "icon": "https://www.36dm.com/favicon.ico?v=2",
+          "name": "简单动漫",
+          "desc": "BT下载|动漫下载|动画|漫画"
+        }, {
+          "url": "http://bt.acg.gg/",
+          "icon": "http://bt.acg.gg/favicon.ico?v=2",
+          "name": "ACG狗狗",
+          "desc": "动漫资源分享 - 动漫下载|BT|漫画|动画|游戏"
+        }, {
+          "url": "http://www.ikanfan.com/",
+          "icon": "http://www.ikanfan.com/favicon.ico",
+          "name": "爱看番",
+          "desc": "小而美的动漫追番网站"
+        }, {
+          "url": "https://www.5ddm.com/",
+          "icon": "https://www.5ddm.com/5d_favicon.ico",
+          "name": "5D动漫(5站)",
+          "desc": "无广告免费的动漫网站"
         }
       ]
     },
@@ -176,6 +225,41 @@ define([
           "icon": "http://www.zimuxia.cn/wp-content/uploads/2016/03/cropped-logo2-32x32.png",
           "name": "FIX字幕侠",
           "desc": "做国内最好的字幕组"
+        }, {
+          "url": "https://www.hanfan.cc/hanju/",
+          "icon": "https://www.hanfan.cc/favicon.ico",
+          "name": "韩饭网",
+          "desc": "提供最新韩剧下载，韩剧排行榜，热门韩剧资讯，剧情介绍，幕后花絮等精彩内容。"
+        }, {
+          "url": "http://www.hanju.cc/",
+          "icon": "http://www.hanju.cc/favicon.ico",
+          "name": "韩剧网",
+          "desc": "H9T韩剧网是最大的韩剧资料馆"
+        }, {
+          "url": "http://hxly9.com/forum.php",
+          "icon": "http://hxly9.com/favicon.ico",
+          "name": "幻想乐园字幕组",
+          "desc": "幻想乐园字幕组是为大家免费提供韩国综艺,韩剧,电影的中文字幕,原创翻译最新的韩国娱乐新闻"
+        }, {
+          "url": "http://www.zzrbl.com/",
+          "icon": "http://www.zzrbl.com/favicon.ico",
+          "name": "猪猪日部落",
+          "desc": "日剧综合站"
+        }, {
+          "url": "http://www.hideystudio.com/drama/",
+          "icon": "http://www.hideystudio.com/favicon.ico",
+          "name": "隐社",
+          "desc": "日剧综合站"
+        }, {
+          "url": "http://www.wwmulu.com/",
+          "icon": "http://www.wwmulu.com/favicon.ico",
+          "name": "91日剧",
+          "desc": "高清日剧下载|日剧排行榜|日剧推荐"
+        }, {
+          "url": "http://www.tokyonothot.com/portal.php",
+          "icon": "http://www.tokyonothot.com/favicon.ico",
+          "name": "东京不够热",
+          "desc": "日剧字幕组"
         }
 
       ]
@@ -223,6 +307,12 @@ define([
           "url": "http://www.yyets.com/",
           "icon": "http://www.yyets.com/favicon.ico",
           "name": "人人影视",
+          "desc": "美剧下载,字幕下载,日剧下载,高清电影下载,韩剧下载,美剧时间表,字幕组"
+        },
+        {
+          "url": "http://zhuixinfan.com/main.php",
+          "icon": "http://zhuixinfan.com/favicon.ico",
+          "name": "追新番日剧站",
           "desc": "美剧下载,字幕下载,日剧下载,高清电影下载,韩剧下载,美剧时间表,字幕组"
         }
       ]

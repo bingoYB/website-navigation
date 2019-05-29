@@ -19,6 +19,7 @@ require.config(
     // 文本插件
     paths: {
       text: "lib/text",
-    }
+    },
+
   }
 )
