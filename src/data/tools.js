@@ -300,6 +300,12 @@ define([
           "icon": "https://cn.office-converter.com/images/favicon.ico",
           "name": "免费在线文件转换器",
           "desc": "免费在线转换视频,在线音频转换,在线图形转换,在线文档转换和在线压缩格式."
+        },
+        {
+          "url": "https://screendump.techulus.com/",
+          "icon": "https://screendump.techulus.com/favicon.ico",
+          "name": "在线网页截屏",
+          "desc": "输入url，即可截取网页图片，支持各种屏幕尺寸的截屏"
         }
       ]
     }, {
@@ -354,7 +360,17 @@ define([
           "icon": "https://helloliuliu.top/favicon.ico",
           "name": "在线免费接收短信",
           "desc": "在线短信接收-国内+国外"
-        },
+        },{
+          "url":"https://www.asklib.com/",
+          "icon": "https://www.asklib.com/favicon.ico",
+          "name": "问答库_做最有用的题库问答学习平台",
+          "desc": "考试题库,题库,尔雅通识课,尔雅通识课题库,尔雅,中级职称,职业资格考试,公务员考试,超星,慕课,机器人问答库,问答库"
+        }, {
+          "url": "http://ictclas.nlpir.org/nlpir/",
+          "icon": "http://ictclas.nlpir.org/nlpir/favicon.ico",
+          "name": "语义分析系统",
+          "desc": "语义分析系统"
+        }
       ]
     },
   ]

@@ -8,33 +8,33 @@ define([
   'use strict';
   let data = [{
     "title": "首页",
-    "icon": "icon-shouye-",
+    "icon": "icon-shouye",
     "id": "home",
     "hashUrl": "#",
     "sub": []
   }, {
     "title": "影视",
-    "icon": "icon-yingshi",
+    "icon": "icon-dianying",
     "id": "nav",
     "hashUrl": "#nav?class=1",
     "sub": film
   }, {
     "title": "学习",
-    "icon": "icon-xuexi1",
+    "icon": "icon-xuexizhongxin",
     "id": "nav",
     "hashUrl": "#nav?class=2",
     "sub": study
   }, {
     "title": "生活",
-    "icon": "icon-yingshi",
+    "icon": "icon-tubiaozhizuomobanyihuifu-",
     "id": "nav",
     "hashUrl": "#nav?class=3",
     "sub": life
   }, {
     "title": "工具",
-    "icon": "icon-Tools",
+    "icon": "icon-tool",
     "id": "nav",
-    "hashUrl": "#nav?class=4", 
+    "hashUrl": "#nav?class=4",
     "sub": tools
   }]
   return data

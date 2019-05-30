@@ -297,6 +297,24 @@ define([
           "icon": "https://www.shuxuele.com/favicon.ico",
           "name": "数学乐",
           "desc": "数学基础可视化教程"
+        },{
+          "tag":"教程",
+          "url":"http://www.08nm.com/",
+          "icon": "http://www.08nm.com/favicon.ico",
+          "name": "柠檬大学-伴我成长",
+          "desc": "包含大学专业课程的各个视频"
+        }, {
+          "tag": "科普",
+          "url": "http://open.163.com/special/opencourse/aspacetimeodyssey.html",
+          "icon": "http://open.163.com/favicon.ico",
+          "name": "国家地理频道纪录片：宇宙时空之旅",
+          "desc": "一部花费重金打造的科普巨制，带领观众以最宏观和最微观的角度来审视宇宙。"
+        }, {
+          "tag": "书籍",
+          "url": "https://nndl.github.io/",
+          "icon": "https://nndl.github.io/favicon.ico",
+          "name": "神经网络与深度学习",
+          "desc": "本课程主要介绍神经网络与深度学习中的基础知识、主要模型（前馈网络、卷积网络、循环网络等）以及在计算机视觉、自然语言处理等领域的应用。"
         }
 
       ]

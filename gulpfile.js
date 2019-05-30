@@ -10,11 +10,10 @@ gulp.task("clean", function () {
 });
 
 gulp.task("copy", function () {
-  return gulp.src("src/**")// ES6 源码存放的路径
-    .pipe(gulp.dest("docs")); //转换成 ES5 存放的路径
+  return gulp.src("src/**")// 源码存放的路径
+    .pipe(gulp.dest("docs")); //转换成生产的路径
 });
 // ES6转化为ES5
-// 在命令行使用 gulp toes5 启动此任务
 gulp.task("es6", function () {
   return gulp.src("docs/**/*.js")// ES6 源码存放的路径
     .pipe(babel())

@@ -8,7 +8,7 @@
     <div class="list">
       <div class="card-wrapper">
         {{#each item}}
-        <div class="card">
+        <div class="card hint--bottom hint--bounce hint--large" aria-label="{{desc}}">
           <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
             <div>
               <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="this.src='img/404-1.png'">
@@ -17,7 +17,7 @@
                 <div class="card-name">
                   {{name}}
                 </div>
-                <div style="width:100%;" class="hint--bottom hint--bounce" aria-label="{{desc}}">
+                <div style="width:100%;">
                   <div class="card-des">{{desc}}</div>
                 </div>
               </div>
