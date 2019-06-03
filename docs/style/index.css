@@ -378,7 +378,7 @@ main {
 .content {
   height: auto;
   min-height: 100%;
-  padding: 1px 0 70px;
+  padding: 1px 44px 70px;
 }
 
 .block {
@@ -619,7 +619,12 @@ main {
   pointer-events: auto;
 }
 
-
+.search-pre,.search-post {
+  width: 61px;
+  height: 50px;
+  border: 1px solid #353535;
+  float: left;
+}
 
 #search_bg #button_bg .textb {
   display: block;
@@ -628,8 +633,12 @@ main {
   text-align: left;
 }
 
+.search-input {
+  margin: 0 61px;
+}
+
 #search {
-  width: 1000px;
+  width: 100%;
   height: 50px;
   border: 1px solid #353535;
   border-right: 0 none;
@@ -648,29 +657,22 @@ main {
   float: left;
 }
 
-#searchBtn {
-  width: 61px;
-  height: 50px;
+.btn-search {
   background-color: rgb(252, 209, 51);
-  border: 1px solid #353535;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
-  float: left;
+  /* float: left; */
   background-image: url(../img/searchBtn.png?v=2.0);
   background-position: 15px 13px;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.searchChoice {
-  width: 61px;
-  height: 50px;
+.search-pre {
   background-color: white;
-  border: 1px solid #353535;
   border-right: 0;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  float: left;
   background-position: 12px 12px;
   background-repeat: no-repeat;
   position: relative;
@@ -708,9 +710,7 @@ main {
 }
 
 .search {
-  /* overflow: hidden; */
   margin: 100px auto 20px;
-  width: 1122px;
   height: 60px;
 }
 
