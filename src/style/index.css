@@ -410,6 +410,12 @@ main {
   .block {
     width: 1112px;
   }
+
+  .search.inputing>div{
+    width: 1112px;
+    margin: auto;
+  }
+  
 }
 
 .title-icon {
@@ -888,10 +894,6 @@ main {
   .search {
     margin: 20px auto 10px;
     width: 100%;
-  }
-
-  #search {
-    width: calc(100% - 122px);
   }
 
   .result-url {
