@@ -18,7 +18,7 @@ define([
         $('#header-title').find('.iconfont').removeClass().addClass(icon.attr('class'))
 
         if (isMobile()) {
-          $('.side').toggleClass('active')
+          $('menu').toggleClass('active')
         }
       });
     },
@@ -38,19 +38,19 @@ define([
         $(this).siblings().find('.nonius').css('top', top)
 
         if (isMobile()) {
-          $('.side').toggleClass('active')
+          $('menu').toggleClass('active')
         }
       });
     },
     // 移动版菜单的显隐
     toogleMenu() {
       $('.btn-menu').on('click', function () {
-        $('.side').toggleClass('active')
+        $('menu').toggleClass('active')
       });
 
-      // $('#container').on('click', function () {
-      //   $('.side').removeClass('active')
-      // });
+      $('.side-mask').on('click', function () {
+        $('menu').removeClass('active')
+      });
     }
   }
 

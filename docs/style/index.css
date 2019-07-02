@@ -411,11 +411,11 @@ main {
     width: 1112px;
   }
 
-  .search.inputing>div{
+  .search.inputing>div {
     width: 1112px;
     margin: auto;
   }
-  
+
 }
 
 .title-icon {
@@ -625,7 +625,8 @@ main {
   pointer-events: auto;
 }
 
-.search-pre,.search-post {
+.search-pre,
+.search-post {
   width: 61px;
   height: 50px;
   border: 1px solid #353535;
@@ -910,13 +911,23 @@ main {
     display: none;
   }
 
-  .side.active {
+  .active .side {
     left: 0;
     opacity: 1;
     /* border-right: rgba(0, 0, 0, .6) 1000px solid; */
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, .6);
   }
 
+  .active .side-mask {
+    width: 100%;
+  }
+
+  .side-mask{
+    width: 0;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+  }
   .side {
     position: fixed;
     left: -224px;
