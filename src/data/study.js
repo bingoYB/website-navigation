@@ -171,6 +171,12 @@ define([
         "icon": "https://hao.uisdc.com/favicon.png",
         "name": "优设导航 - 学设计从这里开始！",
         "desc": "设计导航"
+      }, {
+        "tag": "导航",
+        "url": "https://idesign.qq.com/#!index/feed",
+        "icon": "https://idesign.qq.com/favicon.png",
+        "name": "设计订阅 - 腾讯设计导航",
+        "desc": "腾讯设计导航云集高质量设计网站的内容，云集大量设计素材，随时随地访问收藏为设计灵感保驾护航。每天定时更新，网罗全网高逼格的设计站点，是最优秀的设计资讯网站。"
       },
       {
         "tag": "图标",
@@ -226,21 +232,25 @@ define([
         "icon": "http://color.uisdc.com/favicon.ico",
         "name": "中国传统色彩",
         "desc": "中国传统色彩"
-        }, {
-          "tag": "配色",
+      }, {
+        "tag": "配色",
         "url": "http://tool.c7sky.com/webcolor/",
         "icon": "http://tool.c7sky.com/favicon.ico",
         "name": "配色表",
         "desc": "网页设计常用色彩搭配表"
-        }, {
+      }, {
         "tag": "平台",
         "url": "https://www.uisdc.com/",
         "icon": "http://color.uisdc.com/favicon.ico",
         "name": "优设网 - UISDC",
         "desc": "设计师交流学习平台 - 看设计文章，学软件教程，找灵感素材，尽在优设网！"
-      }
-
-      ]
+      }, {
+        "tag": "配色",
+        "url": "https://coolbackgrounds.io/",
+        "icon": "https://coolbackgrounds.io/favicon.ico",
+        "name": "渐变色背景生成",
+        "desc": "渐变色背景生成"
+      }]
     }, {
       "title": "系统",
       "icon": "icon-router",
@@ -263,7 +273,7 @@ define([
       "icon": "icon-router",
       "item": [
         {
-          "tag":"书籍",
+          "tag": "书籍",
           "url": "http://www.ruanyifeng.com/survivor/collapse/index.html",
           "icon": "http://www.ruanyifeng.com/favicon.ico",
           "name": "未来世界的幸存者",
@@ -279,7 +289,7 @@ define([
           "icon": "http://mbmlbook.com/images/favicon.ico",
           "name": "Model-Based Machine Learning (Early Access)",
           "desc": "基于模型的机器学习（英文电子书）"
-        },  {
+        }, {
           "tag": "书籍",
           "url": "https://book.systemsapproach.org/",
           "icon": "https://book.systemsapproach.org/gitbook/images/favicon.ico",
@@ -297,9 +307,9 @@ define([
           "icon": "https://www.shuxuele.com/favicon.ico",
           "name": "数学乐",
           "desc": "数学基础可视化教程"
-        },{
-          "tag":"教程",
-          "url":"http://www.08nm.com/",
+        }, {
+          "tag": "教程",
+          "url": "http://www.08nm.com/",
           "icon": "http://www.08nm.com/favicon.ico",
           "name": "柠檬大学-伴我成长",
           "desc": "包含大学专业课程的各个视频"

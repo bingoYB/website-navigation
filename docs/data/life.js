@@ -65,6 +65,18 @@ define(['require'], function (require) {
       "icon": "http://www.ftchinese.com/favicon.ico",
       "name": "FT中文网 － 全球财经精粹",
       "desc": "英国《金融时报》唯一的非英语网站，致力于向中国商业菁英和企业决策者及时提供来自全球的商业、经济、市场、管理和科技新闻"
+    }, {
+      "tag": "资讯",
+      "url": "https://tophub.today/",
+      "icon": "https://tophub.today/favicon.ico",
+      "name": "今日热榜",
+      "desc": "今日热榜提供各站热点聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、华尔街见闻...全网新闻热点排行榜服务。"
+    }, {
+      "tag": "资讯",
+      "url": "https://www.anyknew.com/#/",
+      "icon": "https://www.anyknew.com/favicon.ico",
+      "name": "anyknew",
+      "desc": "AnyKnew - 效率资讯 - 高效读新闻, 5分钟遍历全网热点"
     }]
   }, {
     "title": "购物优惠",
@@ -84,11 +96,6 @@ define(['require'], function (require) {
       "icon": "http://you.163.com/favicon.ico",
       "name": "严选",
       "desc": "为中国消费者甄选天下优品"
-    }, {
-      "url": "https://www.anyknew.com/#/",
-      "icon": "https://www.anyknew.com/favicon.ico",
-      "name": "anyknew",
-      "desc": "AnyKnew - 效率资讯 - 高效读新闻, 5分钟遍历全网热点"
     }]
   }, {
     "title": "生活工具",

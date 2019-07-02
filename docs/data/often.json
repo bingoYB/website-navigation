@@ -4,6 +4,13 @@
     "icon":"icon-router",
     "item": [
       {
+        "tag": "资讯",
+        "url": "https://tophub.today/",
+        "icon": "https://tophub.today/favicon.ico",
+        "name": "今日热榜",
+        "desc": "今日热榜提供各站热点聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、华尔街见闻...全网新闻热点排行榜服务。"
+      },
+      {
         "url": "https://weibo.com/u/3816118370/home?topnav=1&wvr=6",
         "icon": "https://weibo.com/favicon.ico",
         "name": "微博",

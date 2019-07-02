@@ -168,6 +168,12 @@ define(['require'], function (require) {
       "name": "优设导航 - 学设计从这里开始！",
       "desc": "设计导航"
     }, {
+      "tag": "导航",
+      "url": "https://idesign.qq.com/#!index/feed",
+      "icon": "https://idesign.qq.com/favicon.png",
+      "name": "设计订阅 - 腾讯设计导航",
+      "desc": "腾讯设计导航云集高质量设计网站的内容，云集大量设计素材，随时随地访问收藏为设计灵感保驾护航。每天定时更新，网罗全网高逼格的设计站点，是最优秀的设计资讯网站。"
+    }, {
       "tag": "图标",
       "url": "https://www.iconfont.cn/",
       "icon": "https://www.iconfont.cn/favicon.ico",
@@ -233,6 +239,12 @@ define(['require'], function (require) {
       "icon": "http://color.uisdc.com/favicon.ico",
       "name": "优设网 - UISDC",
       "desc": "设计师交流学习平台 - 看设计文章，学软件教程，找灵感素材，尽在优设网！"
+    }, {
+      "tag": "配色",
+      "url": "https://coolbackgrounds.io/",
+      "icon": "https://coolbackgrounds.io/favicon.ico",
+      "name": "渐变色背景生成",
+      "desc": "渐变色背景生成"
     }]
   }, {
     "title": "系统",

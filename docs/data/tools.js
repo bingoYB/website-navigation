@@ -144,6 +144,11 @@ define(['require'], function (require) {
       "icon": "https://getitfree.cn/wp-content/uploads/favicon.ico",
       "name": "正版中国 | 正版软件限时免费",
       "desc": "提供正版软件限时免费信息为途径,引导用户养成使用正版软件的习惯,以此促进国内版权氛围的改进。"
+    }, {
+      "url": "https://www.fosshub.com/",
+      "icon": "https://www.fosshub.com/favicon.ico",
+      "name": "FossHUB--Download Open Source and Free Software. ",
+      "desc": "下载开源与免费软件。No adware, no spyware, no bundles, no malware, fast downloads, free services and a single ad."
     }]
   }, {
     "title": "导航",
@@ -198,11 +203,26 @@ define(['require'], function (require) {
       "icon": "http://www.nani.online/favicon.ico",
       "name": "纳尼导航-上网如此简单",
       "desc": "最快速的及时收录电影、影视、音乐、娱乐、新闻等高质量网址"
+    }, {
+      "url": "https://dh.woshipm.com/",
+      "icon": "https://dh.woshipm.com/favicon.ico",
+      "name": "阿猫阿狗导航",
+      "desc": "产品经理导航|运营导航|设计师导航-阿猫阿狗导航"
+    }, {
+      "url": "http://www.world68.com/",
+      "icon": "http://www.world68.com/favicon.ico",
+      "name": "国外网站大全 - 世界各国网址大全,世界的,你我的!",
+      "desc": "国外网站大全即世界各国网址大全，国外网站大全收录100多个国家知名网站，包括美国、中国(含香港台湾)、英国、法国、德国、日本、韩国、泰国、印度、俄罗斯、澳大利亚等。"
     }]
   }, {
     "title": "在线工具",
     "icon": "icon-router",
     "item": [{
+      "url": "https://www.photopea.com/",
+      "icon": "https://www.photopea.com/promo/thumb256.png",
+      "name": "在线photoshop",
+      "desc": "Open and edit PSD, XCF, Sketch (Photoshop, Gimp and Sketch) or any other image files. Inspect PSD and Sketch files. Convert Sketch to PSD. Apply photo effects and filters. A perfect alternative to Photoshop or Gimp."
+    }, {
       "url": "https://tool.lu/",
       "icon": "https://tool.lu/favicon.ico",
       "name": "在线工具",
@@ -340,6 +360,11 @@ define(['require'], function (require) {
       "icon": "http://ictclas.nlpir.org/nlpir/favicon.ico",
       "name": "语义分析系统",
       "desc": "语义分析系统"
+    }, {
+      "url": "http://mail.bccto.me/",
+      "icon": "http://mail.bccto.me/favicon.ico",
+      "name": "10分钟邮箱",
+      "desc": "提供一个临时邮箱地址用来收信息"
     }]
   }];
 });
