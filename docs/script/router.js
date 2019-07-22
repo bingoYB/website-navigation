@@ -75,7 +75,7 @@ define(['require'], function (require) {
         } else {
           $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");
         }
-      }, thiz.cache);
+      });
     },
 
     getPageParam: function getPageParam() {

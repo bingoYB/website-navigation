@@ -15,10 +15,19 @@
   <h3>标题<span class="follow">span</span></h3>
   <h3>标题<div class="follow">div</div>
   </h3>
-  <input type="text">
+  <!-- <iframe src="https://www.baidu.com" frameborder="0"></iframe> -->
+  <!-- <object data="https://www.baidu.com" type="html"></object> -->
+  <!-- <img src="https://www.baidu.com" alt=""> -->
   <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
   <script>
-    
+    let img = new Image()
+    img.src = 'https://www.baidu.com/favicon.ico'
+    img.onload = function (params) {
+      console.log(params)
+    }
+    img.onerror = function (params) {
+        console.log(params)
+      }
   </script>
 </body>
 

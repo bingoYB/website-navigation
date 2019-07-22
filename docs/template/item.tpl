@@ -11,7 +11,7 @@
         <div class="card hint--bottom hint--bounce hint--large" aria-label="{{desc}}">
           <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
             <div>
-              <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="this.src='img/404-1.png'">
+              <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="CONF.getWebsiteIcon(this)">
               {{!-- <div class="bg-img round card-icon" style="background-image: url(&quot;&quot;);"></div> --}}
               <div class="card-main">
                 <div class="card-name">
