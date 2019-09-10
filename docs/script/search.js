@@ -55,6 +55,8 @@ define(['require', 'script/data'], function (require, data) {
         console.timeEnd('搜索时间:');
         return results;
       }
+      // 相当于建立索引
+
     }, {
       key: 'datainit',
       value: function datainit(data) {

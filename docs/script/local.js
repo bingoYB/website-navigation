@@ -6,11 +6,11 @@ define(['require'], function (require) {
   var localKey = 'nav-data';
   return {
     getLocal: function getLocal() {
-      localStorage.getItem(localKey);
+      return JSON.parse(localStorage.getItem(localKey));
     },
     setLocal: function setLocal(jsonString) {
       localStorage.setItem(localKey, jsonString);
     },
-    combine: function combine() {}
+    combine: function combine(data, local) {}
   };
 });
