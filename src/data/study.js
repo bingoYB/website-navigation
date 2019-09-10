@@ -148,6 +148,16 @@ define([
           "name": "html中文网",
           "desc": "从html、css到 js，WEB前端开发在线学习视频教程 - html中文网",
           "tag": "文章 教程"
+        }, {
+          "url": "https://yuchengkai.cn/",
+          "name": "前端进阶之道",
+          "desc": "内容涵盖计算机通识，前端等知识。完善你的知识体系，让你的面试如虎添翼！",
+          "tag": "面试"
+        }, {
+          "url": "https://pianduan.fun/?utm_source=xinquji&language_id=4&page=1",
+          "name": "片段",
+          "desc": "代码片段,代码分享,Node.js教程,Flutter教程,代码托管",
+          "tag": "代码"
         }
       ]
     }, {
@@ -325,7 +335,17 @@ define([
           "icon": "https://nndl.github.io/favicon.ico",
           "name": "神经网络与深度学习",
           "desc": "本课程主要介绍神经网络与深度学习中的基础知识、主要模型（前馈网络、卷积网络、循环网络等）以及在计算机视觉、自然语言处理等领域的应用。"
-        }
+        }, {
+          "tag": "书籍",
+          "url": "https://www.shuge.org/",
+          "name": "书格",
+          "desc": "有品格的数字古籍图书馆, 书格, 书格图书馆,古籍,善本,Shuge Library,数字图书馆,书格网,版画,典籍,小说,绘画,老照片,每个人都能自由地看到我们的文明,书格官网"
+        }, {
+          "tag": "科学",
+          "url": "http://open.163.com/special/opencourse/aspacetimeodyssey.html",
+          "name": "国家地理频道纪录片：宇宙时空之旅",
+          "desc": "国家地理频道纪录片：宇宙时空之旅"
+        },
 
       ]
     }

@@ -68,8 +68,8 @@ define([
           "desc": "免VIP抢先观看最新好看的电影和电视剧"
         },
         {
-          "url": "https://www.halihali.tv/",
-          "icon": "https://www.halihali.tv/favicon.ico",
+          "url": "https://www.halihali.vip/",
+          "icon": "https://www.halihali.vip/favicon.ico",
           "name": "哈哩哈哩(H站)",
           "desc": "哈哩哈哩爱不离手的视频放映厅，二次元暖暖的综合视频站，拥有最新最全的电影,电视剧,综艺,动漫资源视频,全站无广告播放,完美支持电脑手机观看，赶快加入哈哩哈哩。"
         },

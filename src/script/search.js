@@ -21,10 +21,9 @@ define([
       console.timeEnd('搜索时间:')
       return results
     }
-
+// 相当于建立索引
     datainit(data) {
       let m = this.queryArrayMap = new Map()
-      let sks = this.option.searchKeys
       for (const key in data) {
         const el = data[key].sub
         for (let i = 0; i < el.length; i++) {

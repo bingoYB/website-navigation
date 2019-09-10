@@ -159,8 +159,8 @@ define(['require'], function (require) {
       "name": "纳威安全导航",
       "desc": "网络安全人员的上网导航"
     }, {
-      "url": "http://hao.xsldh.com/",
-      "icon": "http://hao.xsldh.com/favicon.ico",
+      "url": "http://www.xsldh.vip/",
+      "icon": "http://www.xsldh.vip/favicon.ico",
       "name": "小森林导航",
       "desc": "收录600多实用网站，整合200多个搜索引擎，包括了电影资源，电视剧资源，音乐，阅读，模板素材，软件工具，知识文库等各大分类。页面清爽，酷炫，无广告，是一个类目齐全，功能强大，非常实用的导航网站"
     }, {

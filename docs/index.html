@@ -14,9 +14,9 @@
 
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-  <link rel="stylesheet" href="style/font/iconfont.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1218740_v6jir14ehqi.css">
   <link rel="stylesheet" href="style/index.css">
   <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style/hint.min.css">
@@ -74,9 +74,40 @@
       </div>
     </main>
   </div>
+  <div class="setting closed">
+    <div class="mask"></div>
+    <div class="wrapper">
+      <div class="setting-btn-wrapper">
+        <button id="setting" class="pure-button pure-button-primary setting-btn"><i class="iconfont icon-setting"></i></button>
+      </div>
+      <form class="pure-form pure-form-stacked">
+        <fieldset>
+          <legend>添加数据</legend>
+      
+          <label for="url">网页地址</label>
+          <input id="url" type="text" placeholder="URL" style="width: 100%;">
+
+          <label for="webIcon">网页图标</label>
+          <input id="webIcon" type="text" placeholder="Icon" style="width: 100%;">
+      
+          <label for="desc">网页描述</label>
+          <textarea id="desc" type="text" placeholder="Desc" style="width: 100%;"></textarea>
+      
+          <label for="type">类别</label>
+          <select id="type" style="width: 100%;">
+            <option>综合</option>
+            <option>影视</option>
+            <option>test</option>
+          </select>
+          <button type="button" class="pure-button pure-button-primary">添加</button>
+          <button type="button" class="pure-button pure-button-primary">导出本地数据</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
   
   <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
-  <script src="lib/tooltip-bundle.min.js"></script>
+  <!-- <script src="lib/tooltip-bundle.min.js"></script> -->
   <script src="https://cdn.bootcss.com/handlebars.js/4.1.0/handlebars.js"></script>
   <script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
   <script src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script>

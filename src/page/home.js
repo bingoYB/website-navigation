@@ -16,7 +16,7 @@ define([
     type: '百度'
   }
 
-    let suggestUrl = '//api.bing.com/qsonhs.aspx'
+  let suggestUrl = '//api.bing.com/qsonhs.aspx'
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
