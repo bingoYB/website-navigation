@@ -5,13 +5,18 @@ define([
   let localKey = 'nav-data'
   return {
     getLocal(){
-      return JSON.parse(localStorage.getItem(localKey)) 
+      let local = localStorage.getItem(localKey)
+      if (local){
+        return JSON.parse(localStorage.getItem(localKey)) 
+      }else{
+        return {}
+      }
     },
     setLocal(jsonString){
       localStorage.setItem(localKey, jsonString);
     },
-    combine(data,local){
-      
+    clearLocal(){
+      localStorage.clear()
     }
   }
 });

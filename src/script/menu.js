@@ -60,7 +60,7 @@ define([
       //预编译模板
       var template = Handlebars.compile(tpl)
       //匹配json内容
-      let html = template(data)
+      let html = template(data.navData)
       //输入模板
       $('#menu').html(html)
       // })

@@ -59,7 +59,7 @@ define(['require', 'script/router', 'text!template/menu.tpl', 'script/data'], fu
       //预编译模板
       var template = Handlebars.compile(tpl);
       //匹配json内容
-      var html = template(data);
+      var html = template(data.navData);
       //输入模板
       $('#menu').html(html);
       // })

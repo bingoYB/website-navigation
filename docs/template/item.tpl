@@ -7,34 +7,27 @@
     </div>
     <div class="list">
       <div class="card-wrapper">
-        {{#each item}}
-        <div class="card hint--bottom hint--bounce hint--large" aria-label="{{desc}}">
-          <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
-            <div>
-              <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="CONF.getWebsiteIcon(this)">
-              {{!-- <div class="bg-img round card-icon" style="background-image: url(&quot;&quot;);"></div> --}}
-              <div class="card-main">
-                <div class="card-name">
-                  {{name}}
+        <div class="pure-g">
+          {{#each item}}
+          <div class="pure-u-lg-1-4 pure-u-md-1-3 pure-u-sm-23-24 pure-u-1-2">
+            <div class="card hint--bottom hint--bounce hint--medium" aria-label="{{desc}}">
+              <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
+                <div>
+                  <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="CONF.getWebsiteIcon(this)">
+                  <div class="card-main">
+                    <div class="card-name">
+                      {{name}}
+                    </div>
+                    <div style="width:100%;">
+                      <div class="card-des">{{desc}}</div>
+                    </div>
+                  </div>
                 </div>
-                <div style="width:100%;">
-                  <div class="card-des">{{desc}}</div>
-                </div>
-              </div>
+              </a>
             </div>
-            <!-- <div class="card-count">
-              <div class="like">
-                <div class="btn-like count-symbol"><i class="iconfont icon-seed-filled"></i></div><span
-                  class="count-num">2188</span>
-              </div>
-              <div class="view">
-                <div class="count-symbol"><i class="iconfont icon-eye"></i></div>
-                <div class="count-num">161941</div>
-              </div>
-            </div> -->
-          </a>
+          </div>
+          {{/each}}
         </div>
-        {{/each}}
       </div>
     </div>
   </section>

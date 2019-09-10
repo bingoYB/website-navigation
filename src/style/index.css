@@ -449,13 +449,14 @@ main {
   width: calc(100% + 40px);
 }
 
+.pure-g [class*=pure-u] {
+  padding: 0 24px 24px 0;
+}
 
 .card {
-  margin: 0 24px 24px 0;
-  width: 260px;
-  height: 70px;
-  display: inline-block;
-  vertical-align: top;
+  width: 100%;
+  letter-spacing: normal;
+  text-rendering: auto;
 }
 
 .bg-img {
@@ -525,7 +526,7 @@ main {
 }
 
 .card-default {
-  width: 260px;
+  /* width: 260px; */
   height: 70px;
   border-radius: 4px;
   background: #fff;
@@ -929,14 +930,12 @@ button.setting-btn i {
     font-size: 16px;
   }
 
-  .card-wrapper {
-    width: 100%;
+  .pure-g [class*=pure-u] {
+    padding: 17px 8px 0 8px;
   }
 
-  .card {
-    margin: 17px 5px 0;
-    width: 46%;
-    height: 70px;
+  .card-wrapper {
+    width: 100%;
   }
 
   .card-default {

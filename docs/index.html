@@ -80,27 +80,26 @@
       <div class="setting-btn-wrapper">
         <button id="setting" class="pure-button pure-button-primary setting-btn"><i class="iconfont icon-setting"></i></button>
       </div>
-      <form class="pure-form pure-form-stacked">
+      <form class="pure-form pure-form-stacked" id="addForm">
         <fieldset>
           <legend>添加数据</legend>
-      
-          <label for="url">网页地址</label>
-          <input id="url" type="text" placeholder="URL" style="width: 100%;">
+          <label for="url">名称<i style="color: red">*</i></label>
+          <input id="name" name="name" type="text" placeholder="网页名称" style="width: 100%;">
+          <label for="url">地址<i style="color: red">*</i></label>
+          <input id="url" name="url" type="text" placeholder="网页地址" style="width: 100%;">
+          <label for="type">大类别<i style="color: red">*</i></label>
+          <select id="type" name="type" style="width: 100%;"></select>
+          <label for="type">子类别<i style="color: red">*</i></label>
+          <select id="subtype" name="subType" style="width: 100%;"></select>
 
           <label for="webIcon">网页图标</label>
-          <input id="webIcon" type="text" placeholder="Icon" style="width: 100%;">
+          <input id="webIcon" name="icon" type="text" placeholder="Icon" style="width: 100%;">
       
           <label for="desc">网页描述</label>
-          <textarea id="desc" type="text" placeholder="Desc" style="width: 100%;"></textarea>
-      
-          <label for="type">类别</label>
-          <select id="type" style="width: 100%;">
-            <option>综合</option>
-            <option>影视</option>
-            <option>test</option>
-          </select>
-          <button type="button" class="pure-button pure-button-primary">添加</button>
-          <button type="button" class="pure-button pure-button-primary">导出本地数据</button>
+          <textarea id="desc" name="desc"  type="text" placeholder="Desc" style="width: 100%;"></textarea>
+    
+          <button type="button" id="saveLocal" class="pure-button pure-button-primary">添加</button>
+          <button type="button" id="exportLocal" class="pure-button pure-button-primary">导出本地数据</button>
         </fieldset>
       </form>
     </div>

@@ -6,7 +6,8 @@ define([
   class search {
     constructor(data, option) {
       this.option = option ? option : {}
-      this.datainit(data)
+      this.queryArrayMap = data.index
+      // this.datainit(data)
     }
 
     search(v) {

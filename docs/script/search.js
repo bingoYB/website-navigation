@@ -14,7 +14,8 @@ define(['require', 'script/data'], function (require, data) {
       _classCallCheck(this, search);
 
       this.option = option ? option : {};
-      this.datainit(data);
+      this.queryArrayMap = data.index;
+      // this.datainit(data)
     }
 
     _createClass(search, [{
