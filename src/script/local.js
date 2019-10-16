@@ -6,8 +6,10 @@ define([
   return {
     getLocal(){
       let local = localStorage.getItem(localKey)
+      let jsonLocal = JSON.parse(localStorage.getItem(localKey)) 
+      this.data = jsonLocal
       if (local){
-        return JSON.parse(localStorage.getItem(localKey)) 
+        return jsonLocal
       }else{
         return {}
       }

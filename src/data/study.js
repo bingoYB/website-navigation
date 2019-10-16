@@ -154,6 +154,11 @@ define([
           "desc": "内容涵盖计算机通识，前端等知识。完善你的知识体系，让你的面试如虎添翼！",
           "tag": "面试"
         }, {
+          "url": "https://www.cxymsg.com/",
+          "name": "前端面试指南",
+          "desc": "追求重点和难点,剔除陈旧的知识！",
+          "tag": "面试"
+        }, {
           "url": "https://pianduan.fun/?utm_source=xinquji&language_id=4&page=1",
           "name": "片段",
           "desc": "代码片段,代码分享,Node.js教程,Flutter教程,代码托管",

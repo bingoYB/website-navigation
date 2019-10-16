@@ -37,8 +37,8 @@ define([
 
   $('#saveLocal').click(() => {
     let local = localFun.getLocal()
-    console.log(local)
     let addLocal = $("#addForm").serializeObject()
+    addLocal.custom = 'isCustom'
     let subType = addLocal.subType
     let type = addLocal.type
     if (!local[type]) {
@@ -49,35 +49,35 @@ define([
     }
     local[type][subType].push(addLocal)
     localFun.setLocal(JSON.stringify(local))
+    $("#addForm").find('select,input,textarea').val('')
+    alert('添加成功')
+
+    window.location.reload()
   })
 
-  let {typeList,subTypeList} = data
+   // 数据分类下拉框处理
+  let { typeList, subTypeList } = data
   let string = ''
   for (let i = 0; i < typeList.length; i++) {
     const item = typeList[i];
     string += `<option>${item}</option>`
   }
 
+  // 数据分类下拉框处理
   $('#type').html(string)
-    $('#type').change(e=>{
-      let type = $('#type').val()
-      let subType = subTypeList[type]
-      let string = ''
-      for (let i = 0; i < subType.length; i++) {
-        const item = subType[i];
-        string += `<option>${item}</option>`
-      }
-      $('#subtype').html(string)
-    })
-    $('#type').change()
-
-  // ToolTip.init({
-  //   delay: 200,
-  //   fadeDuration: 250,
-  //   fontSize: '12PX',
-  //   // theme: 'light',
-  //   // textColor: '#757575',
-  //   // shadowColor: '#000',
-  //   // fontFamily: "'Roboto-Medium', 'Roboto-Regular', Arial"
-  // });
+  $('#type').change(e => {
+    let type = $('#type').val()
+    let subType = subTypeList[type]
+    let string = ''
+    for (let i = 0; i < subType.length; i++) {
+      const item = subType[i];
+      string += `<option>${item}</option>`
+    }
+    $('#subtype').html(string)
+  })
+  $('#type').change()
 });
+
+/**
+ * TODO:删除本地数据，
+ * */

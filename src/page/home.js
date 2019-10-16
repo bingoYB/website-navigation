@@ -168,6 +168,12 @@ define([
       $('#container').on('click',function () { 
         $('.search-result').hide()
       })
+    },
+
+    searchClick(){
+      $('#searchBtn').on('click',function (e) {
+        Interactive.searchEnter()
+      })
     }
   }
 
@@ -200,5 +206,6 @@ define([
     Interactive.searchKeydown()
     Interactive.changeSearch()
     Interactive.rstClick()
+    Interactive.searchClick()
   }
 });

@@ -80,7 +80,7 @@ define([
   }
 
   let index = dataDeal()
-
+  console.log(data)
   return {
     navData: data,
     index,

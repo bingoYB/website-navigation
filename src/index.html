@@ -16,7 +16,7 @@
   <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1218740_v6jir14ehqi.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1218740_v3zuknytr5.css">
   <link rel="stylesheet" href="style/index.css">
   <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style/hint.min.css">
@@ -82,12 +82,12 @@
       </div>
       <form class="pure-form pure-form-stacked" id="addForm">
         <fieldset>
-          <legend>添加数据</legend>
+          <legend class="hint--bottom"  aria-label="此数据只在你本地显示，不支持多端共享" style="text-align: center;">添加网站<i class="iconfont icon-tishi" ></i></legend>
           <label for="url">名称<i style="color: red">*</i></label>
           <input id="name" name="name" type="text" placeholder="网页名称" style="width: 100%;">
           <label for="url">地址<i style="color: red">*</i></label>
           <input id="url" name="url" type="text" placeholder="网页地址" style="width: 100%;">
-          <label for="type">大类别<i style="color: red">*</i></label>
+          <label for="type">网页类型<i style="color: red">*</i></label>
           <select id="type" name="type" style="width: 100%;"></select>
           <label for="type">子类别<i style="color: red">*</i></label>
           <select id="subtype" name="subType" style="width: 100%;"></select>
