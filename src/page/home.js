@@ -1,9 +1,9 @@
 define([
   'require',
-  'text!template/item.tpl',
-  'script/search',
-  'text!template/searchResult.tpl',
-  'script/lazyLoad'
+  'text-loader!../template/item.tpl',
+  '../script/search',
+  'text-loader!../template/searchResult.tpl',
+  '../script/lazyLoad'
 ], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
   let searchUrl = {

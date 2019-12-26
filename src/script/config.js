@@ -44,14 +44,14 @@ window.CONF = {
 }
 
 
-require.config(
-  {
-    // Sea.js 的基础路径
-    baseUrl: window.CONF.requireBase[CONF.getEnv()],
-    // 文本插件
-    paths: {
-      text: "lib/text",
-    },
+// require.config(
+//   {
+//     // Sea.js 的基础路径
+//     baseUrl: window.CONF.requireBase[CONF.getEnv()],
+//     // 文本插件
+//     paths: {
+//       text: "lib/text",
+//     },
 
-  }
-)
+//   }
+// )

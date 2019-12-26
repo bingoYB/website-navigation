@@ -1,10 +1,10 @@
 define([
   'require',
-  'data/film',
-  'data/life',
-  'data/tools',
-  'data/study',
-  'script/local'
+  '../data/film',
+  '../data/life',
+  '../data/tools',
+  '../data/study',
+  '../script/local'
 ], function (require, film, life, tools, study, local) {
   'use strict';
   let data = [{

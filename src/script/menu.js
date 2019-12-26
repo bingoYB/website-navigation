@@ -1,8 +1,8 @@
 define([
   'require',
-  'script/router',
-  'text!template/menu.tpl',
-  'script/data'
+  './router',
+  'text-loader!../template/menu.tpl',
+  './data'
 ], function (require, router, tpl, data) {
   'use strict';
   var isMobile = window.CONF.isMobile

@@ -1,9 +1,9 @@
 define([
   'require',
-  'text!template/item.tpl',
-  'script/data',
-  'script/router',
-  'script/lazyLoad'
+  'text-loader!../template/item.tpl',
+  '../script/data',
+  '../script/router',
+  '../script/lazyLoad'
 ], function (require, tpl, data, router,lazyLoad) {
   'use strict';
   // 页面加载渲染

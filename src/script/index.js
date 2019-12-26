@@ -1,9 +1,9 @@
 define([
   'require',
-  'script/router',
-  'script/menu',
-  'script/local',
-  'script/data'
+  './router',
+  './menu',
+  './local',
+  './data'
 ], function (require, Router, menu, localFun, data) {
   'use strict';
   // 添加个方法

@@ -1,6 +1,6 @@
 define([
   'require',
-  'script/data'
+  './data'
 ], function (require, data) {
   'use strict';
   class search {
