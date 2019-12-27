@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "**个人网址导航**",
   "main": "index.js",
+  "homepage": "https://bingoyb.github.io/website-navigation",
   "directories": {
     "doc": "docs"
   },
@@ -18,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/bingoYB/website-navigation/issues"
   },
-  "homepage": "https://github.com/bingoYB/website-navigation#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",

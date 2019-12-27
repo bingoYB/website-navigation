@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build
-      run: |
-        npm install
-        npm run build
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
       env:
-        CI: true
+        ACCESS_TOKEN: ${{ secrets.action_token }}
+        BRANCH: webpack-build
+        BUILD_SCRIPT: npm install && npm run build
