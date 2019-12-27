@@ -4,32 +4,31 @@ const webpack = require('webpack'); //访问内置的插件
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-    entry: {
-        index: './src/script/index.js'
-    },
-    mode:'production',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
-    },
-    plugins: [
-        // new webpack.optimize.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({ template: './public/index.html' }),
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, './public'),
-                to: path.resolve(__dirname, './dist'),
-                ignore: ['.html']
-            }
-        ])
-    ]
-    // module: {
-    //     rules: [
-    //       { 
-    //         test: /\.handlebars$/, 
-    //         use: __dirname + "/../../?helperDirs[]=" + __dirname + "/helpers" }
-
-    //     ]
-    //   },
-
+  entry: {
+    index: './src/script/index.js'
+  },
+  mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
+  },
+  plugins: [
+    // new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, './public'),
+        to: path.resolve(__dirname, './dist'),
+        ignore: ['.html']
+      }
+    ])
+  ],
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.json$/,
+  //       use: 'json-loader'
+  //     }
+  //   ]
+  // }
 }

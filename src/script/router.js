@@ -62,9 +62,9 @@ define([
       
       // 加载页面对应的JS模块，并初始化
       import(`text-loader!../page/${url}.html`).then(htmlPage=>{
-        $(thiz.container).html(htmlPage)
+        $(thiz.container).html(htmlPage.default)
         import(`../page/${url}.js`).then(render => {
-          render?render():1
+          render.default?render.default():1
           NProgress.done()
         })
       })

@@ -1,8 +1,4 @@
-define([
-  'require',
-], function (require, factory) {
-  'use strict';
-  return [
+ [
     {
       "title": "综合",
       "icon": "icon-yingshi",
@@ -348,4 +344,4 @@ define([
       ]
     }
   ]
-});
+
