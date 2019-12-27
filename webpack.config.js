@@ -9,7 +9,7 @@ module.exports = {
   },
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].js'
   },
   plugins: [
@@ -18,7 +18,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, './public'),
-        to: path.resolve(__dirname, './dist'),
+        to: path.resolve(__dirname, './docs'),
         ignore: ['.html']
       }
     ])
