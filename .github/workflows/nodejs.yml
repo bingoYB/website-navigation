@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
+      with:
+        ref: 'webpack-build'
     - name: Build
       run: |
         npm install || npm run build
@@ -17,4 +19,6 @@ jobs:
         git config user.email "github action"
         git config user.name "github action"
         git branch -a
+        git branch -vv
+
         
