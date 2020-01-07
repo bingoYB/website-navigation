@@ -16,9 +16,5 @@ jobs:
       run: |
         git config user.email "github action"
         git config user.name "github action"
-        list
-        git add -A
-        git commit -m "test commit from action"
-        remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
-        git push "${remote_repo}" HEAD:${INPUT_BRANCH}
+        git branch -a
+        
