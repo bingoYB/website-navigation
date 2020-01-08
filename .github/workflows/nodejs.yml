@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy Demo
+name: build-and-deploy
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
         git config user.email "github action"
         git config user.name "github action"
         git add -A
-        git commit -m "test commit from action"
+        git commit -m "auto build from action"
         remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
         INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
         git push "${remote_repo}" HEAD:${INPUT_BRANCH}
