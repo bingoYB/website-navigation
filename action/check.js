@@ -50,7 +50,7 @@ function checkUrl(web) {
 
 function checkNet() {
   console.log('net check')
-  return axios.get('www.baidu.com', { timeout: 30000 })
+  return axios.get('https://www.baidu.com', { timeout: 30000 })
     .then(function (response) {
       console.log('net check success')
     })
