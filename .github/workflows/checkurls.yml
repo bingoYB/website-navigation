@@ -1,0 +1,28 @@
+name: build-and-deploy
+on:
+  push:
+    branches:
+      - webpack-build
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: 'webpack-build'
+    - name: Build
+      run: |
+        npm install
+    - name: Deploy
+      run: |
+        node action/check.js
+        git config user.email "github action"
+        git config user.name "github action"
+        git add -A
+        git commit -m "auto build from action"
+        remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
+        INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
+        git push "${remote_repo}" HEAD:${INPUT_BRANCH}
+
+        

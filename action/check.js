@@ -1,3 +1,5 @@
+// javascript
+// const core = require('@actions/core')
 let axios = require('axios')
 let fs = require('fs')
 let path = require('path')
@@ -8,7 +10,9 @@ let fileList = [
   // '../src/data/study.json'
 ]
 
-start()
+checkNet().then(()=>{
+  start()
+})
 
 function start() {
   for (let i = 0; i < fileList.length; i++) {
@@ -40,8 +44,17 @@ function checkUrl(web) {
       web.disabled = false
     })
     .catch(function (error) {
-      console.log(error)
       web.disabled = true
     })
 }
 
+function checkNet() {
+  console.log('net check')
+  return axios.get('www.baidu.com', { timeout: 30000 })
+    .then(function (response) {
+      console.log('net check success')
+    })
+    .catch(function (error) {
+      console.log('net check fail')
+    })
+}
