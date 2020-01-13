@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - webpack-build
+    paths-ignore:
+      - 'action/**'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
