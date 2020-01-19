@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - webpack-build
-    paths:
-      - 'action/**'
+    # paths:
+    #   - 'action/**'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,12 +19,17 @@ jobs:
     - name: Deploy
       run: |
         node action/check.js
-        git config user.email "github action"
-        git config user.name "github action"
-        git add -A
-        git commit -m "auto build from action"
-        remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
-        INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
-        git push "${remote_repo}" HEAD:${INPUT_BRANCH}
+# git config user.email "github action"
+# git config user.name "github action"
+# git add -A
+# git commit -m "auto build from action"
+# remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
+# INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
+# git push "${remote_repo}" HEAD:${INPUT_BRANCH}
+    - name: push task
+      uses: bingoYB/push-your-github@release-v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.action_token }}
+        PUSH_BRANCH: webpack-build
 
         

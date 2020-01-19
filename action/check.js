@@ -33,7 +33,7 @@ function start() {
 }
 
 function dealFile(filePath,data) {
-  fs.writeFile(path.resolve(__dirname,filePath), JSON.stringify(data), 'utf8', (err) => {
+  fs.writeFile(path.resolve(__dirname,'../src/data/test.json'), JSON.stringify(data), 'utf8', (err) => {
     if (err) throw err;
     console.log('done');
   })
