@@ -11,7 +11,10 @@
           {{#each item}}
           <div class="pure-u-lg-1-4 pure-u-md-1-3 pure-u-sm-23-24 pure-u-1-2">
             <div class="card hint--bottom hint--bounce hint--medium" aria-label="{{desc}}">
-              <a href="{{url}}" rel="nofollow" target="_blank" class="card-default">
+              {{#if disabled}}
+              <div class="diabled-item-badge">失效</div>
+              {{/if}}
+              <a href="{{url}}" rel="nofollow" target="_blank" class="card-default  {{#if disabled}}web-disabled{{/if}}">
                 <div>
                   <img class="card-icon" alt="loading" data-src="{{icon}}" onerror="CONF.getWebsiteIcon(this)">
                   <div class="card-main">

@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+  <style type="text/css">
+    .new-item-badge {
+    position: absolute;
+    background: #92b7bd;
+    z-index: 999;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 70%;
+    padding: 2px 4px 0;
+    top: -17px;
+    left: -10px;
+    line-height: 1.4;
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    -webkit-transition: 0 0.1s ease-in;
+    -moz-transition: 0 0.1s ease-in;
+    -o-transition: 0 0.1s ease-in;
+    transition: transform 0.1s ease-in;
+    /* Most of this code is necessary to style and position the badge. */
+}
+li {
+    /* This is also necessary to position it. */
+    
+    position: relative;
+    margin: 30px;
+    list-style: none;
+}
+li:hover .new-item-badge {
+    transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+    /* This combined with the transition properties above rotates the badge on hover. */
+}
+body {
+    background: #f7f7f7;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+li a {
+    color: #333;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #ddd;
+    text-decoration: none;
+}
+  </style>
+</head>
+
+<body>
+  <li>
+    <div class="new-item-badge">New</div>
+    <a href="#" class="doubletap">Gifts &amp; Decor</a>
+  </li>
+</body>
+
+</html>
