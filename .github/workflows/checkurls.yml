@@ -1,10 +1,7 @@
 name: build-and-deploy
 on:
-  push:
-    branches:
-      - webpack-build
-    # paths:
-    #   - 'action/**'
+  schedule:
+    - cron: '0 21 * * *'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
