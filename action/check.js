@@ -24,7 +24,7 @@ function start() {
         taskList.push(checkUrl(web))
       })
     })
-// axios返回的对象应该不标准，Promise.all都无法得知失败
+    // axios返回的对象应该不标准，Promise.all都无法得知失败
     Promise.all(taskList).then(()=>{
       console.log('start reset file')
       dealFile(filePath, dataJson)
