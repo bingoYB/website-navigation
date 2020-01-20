@@ -1,11 +1,11 @@
 define([
   'require',
+  './config',
   './router',
   './menu',
   './local',
-  './data',
-  './config'
-], function (require, Router, menu, localFun, data) {
+  './data'
+], function (require,CONF, Router, menu, localFun, data) {
   'use strict';
   // 添加个方法
   $.fn.serializeObject = function () {
