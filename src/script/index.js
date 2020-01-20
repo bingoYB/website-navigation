@@ -3,7 +3,8 @@ define([
   './router',
   './menu',
   './local',
-  './data'
+  './data',
+  './config'
 ], function (require, Router, menu, localFun, data) {
   'use strict';
   // 添加个方法

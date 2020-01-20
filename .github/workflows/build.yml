@@ -5,6 +5,8 @@ on:
       - webpack-build
     paths-ignore:
       - 'action/**'
+  schedule:
+    - cron: '0 22 * * *'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
