@@ -1,21 +1,32 @@
-name: build-and-deploy
+name: check-webnav-url
 on:
+  push:
+    branches:
+      - webpack-build
+    paths:
+      - 'action/**'
   schedule:
     - cron: '0 21 * * *'
 jobs:
-  build-and-deploy:
+  check-webnav-url:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
       with:
         ref: 'webpack-build'
-    - name: Build
+    - name: install
       run: |
         npm install
-    - name: Deploy
+    - name: check
       run: |
         node action/check.js
+    - name: pull-step
+      run: |
+        git pull
+    - name: Build
+      run: |
+        npm run build
 # git config user.email "github action"
 # git config user.name "github action"
 # git add -A
@@ -23,10 +34,10 @@ jobs:
 # remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
 # INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
 # git push "${remote_repo}" HEAD:${INPUT_BRANCH}
-    - name: push task
+    - name: push step
       uses: bingoYB/push-your-github@release-v1
       with:
         GITHUB_TOKEN: ${{ secrets.action_token }}
-        PUSH_BRANCH: webpack-build
+        PUSH_BRANCH: master
 
         
