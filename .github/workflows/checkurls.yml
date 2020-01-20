@@ -39,5 +39,6 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.action_token }}
         PUSH_BRANCH: master
+        FORCE_PUSH: force
 
         
