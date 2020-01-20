@@ -2,7 +2,7 @@ name: build-and-deploy
 on:
   push:
     branches:
-      - webpack-build
+      - master
     paths-ignore:
       - 'action/**'
   schedule:

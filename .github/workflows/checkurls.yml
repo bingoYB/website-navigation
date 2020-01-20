@@ -2,7 +2,7 @@ name: check-webnav-url
 on:
   push:
     branches:
-      - webpack-build
+      - master
     paths:
       - 'action/**'
   schedule:
