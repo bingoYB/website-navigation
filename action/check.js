@@ -60,10 +60,17 @@ function checkUrl(web) {
     .catch(function (error) {
       // 有些网站做了反爬虫限制，导致一些网站返回403，实际网站是有效的
       // 所以这里做了一些处理
-      if (error.response.status !== 403 && error.response.status !== 401) {
+      if (error.response){
+        if (error.response.status !== 403 && error.response.status !== 401) {
+          web.disabled = true
+          console.log(web.url + ' is undisabled!!!')
+        }else{
+          console.log(web.url + ' is not authorized')
+        }
+      }else{
         web.disabled = true
-        console.log(web.url + 'is undisabled!!!')
       }
+      
     })
 }
 
