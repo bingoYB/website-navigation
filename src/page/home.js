@@ -12,8 +12,9 @@ define([
     'Google': 'https://www.google.com/search?q='
   };
 
+  // 搜索类型（百度，谷歌，必应）
   let searchRst = {
-    type: '百度'
+    type: localStorage.getItem('searchType')||'百度'
   }
 
   let suggestUrl = '//api.bing.com/qsonhs.aspx'
@@ -140,6 +141,8 @@ define([
         $('.sChoiceBtn').css('background', 'url(' + imgUrl + ')')
         $('.scBigBox').hide()
         searchRst.type = $(this).find('span').text()
+        // 缓存此次选择结果，方便下次打开依旧此选项
+        localStorage.setItem('searchType', searchRst.type);
       });
     },
 
