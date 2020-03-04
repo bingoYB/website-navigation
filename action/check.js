@@ -65,6 +65,7 @@ function checkUrl(web) {
           web.disabled = true
           console.log(web.url + ' is undisabled!!!')
         }else{
+          web.disabled = false
           console.log(web.url + ' is not authorized')
         }
       }else{
