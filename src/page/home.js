@@ -11,13 +11,22 @@ define([
     '必应': 'https://cn.bing.com/search?q=',
     'Google': 'https://www.google.com/search?q='
   };
+    
+  const imgUrls = {
+    '百度': 'img/scbaidu.png',
+    '必应': 'img/scbing.png',
+    'Google': 'img/scgoogle.png'
+  }
 
   // 搜索类型（百度，谷歌，必应）
   let searchRst = {
     type: localStorage.getItem('searchType')||'百度'
   }
 
+  $('.sChoiceBtn').css('background', 'url(' + imgUrls[searchRst.type] + ')')
+
   let suggestUrl = '//api.bing.com/qsonhs.aspx'
+
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
