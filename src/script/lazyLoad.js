@@ -1,6 +1,6 @@
 define([
   'require',
-  'utils'
+  './utils'
 ], function (require,ut) {
 
   class LZload {
