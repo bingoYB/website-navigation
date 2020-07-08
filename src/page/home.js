@@ -1,9 +1,9 @@
 define([
   'require',
-  'text!template/item.tpl',
-  'script/search',
-  'text!template/searchResult.tpl',
-  'script/lazyLoad'
+  'text-loader!../template/item.tpl',
+  '../script/search',
+  'text-loader!../template/searchResult.tpl',
+  '../script/lazyLoad'
 ], function (require, tpl, s, searchTpl, lazyLoad) {
   'use strict';
   let searchUrl = {
@@ -11,12 +11,22 @@ define([
     '必应': 'https://cn.bing.com/search?q=',
     'Google': 'https://www.google.com/search?q='
   };
-
-  let searchRst = {
-    type: '百度'
+    
+  const imgUrls = {
+    '百度': 'img/scbaidu.png',
+    '必应': 'img/scbing.png',
+    'Google': 'img/scgoogle.png'
   }
 
+  // 搜索类型（百度，谷歌，必应）
+  let searchRst = {
+    type: localStorage.getItem('searchType')||'百度'
+  }
+
+  $('.sChoiceBtn').css('background', 'url(' + imgUrls[searchRst.type] + ')')
+
   let suggestUrl = '//api.bing.com/qsonhs.aspx'
+
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
@@ -52,15 +62,15 @@ define([
         }
         //按下下方向键
         else if (event.which == 40) {
-          active.length ? active.removeClass('active'):''
+          active.length ? active.removeClass('active') : ''
           if (active.length && next.length) {
             if (!isVisible(next, rs)) {
-              rs[0].scrollTop= next[0].offsetTop - 6*40 
+              rs[0].scrollTop = next[0].offsetTop - 6 * 40
             }
             next.addClass('active')
           } else {
             if (!isVisible(first, rs)) {
-              rs[0].scrollTop= '0'
+              rs[0].scrollTop = '0'
             }
             first.addClass('active')
           }
@@ -70,12 +80,12 @@ define([
           active.length ? active.removeClass('active') : ''
           if (active.length && prev.length) {
             if (!isVisible(prev, rs)) {
-              rs[0].scrollTop= prev[0].offsetTop 
+              rs[0].scrollTop = prev[0].offsetTop
             }
             prev.addClass('active')
           } else {
             if (!isVisible(last, rs)) {
-              rs[0].scrollTop= rs.height()
+              rs[0].scrollTop = rs.height()
             }
             last.addClass('active')
           }
@@ -92,7 +102,7 @@ define([
         $('.search-result').show()
 
         searchRst.local = s.search(searchText)
-        
+
         // http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
         $.ajax({
           url: suggestUrl,
@@ -102,9 +112,9 @@ define([
           async: false,
           timeout: 5000,//请求超时
           data: {
-            type:'cb',
-            q:searchText,
-            cb:'dealSearchReturn'
+            type: 'cb',
+            q: searchText,
+            cb: 'dealSearchReturn'
             // "wd": searchText,
             // "cb": "dealSearchReturn"
           },
@@ -120,9 +130,9 @@ define([
     },
     searchEnter() {
       let active = $('.search-result li.active')
-      if(active.length){
+      if (active.length) {
         active.click()
-      }else{
+      } else {
         let url = searchUrl[searchRst.type] + $('#search').val()
         window.open(url, '_blank');
       }
@@ -140,6 +150,8 @@ define([
         $('.sChoiceBtn').css('background', 'url(' + imgUrl + ')')
         $('.scBigBox').hide()
         searchRst.type = $(this).find('span').text()
+        // 缓存此次选择结果，方便下次打开依旧此选项
+        localStorage.setItem('searchType', searchRst.type);
       });
     },
 
@@ -165,13 +177,13 @@ define([
         window.open(url, '_blank');
       })
 
-      $('#container').on('click',function () { 
+      $('#container').on('click', function () {
         $('.search-result').hide()
       })
     },
 
-    searchClick(){
-      $('#searchBtn').on('click',function (e) {
+    searchClick() {
+      $('#searchBtn').on('click', function (e) {
         Interactive.searchEnter()
       })
     }
@@ -180,21 +192,19 @@ define([
   // 页面加载渲染
   let Render = {
     getOften() {
-      $.getJSON('data/often.json',
-        function (data, textStatus, jqXHR) {
-          //预编译模板
-          var template = Handlebars.compile(tpl)
-          //匹配json内容
-          let html = template(data)
-          //输入模板
-          $('.often').html(html)
+      let data = require('../data/often.json')
+      //预编译模板
+      var template = Handlebars.compile(tpl)
+      //匹配json内容
+      let html = template(data)
+      //输入模板
+      $('.often').html(html)
 
-          new lazyLoad({
-            content: window,
-            imgs: $('.often')[0].querySelectorAll('img')
-          })
-        }
-      );
+      new lazyLoad({
+        content: window,
+        imgs: $('.often')[0].querySelectorAll('img')
+      })
+
 
       $('#header-title').find('h1').html('首页')
       $('#header-title').find('.iconfont').removeClass().addClass('iconfont icon-shouye')

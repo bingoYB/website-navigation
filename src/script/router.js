@@ -60,20 +60,37 @@ define([
       $(thiz.container).html('')
       // $('#loading').show()
       
+      // 加载页面对应的JS模块，并初始化
+      import(`text-loader!../page/${url}.html`).then(htmlPage=>{
+        $(thiz.container).html(htmlPage.default)
+        import(`../page/${url}.js`).then(render => {
+          render.default?render.default():1
+          NProgress.done()
+        })
+      })
+       
+        // require(`../page/${url}.js`,function(render){
+        //   render?render():1
+        //   NProgress.done()
+        // })
+      
+
+
       // 调用Ajax加载页面，默认开启缓存，可进行配置
-      $.get(pageurl, function (html, state) {
-        if (state =='success') {
-          $(thiz.container).html(html)
-          // 加载页面对应的JS模块，并初始化
-          requirejs([pageurl.split('.')[0]], function (render) {
-            render?render():1
-            // $('#loading').hide()
-            NProgress.done()
-          })
-        } else {
-          $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");
-        }
-      });
+      // $.get(pageurl, function (html, state) {
+      //   if (state =='success') {
+      //     $(thiz.container).html(html)
+
+      //     // 加载页面对应的JS模块，并初始化
+      //     requirejs([pageurl.split('.')[0]], function (render) {
+      //       render?render():1
+      //       // $('#loading').hide()
+      //       NProgress.done()
+      //     })
+      //   } else {
+      //     $(thiz.container).html("<div class='error-construction'><h4>很抱歉！无法加载到您要的资源...</h4></div>");
+      //   }
+      // });
     },
 
     getPageParam() {

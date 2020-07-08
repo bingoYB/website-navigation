@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "**个人网址导航**",
   "main": "index.js",
+  "homepage": "https://bingoyb.github.io/website-navigation",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,18 +19,19 @@
   "bugs": {
     "url": "https://github.com/bingoYB/website-navigation/issues"
   },
-  "homepage": "https://github.com/bingoYB/website-navigation#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-clean": "^0.4.0",
-    "gulp-requirejs-optimize": "^1.3.0",
-    "gulp-uglify": "^3.0.2"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "text-loader": "0.0.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "async.parallel": "^0.5.2",
+    "axios": "^0.19.1"
   }
 }

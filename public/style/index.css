@@ -1020,3 +1020,25 @@ button.setting-btn i {
     max-height: 210px;
   }
 }
+
+
+.web-disabled {
+  background-color: #e7e8ea;
+}
+
+.diabled-item-badge {
+  position: absolute;
+  background: #92b7bd;
+  z-index: 999;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 70%;
+  padding: 2px 4px 0;
+  top: -12px;
+  right: -10px;
+  line-height: 1.4;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+  /* Most of this code is necessary to style and position the badge. */
+}

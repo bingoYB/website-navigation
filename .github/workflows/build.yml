@@ -1,0 +1,37 @@
+name: build-and-deploy
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'action/**'
+  schedule:
+    - cron: '0 22 * * *'
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: 'master'
+    - name: Build
+      run: |
+        npm install && npm run build
+    - name: push steps
+      uses: bingoYB/push-your-github@release-v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.action_token }}
+        PUSH_BRANCH: master
+        FORCE_PUSH: force
+    # - name: Deploy
+    #   run: |
+    #     git config user.email "github action"
+    #     git config user.name "github action"
+    #     git add -A
+    #     git commit -m "auto build from action"
+    #     remote_repo="https://${GITHUB_ACTOR}:${{ secrets.action_token }}@github.com/${GITHUB_REPOSITORY}.git"
+    #     INPUT_BRANCH=${INPUT_BRANCH:-webpack-build}
+    #     git push "${remote_repo}" HEAD:${INPUT_BRANCH}
+
+        
