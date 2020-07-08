@@ -31,9 +31,12 @@ define([
 
   // 搜索引擎返回处理
   window.dealSearchReturn = (datas) => {
-    console.log(datas.AS.Results[0].Suggests)
-    searchRst.engine = datas.AS.Results[0].Suggests
-    Interactive.loadRst()
+    console.log(datas)
+    if(datas.AS.FullResults){
+      console.log(datas.AS.Results[0].Suggests)
+      searchRst.engine = datas.AS.Results[0].Suggests
+      Interactive.loadRst()
+    }
   }
 
   const isVisible = (el, parent) => {
@@ -93,7 +96,7 @@ define([
         }
       });
 
-      $('#search').on('input',ut.debunce(se))
+      $('#search').on('input',ut.debounce(se,500))
 
       function se(e) {
         let searchText = this.value
