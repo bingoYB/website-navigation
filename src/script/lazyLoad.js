@@ -1,6 +1,7 @@
 define([
   'require',
-], function (require) {
+  'utils'
+], function (require,ut) {
 
   class LZload {
     constructor(option) {
@@ -8,7 +9,7 @@ define([
       this.index = 0
       this.imgs = imgs
       this.checkImgs()
-      content.onscroll = this.throttle(this.checkImgs)
+      content.onscroll = ut.throttle(this.checkImgs)
     }
 
     isInSight(el) {
@@ -33,25 +34,6 @@ define([
         if (this.isInSight(imgs[i])) {
           this.loadImg(imgs[i]);
           index = i;
-        }
-      }
-    }
-
-    // 函数防抖
-    throttle(fn, mustRun = 100) {
-      const timer = null;
-      let previous = null;
-      const context = this;
-      return function () {
-        const now = new Date();
-        const args = arguments;
-        if (!previous) {
-          previous = now;
-        }
-        const remaining = now - previous;
-        if (mustRun && remaining >= mustRun) {
-          fn.apply(context, args);
-          previous = now;
         }
       }
     }

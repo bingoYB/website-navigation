@@ -3,8 +3,9 @@ define([
   'text-loader!../template/item.tpl',
   '../script/search',
   'text-loader!../template/searchResult.tpl',
-  '../script/lazyLoad'
-], function (require, tpl, s, searchTpl, lazyLoad) {
+  '../script/lazyLoad',
+  '../script/utils'
+], function (require, tpl, s, searchTpl, lazyLoad,ut) {
   'use strict';
   let searchUrl = {
     '百度': 'https://www.baidu.com/s?wd=',
@@ -92,7 +93,9 @@ define([
         }
       });
 
-      $('#search').on('input', function (e) {
+      $('#search').on('input',ut.debunce(se))
+
+      function se(e) {
         let searchText = this.value
 
         if (searchText == '') {
@@ -117,16 +120,9 @@ define([
             cb: 'dealSearchReturn'
             // "wd": searchText,
             // "cb": "dealSearchReturn"
-          },
-          success: function (json) {
-
-          },
-          error: function (xhr) {
-            return;
           }
-
         });
-      })
+      }
     },
     searchEnter() {
       let active = $('.search-result li.active')
