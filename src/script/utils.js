@@ -47,6 +47,37 @@ define([
           action.apply(context, arg)
         }, idle)
       }
+    },
+
+    lazyLoad(options){
+      let { content, imgs = [] } = options
+      let index = 0
+      checkImgs()
+      content.onscroll = this.throttle(checkImgs)
+
+      function isInSight(el) {
+        const bound = el.getBoundingClientRect();
+        const clientHeight = window.innerHeight;
+        //如果只考虑向下滚动加载
+        //const clientWidth=window.innerWeight;
+        return bound.top <= clientHeight;
+      }
+
+      function loadImg(el) {
+        if (!el.src) {
+          const source = el.dataset.src;
+          el.src = source;
+        }
+      }
+
+      function checkImgs() {
+        for (let i = index; i < imgs.length; i++) {
+          if (isInSight(imgs[i])) {
+            loadImg(imgs[i]);
+            index = i;
+          }
+        }
+      }
     }
   }
 });

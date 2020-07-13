@@ -3,9 +3,8 @@ define([
   'text-loader!../template/item.tpl',
   '../script/search',
   'text-loader!../template/searchResult.tpl',
-  '../script/lazyLoad',
   '../script/utils'
-], function (require, tpl, s, searchTpl, lazyLoad,ut) {
+], function (require, tpl, s, searchTpl,ut) {
   'use strict';
   let searchUrl = {
     '百度': 'https://www.baidu.com/s?wd=',
@@ -199,7 +198,7 @@ define([
       //输入模板
       $('.often').html(html)
 
-      new lazyLoad({
+      ut.lazyLoad({
         content: window,
         imgs: $('.often')[0].querySelectorAll('img')
       })

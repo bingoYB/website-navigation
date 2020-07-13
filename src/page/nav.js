@@ -3,8 +3,8 @@ define([
   'text-loader!../template/item.tpl',
   '../script/data',
   '../script/router',
-  '../script/lazyLoad'
-], function (require, tpl, data, router,lazyLoad) {
+  '../script/utils',
+], function (require, tpl, data, router,ut) {
   'use strict';
   // 页面加载渲染
   let Render = {
@@ -17,10 +17,10 @@ define([
       let html = template(navData[key].sub)
       //输入模板
       $('.my-nav').html(html)
-
-      new lazyLoad({
+      console.log($('.my-nav')[0].querySelectorAll('.card-icon').length)
+      ut.lazyLoad({
         content:window,
-        imgs: $('.my-nav')[0].querySelectorAll('img')
+        imgs: $('.my-nav')[0].querySelectorAll('.card-icon')
       })
       // title render
       $('#header-title').find('h1').html(navData[key].title)
