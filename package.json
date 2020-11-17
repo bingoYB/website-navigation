@@ -8,8 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --inline --progress --config webpack.dev.js"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -29,9 +28,7 @@
     "json-loader": "^0.5.7",
     "text-loader": "0.0.1",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.2"
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "async.parallel": "^0.5.2",
