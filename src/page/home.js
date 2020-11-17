@@ -95,7 +95,7 @@ define([
         }
       });
 
-      $('#search').on('input',ut.debounce(se,500))
+      $('#search').on('input',ut.debounce(se,100))
 
       function se(e) {
         let searchText = this.value
