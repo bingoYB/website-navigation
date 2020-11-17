@@ -4,13 +4,11 @@ const webpack = require('webpack'); //访问内置的插件
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = function (env,args) {
-  console.log(env)
-  console.log(args)
   return {
     entry: {
       index: './src/script/index.js'
     },
-    mode: 'production',
+    mode: 'development',
     output: {
       path: path.resolve(__dirname, 'docs'),
       filename: '[name].js'

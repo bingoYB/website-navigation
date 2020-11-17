@@ -22,7 +22,7 @@ define([
       console.timeEnd('搜索时间:')
       return results
     }
-// 相当于建立索引
+		// 相当于建立索引
     datainit(data) {
       let m = this.queryArrayMap = new Map()
       for (const key in data) {
