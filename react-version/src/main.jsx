@@ -1,8 +1,9 @@
 // import React from 'react'
 // import ReactDOM from 'react-dom'
-import Layout from './wget/Layout'
+// import Layout from './wget/Layout'
+import CustRouter from './router'
 
 ReactDOM.render(
-    <Layout/>,
-    document.getElementById('app')
+	<CustRouter/>,
+	document.getElementById('app')
 );
