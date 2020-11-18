@@ -190,7 +190,6 @@ p {
 .item-subs {
   display: none;
   position: relative;
-  max-height: 0;
   overflow: auto;
 }
 

@@ -1,10 +1,19 @@
+import store from '../../store'
+const { useState } = React
 export default function NavHeader() {
+
+    const [page, setPage] = useState(store.getState())
+    console.log(store.getState())
+    store.subscribe(()=>{
+        setPage(store.getState())
+    })
+
     return <div id="header">
         <div className="header">
             <div className="row">
                 <div className="header-title" id="header-title">
-                    <div className="header-title-icon"><i className="iconfont icon-design"></i></div>
-                    <h1 className="header-title-text zh">导航</h1>
+                    <div className="header-title-icon"><i className={`iconfont ${page.icon}`}></i></div>
+                    <h1 className="header-title-text zh">{page.title}</h1>
                 </div>
                 <div className="btn-git">
                     <a className="button gray has-icon" href="https://github.com/bingoYB/website-navigation" target="_blank">
