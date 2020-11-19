@@ -90,7 +90,7 @@ export default {
 						selectMap.set(el, true)
 					})
 					let target = e.target
-					if (selector){
+					if (selector) {
 						while (next(target)) {
 							if (selectMap.has(target)) {
 								callback(e, target);
@@ -98,7 +98,7 @@ export default {
 							}
 							target = target.parentElement
 						}
-					}else{
+					} else {
 						callback(e, target);
 					}
 				})
@@ -138,7 +138,7 @@ export default {
 				})
 			},
 			onOtherOnce(event, selector, callback) {
-				ele.addEventListener(event, function bindCallback(e){
+				ele.addEventListener(event, function bindCallback(e) {
 					let selectMap = new Map()
 					ele.querySelectorAll(selector).forEach(function (el) {
 						selectMap.set(el, true)
@@ -158,27 +158,48 @@ export default {
 	},
 
 
-	jsonp(option){
-		let {url,data,jsonp,success} = option
-		const callbackName = 'jsonpCallback'+ ~~(Math.random() * 1000000)
+	jsonp(option) {
+		let { url, data, jsonp, success } = option
+		const callbackName = 'jsonpCallback' + ~~(Math.random() * 1000000)
 		let script = document.createElement('script')
-		script.src = url+'?'+this.serializeObject(data)+`&${jsonp}=${callbackName}`
+		script.src = url + '?' + this.serializeObject(data) + `&${jsonp}=${callbackName}`
 		document.body.append(script)
-		window[callbackName] = function(res){
+		window[callbackName] = function (res) {
 			document.body.removeChild(script)
 			success(res)
 		}
 	},
 
-	serializeObject(Obj){
+	serializeObject(Obj) {
 		let str = ''
 		for (const key in Obj) {
 			if (Obj.hasOwnProperty(key)) {
-				str+=`&${key}=${Obj[key]}`
+				str += `&${key}=${Obj[key]}`
 			}
 		}
 		return str.substr(1)
+	},
+
+	getPageParam() {
+		var urls = location.href.split("?");
+		var paramUrl = urls.length > 1 && urls[1];
+		var obj = {};
+		if (paramUrl) {
+			var params = paramUrl.split("&");
+			if (params) {
+				for (var i = 0; i < params.length; i++) {
+					var param = params[i];
+					var nameAndValue = param.split("=");
+					if (nameAndValue.length == 2) {
+						obj[nameAndValue[0]] = nameAndValue[1];
+					}
+				}
+			}
+		}
+
+		return obj;
 	}
+
 }
 
 
