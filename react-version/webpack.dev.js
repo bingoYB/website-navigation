@@ -1,5 +1,6 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let webpackConfig = merge(common, {
 	devtool: 'source-map',
@@ -16,7 +17,13 @@ let webpackConfig = merge(common, {
 		// local服务器自动打开浏览器。
 		open: true,
 		// quiet: true,
-	}
+	},plugins:[
+		new HtmlWebpackPlugin({
+			template: './public/index.html',
+			reactPath: './react.development.js',
+			reactDomPath: '././react-dom.development.js'
+		})
+	]
 });
 console.log(webpackConfig)
 module.exports = webpackConfig;

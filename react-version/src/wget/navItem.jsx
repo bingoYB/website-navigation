@@ -1,5 +1,6 @@
+const getIconApiUrl = 'https://ico.mikelin.cn/'
+
 function getWebsiteIcon(img,url) {
-	let getIconApiUrl = 'https://ico.mikelin.cn/'
 	if (img.src.indexOf(getIconApiUrl) >= 0) {
 		img.src = 'img/404-1.png'
 	} else {
@@ -23,7 +24,7 @@ export default function (props) {
 										{ii.disabled ? <div className="diabled-item-badge">失效</div> : ''}
 										<a href={ii.url} rel="nofollow" target="_blank" className={`card-default ${ii.disabled ? 'web-disabled' : ''}`}>
 											<div>
-												<img className="card-icon" alt="loading" data-url={ii.url} data-src={ii.icon} onError={(e) => getWebsiteIcon(e.target,ii.url)} />
+												<img className="card-icon" alt="loading" data-url={ii.url} data-src={getIconApiUrl+ii.url} onError={(e) => getWebsiteIcon(e.target,ii.url)} />
 												<div className="card-main">
 													<div className="card-name">
 														{ii.name}

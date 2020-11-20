@@ -188,7 +188,7 @@ export default function () {
               ? 'active' : ''}`}
               key={i + 'local'} onClick={() => { window.open(el.url, '_blank') }}>
               <div className="result-icon">
-                <i style={{ backgroundImage: `url(${el.icon}),url(img/404-1.png)` }}></i>
+								<i style={{ backgroundImage: `url(https://ico.mikelin.cn/${el.url}),url(img/404-1.png)` }}></i>
               </div>
               <div className="result-text">
                 <span>{el.name}</span>
