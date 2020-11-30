@@ -1,18 +1,30 @@
 const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const common = require('./webpack.config.js');
 
-module.exports = merge(common, {
-	mode: 'development',
-	devtool: 'inline-source-map',
+let webpackConfig = merge(common, {
+	devtool: 'source-map',
 	devServer: {
-		compress: true,
-		port: 8011,
+		// host: "localhost",
+		// contentBase: './docs',
+		// before(app) { },
+		// proxy: {
+		//   "/api": "http://localhost:3000"
+		// },
+		// 一切服务都启用gzip 压缩：
+		// compress: true,
+		port: 7777,
 		// local服务器自动打开浏览器。
 		open: true,
-		// 除了初始启动信息之外的任何内容都不会被打印到控制台。这也意味着来自 webpack 的错误或警告在控制台不可见。
 		// quiet: true,
-		// 浏览器中访问的相对路径
-		// publicPath: config.local.assetsPublicPath,
-	}
+	},plugins:[
+		new HtmlWebpackPlugin({
+			template: './public/index.html',
+			reactPath: './react.development.js',
+			reactDomPath: '././react-dom.development.js'
+		})
+	]
 });
+console.log(webpackConfig)
+module.exports = webpackConfig;
+// module.exports = smp.wrap(merge(webpackConfig));

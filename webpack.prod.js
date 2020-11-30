@@ -8,7 +8,7 @@ let webpackConfig = merge(common, {
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
 			reactPath: './react.production.min.js',
-			reactDomPath: '././react-dom.production.min.js'
+			reactDomPath: './react-dom.production.min.js'
 		}),
 	]
 });

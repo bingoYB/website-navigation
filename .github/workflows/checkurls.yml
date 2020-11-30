@@ -2,7 +2,7 @@ name: check-webnav-url
 on:
   push:
     branches:
-      - master
+      - react-version
     paths:
       - 'action/**'
   schedule:
@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: 'master'
+        ref: 'react-version'
     - name: install
       run: |
         npm install
@@ -38,7 +38,7 @@ jobs:
       uses: bingoYB/push-your-github@release-v1
       with:
         GITHUB_TOKEN: ${{ secrets.action_token }}
-        PUSH_BRANCH: master
+        PUSH_BRANCH: react-version
         FORCE_PUSH: force
 
         

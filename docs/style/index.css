@@ -190,7 +190,6 @@ p {
 .item-subs {
   display: none;
   position: relative;
-  max-height: 0;
   overflow: auto;
 }
 
@@ -1033,7 +1032,7 @@ button.setting-btn i {
 .diabled-item-badge {
   position: absolute;
   background: #92b7bd;
-  z-index: 999;
+  z-index: 1;
   border-radius: 3px;
   color: #fff;
   font-size: 70%;
