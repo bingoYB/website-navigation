@@ -1,40 +1,34 @@
 {
-  "name": "website-navigation",
+  "name": "react-version",
   "version": "1.0.0",
-  "description": "**个人网址导航**",
+  "description": "",
   "main": "index.js",
-  "homepage": "https://bingoyb.github.io/website-navigation",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --inline --progress --config webpack.dev.js"
+    "dev": "webpack serve --inline --progress --config webpack.dev.js",
+    "build:dev": "webpack",
+    "build:prod": "webpack --config webpack.prod.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bingoYB/website-navigation.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bingoYB/website-navigation/issues"
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "^5.1.1",
-    "html-webpack-plugin": "^3.2.0",
-    "json-loader": "^0.5.7",
-    "text-loader": "0.0.1",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "copy-webpack-plugin": "^6.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.2"
-  },
-  "dependencies": {
-    "async.parallel": "^0.5.2",
-    "axios": "^0.19.1"
+    "webpack-merge": "^5.4.0"
   }
 }
