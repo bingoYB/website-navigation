@@ -28,13 +28,19 @@ module.exports = {
 	},
 	plugins: [
 		// new webpack.optimize.UglifyJsPlugin(),
-		new CopyWebpackPlugin([
+		new CopyWebpackPlugin(
 			{
-				from: path.resolve(__dirname, './public'),
-				to: path.resolve(__dirname, './docs'),
-				ignore: ['.html']
+				patterns: [
+					{
+						from: path.resolve(__dirname, './public'),
+						to: path.resolve(__dirname, './docs'),
+						globOptions:{
+							ignore: ['.html']
+						}
+					}
+				]
 			}
-		])
+		)
 	],
 	resolve: {
 		extensions: ['.jsx', '.mjs', '.js', '.json']
