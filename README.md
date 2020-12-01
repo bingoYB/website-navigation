@@ -2,7 +2,7 @@
 
 **个人网址导航**
 
-在线地址：https://bingoyb.github.io/website-navigation/dcos/index.html
+在线地址：https://bingoyb.github.io/website-navigation/docs/index.html
 
 国内码云快速地址：https://bingoyyy.gitee.io/website-navigation/
 

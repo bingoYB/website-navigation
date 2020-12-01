@@ -114,7 +114,11 @@ export default function () {
       if (activeRst.type === 'local') {
         var url = searchRst[type][index].url
       } else {
-        var url = currentEngine.searchUrl + searchRst[type][index].Txt
+				if (searchRst[type].length){
+					var url = currentEngine.searchUrl + searchRst[type][index].Txt
+				}else{
+					var url = currentEngine.searchUrl + document.getElementById('search').value
+				}
       }
 
       window.open(url, '_blank')
@@ -158,7 +162,14 @@ export default function () {
       content: window,
       imgs: document.getElementsByClassName('often')[0].querySelectorAll('img')
     })
-  },[])
+	},[])
+	
+
+	function searchClick() {
+		var url = currentEngine.searchUrl + document.getElementById('search').value
+
+		window.open(url, '_blank')
+	}
 
   return <div>
     <div className="search inputing">
@@ -170,7 +181,7 @@ export default function () {
           <input type="text" onInput={onInput} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
             id="search" autoComplete="off" className="textb"></input>
         </div>
-        <div className="search-post btn-search" id="searchBtn"></div>
+				<div className="search-post btn-search" id="searchBtn" onClick={searchClick}></div>
       </div>
       <div className="scBigBox" style={{ height: sChoiceVis ? '160px' : '0', display: sChoiceVis ? 'block' : 'none' }}>
         {searchEngine.map(s =>
