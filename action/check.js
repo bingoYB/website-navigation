@@ -1,6 +1,6 @@
 // javascript
 // const core = require('@actions/core')
-const checkUrl = require('./utils.js')
+const checkUrl = require('./util')
 let axios = require('axios')
 let fs = require('fs')
 let path = require('path')
