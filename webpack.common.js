@@ -35,7 +35,7 @@ module.exports = {
 						from: path.resolve(__dirname, './public'),
 						to: path.resolve(__dirname, './docs'),
 						globOptions:{
-							ignore: ['.html']
+							ignore: ['**.html']
 						}
 					}
 				]

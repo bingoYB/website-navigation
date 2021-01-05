@@ -19,12 +19,13 @@ let webpackConfig = merge(common, {
 		// quiet: true,
 	},plugins:[
 		new HtmlWebpackPlugin({
-			template: './public/index.html',
-			reactPath: './react.development.js',
-			reactDomPath: '././react-dom.development.js'
+			template: 'public/index.html',
+			fileName:'index.html',
+			reactPath: 'react.development.js',
+			reactDomPath: 'react-dom.development.js',
+			inject: 'body'
 		})
 	]
 });
-console.log(webpackConfig)
 module.exports = webpackConfig;
 // module.exports = smp.wrap(merge(webpackConfig));

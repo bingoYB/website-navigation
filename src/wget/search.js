@@ -7,7 +7,6 @@ class search {
 	}
 
 	search(v) {
-		console.time('搜索时间:')
 		let results = []
 		// 等同于使用map.entries()
 		for (let [key, value] of this.queryArrayMap) {
@@ -15,7 +14,6 @@ class search {
 				results.push(key)
 			}
 		}
-		console.timeEnd('搜索时间:')
 		return results
 	}
 	// 相当于建立索引

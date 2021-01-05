@@ -29,10 +29,10 @@
         "desc": "有问题，上知乎"
       },
       {
-        "url": "https://www.huxiu.com/",
-        "icon": "https://www.huxiu.com/favicon.ico",
-        "name": "虎嗅",
-        "desc": "科技资讯,商业评论,明星公司,动态,宏观,趋势,创业,精选,有料,干货,有用,细节,内幕"
+        "url": "https://36kr.com/",
+        "icon": "https://36kr.com/favicon.ico",
+        "name": "36氪",
+        "desc": "36氪通过全面，独家的视角为用户深度剖析最前沿的资讯，致力于让一部分人先看到未来，内容涵盖快讯，科技，金融，投资，房产，汽车，互联网，股市，教育，生活，职场等，秉承着新商业媒体人的使命砥砺前行"
       },
       {
         "url": "https://juejin.im/timeline",
@@ -41,11 +41,12 @@
         "desc": "前端社区"
       },
       {
-        "url": "http://www.nicotv.me/",
-        "icon": "http://img.kingsnug.cn/favicon.ico",
-        "name": "妮可",
-        "desc": "宅男腐女们最喜爱的动漫交流互动平台"
-      },{
+				"url": "https://www.halihali.vip/",
+				"icon": "https://www.halihali.vip/favicon.ico",
+				"name": "哈哩哈哩(H站)",
+				"desc": "哈哩哈哩爱不离手的视频放映厅，二次元暖暖的综合视频站，拥有最新最全的电影,电视剧,综艺,动漫资源视频,全站无广告播放,完美支持电脑手机观看，赶快加入哈哩哈哩。",
+				"disabled": false
+			},{
         "url": "https://segmentfault.com/",
         "icon": "https://segmentfault.com/favicon.ico",
         "name": "SegmentFault思否",
