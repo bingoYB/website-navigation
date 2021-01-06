@@ -3,7 +3,7 @@ const checkUrl = require('../action/util')
 console.log('start check')
 
 checkUrl({
-	url: 'http://www.wuhaozhan.net'
+	url: 'https://www.halihali.vip/'
 }).then((rs) => {
 	console.log('is ok')
 	console.log(rs)

@@ -31,6 +31,8 @@ module.exports = function checkUrl(web) {
 				}
 			} else {
 				web.disabled = true
+				console.log('check false',web.url)
+				console.log(error.response)
 			}
 
 		})
