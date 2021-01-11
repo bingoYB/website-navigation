@@ -17,7 +17,8 @@ checkNet().then(() => {
 
 function start() {
   for (let i = 0; i < fileList.length; i++) {
-    const filePath = fileList[i]
+		const filePath = fileList[i]
+		console.log('filePath', filePath)
     let dataJson = require(filePath)
     let taskList = []
     dataJson.forEach(el => {

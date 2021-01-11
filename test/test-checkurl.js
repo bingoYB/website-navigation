@@ -3,10 +3,9 @@ const checkUrl = require('../action/util')
 console.log('start check')
 
 checkUrl({
-	url: 'https://www.halihali.vip/'
+	url: 'http://open.163.com/special/opencourse/aspacetimeodyssey.html'
 }).then((rs) => {
 	console.log('is ok')
-	console.log(rs)
 }).catch((err)=>{
 	console.log(err)
 })
