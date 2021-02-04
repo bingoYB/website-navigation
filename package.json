@@ -8,9 +8,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack --config webpack.prod.js",
     "unit:init": "karma init",
-		"unit:test": "karma start",
-		"ui:init":"backstop init",
-		"ui:test": "backstop test"
+    "unit:test": "karma start",
+    "ui:init": "backstop init",
+    "ui:test": "backstop test"
   },
   "keywords": [],
   "author": "",
