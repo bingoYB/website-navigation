@@ -26,7 +26,6 @@ export default function (props) {
 		window.location.hash = navData[index].hashUrl
 		window.scrollTo(0, 0)
 		changePage(index)
-		console.log(111111)
 		menuStore.dispatch({type: 'close'})
 		e.preventDefault()
 	}

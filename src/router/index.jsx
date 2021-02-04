@@ -3,7 +3,7 @@ import Home from '../page/home'
 import NavPage from '../page/nav'
 import Layout from '../wget/Layout'
 
-export default function CusRouter(props) {
+export default function CustRouter(props) {
 	return <HashRouter>
 		<Route path="/">
 			<Layout>

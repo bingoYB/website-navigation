@@ -1,4 +1,4 @@
-const checkUrl = require('../action/util')
+const checkUrl = require('./action/util')
 
 console.log('start check')
 

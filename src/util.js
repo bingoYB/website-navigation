@@ -6,19 +6,21 @@ export default {
 	* @return {function}    返回客户调用函数
 	*/
 	throttle(fn, mustRun = 100) {
-		const timer = null;
+
 		let previous = null;
 		const context = this;
+		
 		return function () {
 			const now = new Date();
 			const args = arguments;
 			if (!previous) {
 				previous = now;
+				return fn.apply(context, args);
 			}
 			const remaining = now - previous;
 			if (mustRun && remaining >= mustRun) {
-				fn.apply(context, args);
 				previous = now;
+				return fn.apply(context, args);
 			}
 		}
 	},
