@@ -8,9 +8,10 @@
     "build:dev": "webpack",
     "build:prod": "webpack --config webpack.prod.js",
     "unit:init": "karma init",
-		"unit:test": "karma start",
-		"ui:init":"backstop init",
-		"ui:test": "backstop test"
+    "unit:test": "karma start",
+    "ui:init": "backstop init",
+    "ui:test": "backstop test",
+    "e2e:test": "cypress open"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +33,7 @@
     "backstopjs": "^5.1.0",
     "chai": "^4.2.0",
     "copy-webpack-plugin": "^6.3.2",
+    "cypress": "^6.4.0",
     "html-webpack-plugin": "^5.0.0-beta.4",
     "karma": "^6.1.0",
     "karma-chai": "^0.1.0",

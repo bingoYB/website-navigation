@@ -66,9 +66,9 @@ export default function () {
 		// TODO:虽然在执行后移除了这个事件，但是还是会存在执行多次的情况
 	})
 
-	function onInput(e) {
-		util.debounce(search, 500)(e)
-	}
+	util.EA(document).onOtherOnce('click', '.search-result,.search-input', () => {
+		setSearchState(false)
+	})
 
 	function search(e) {
 		let searchText = document.getElementById('search').value
@@ -198,8 +198,10 @@ export default function () {
 				<div className="search-pre">
 					<div id="sChoiceBtn" style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick}></div>
 				</div>
-				<div className="search-input">
-					<input type="text" onInput={onInput} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
+				<div className="search-input" onClick={
+					() => setSearchState(true) 
+				}>
+					<input type="text" onInput={util.debounce(search, 500)} onKeyUp={onKeyUp}  lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
 						id="search" autoComplete="off" className="textb"></input>
 				</div>
 				<div className="search-post btn-search" id="searchBtn" onClick={searchClick}></div>
