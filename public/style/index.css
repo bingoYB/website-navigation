@@ -588,7 +588,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 50px;
   background: #fff;
@@ -987,7 +987,6 @@ button.setting-btn i {
 
   .active .side {
     left: 0;
-    opacity: 1;
     /* border-right: rgba(0, 0, 0, .6) 1000px solid; */
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, .6);
   }
@@ -1008,7 +1007,6 @@ button.setting-btn i {
     left: -224px;
     top: 0;
     z-index: 2;
-    opacity: 0;
     transition: left .3s ease-out;
   }
 

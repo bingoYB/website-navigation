@@ -30,7 +30,7 @@ export default {
 	* @param action {function}  请求关联函数，实际应用需要调用的函数
 	* @return {function}    返回客户调用函数
 	*/
-	debounce(action, idle) {
+	debounce(action, idle=500) {
 		if (typeof action != 'function') {
 			throw new TypeError('Expected a function')
 		}

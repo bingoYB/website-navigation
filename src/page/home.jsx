@@ -58,17 +58,19 @@ export default function () {
 		localStorage.setItem('searchType', engine.name);
 	}
 
-	util.EA(document).onOtherOnce('click', '#sChoiceBtn', () => {
-		// let box = document.getElementsByClassName('scBigBox')[0]
-		// box.style['display'] = 'none'
-		// box.style.height = '0'
-		setSChoiceVis(false)
-		// TODO:虽然在执行后移除了这个事件，但是还是会存在执行多次的情况
-	})
-
-	util.EA(document).onOtherOnce('click', '.search-result,.search-input', () => {
-		setSearchState(false)
-	})
+	// util.EA(document).onOtherOnce('click', '#sChoiceBtn', () => {
+	// 	// let box = document.getElementsByClassName('scBigBox')[0]
+	// 	// box.style['display'] = 'none'
+	// 	// box.style.height = '0'
+	// 	// 设置选项不可见
+	// 	setSChoiceVis(false)
+	// 	// TODO:虽然在执行后移除了这个事件，但是还是会存在执行多次的情况
+	// })
+	// 使用blur事件替代
+	// util.EA(document).onOtherOnce('click', '.search-result,.search-input', () => {
+	// 	// 设置搜索下拉不可见
+	// 	setSearchState(false)
+	// })
 
 	function search(e) {
 		let searchText = document.getElementById('search').value
@@ -82,6 +84,7 @@ export default function () {
 			setSearchState(false)
 			return
 		}
+
 		// http://api.bing.com/qsonhs.aspx?type=cb&q=#content#&cb=window.bing.sug
 		util.jsonp({
 			url: suggestUrl,
@@ -97,7 +100,7 @@ export default function () {
 				let local = LocalSearch.search(searchText)
 				if (datas.AS.FullResults) {
 					setSearchRst({
-						txt:[],
+						txt: [],
 						engine: datas.AS.Results[0].Suggests,
 						local
 					})
@@ -149,7 +152,7 @@ export default function () {
 		//按下上方向键
 		else if (event.which == 38) {
 			if (index === 0) {
-				type = nextType(type,true)
+				type = nextType(type, true)
 				index = searchRst[type].length
 			} else {
 				index--
@@ -161,10 +164,10 @@ export default function () {
 			type
 		})
 	}
-
+	// 下一个类型
 	function nextType(type, prevFlag) {
 		const typeMap = ['txt', 'local', 'engine']
-		let i = typeMap.findIndex(el=>el===type)
+		let i = typeMap.findIndex(el => el === type)
 		while (true) {
 			if (prevFlag) {
 				i = i === 0 ? 2 : (i - 1)
@@ -178,6 +181,7 @@ export default function () {
 		}
 	}
 
+	// 应用图片懒加载
 	useEffect(() => {
 		util.lazyLoad({
 			content: window,
@@ -196,12 +200,10 @@ export default function () {
 		<div className="search inputing">
 			<div style={{ overflow: 'hidden' }}>
 				<div className="search-pre">
-					<div id="sChoiceBtn" style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick}></div>
+					<div id="sChoiceBtn" onBlur={()=>{setSChoiceVis(false)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabindex='1'></div>
 				</div>
-				<div className="search-input" onClick={
-					() => setSearchState(true) 
-				}>
-					<input type="text" onInput={util.debounce(search, 500)} onKeyUp={onKeyUp}  lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
+				<div className="search-input">
+					<input type="text" onBlur={()=>{setSearchState(false)}} onFocus={() => setSearchState(true)}onInput={util.debounce(search, 500)} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
 						id="search" autoComplete="off" className="textb"></input>
 				</div>
 				<div className="search-post btn-search" id="searchBtn" onClick={searchClick}></div>
