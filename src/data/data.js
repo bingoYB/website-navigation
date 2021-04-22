@@ -12,12 +12,6 @@ const data = [{
 	"hashUrl": "#",
 	"sub": []
 }, {
-	"title": "影视",
-	"icon": "icon-dianying",
-	"id": "nav",
-	"hashUrl": "#/nav?class=1",
-	"sub": film
-}, {
 	"title": "学习",
 	"icon": "icon-xuexizhongxin",
 	"id": "nav",
@@ -29,7 +23,13 @@ const data = [{
 	"id": "nav",
 	"hashUrl": "#/nav?class=3",
 	"sub": life
-}, {
+}, , {
+	"title": "影视",
+	"icon": "icon-dianying",
+	"id": "nav",
+	"hashUrl": "#/nav?class=1",
+	"sub": film
+},{
 	"title": "工具",
 	"icon": "icon-tool",
 	"id": "nav",
