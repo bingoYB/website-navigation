@@ -200,7 +200,7 @@ export default function () {
 		<div className="search inputing">
 			<div style={{ overflow: 'hidden' }}>
 				<div className="search-pre">
-					<div id="sChoiceBtn" onBlur={()=>{setSChoiceVis(false)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabindex='1'></div>
+					<div id="sChoiceBtn" onBlur={()=>{setSChoiceVis(false)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabIndex='1'></div>
 				</div>
 				<div className="search-input">
 					<input type="text" onBlur={()=>{setSearchState(false)}} onFocus={() => setSearchState(true)}onInput={util.debounce(search, 500)} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="

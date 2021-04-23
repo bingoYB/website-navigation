@@ -23,7 +23,7 @@ const data = [{
 	"id": "nav",
 	"hashUrl": "#/nav?class=2",
 	"sub": life
-}, , {
+}, {
 	"title": "影视",
 	"icon": "icon-dianying",
 	"id": "nav",
