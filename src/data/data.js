@@ -15,19 +15,19 @@ const data = [{
 	"title": "学习",
 	"icon": "icon-xuexizhongxin",
 	"id": "nav",
-	"hashUrl": "#/nav?class=2",
+	"hashUrl": "#/nav?class=1",
 	"sub": study
 }, {
 	"title": "生活",
 	"icon": "icon-tubiaozhizuomobanyihuifu-",
 	"id": "nav",
-	"hashUrl": "#/nav?class=3",
+	"hashUrl": "#/nav?class=2",
 	"sub": life
 }, , {
 	"title": "影视",
 	"icon": "icon-dianying",
 	"id": "nav",
-	"hashUrl": "#/nav?class=1",
+	"hashUrl": "#/nav?class=3",
 	"sub": film
 },{
 	"title": "工具",
