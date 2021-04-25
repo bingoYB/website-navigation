@@ -189,7 +189,7 @@ export default function () {
 		})
 	}, [])
 
-
+  // mousedown ->（other）blur -> mouseup -> click
 	function searchClick() {
 		var url = currentEngine.searchUrl + document.getElementById('search').value
 
@@ -203,7 +203,7 @@ export default function () {
 					<div id="sChoiceBtn" onBlur={()=>{setSChoiceVis(false)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabIndex='1'></div>
 				</div>
 				<div className="search-input">
-					<input type="text" onBlur={()=>{setSearchState(false)}} onFocus={() => setSearchState(true)}onInput={util.debounce(search, 500)} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
+					<input type="text" onBlur={()=>{setTimeout(()=>setSearchState(false),500)}} onFocus={() => setSearchState(true)} onInput={util.debounce(search, 500)} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
 						id="search" autoComplete="off" className="textb"></input>
 				</div>
 				<div className="search-post btn-search" id="searchBtn" onClick={searchClick}></div>
