@@ -3,5 +3,16 @@ describe('首页', () => {
 		cy.visit('http://localhost:7777/')
 		cy.get('.search-input>input').eq(0).type('test')
 		cy.get('.search-result').should('contain', 'test')
+    cy.end()
 	})
 })
+
+describe('首页', () => {
+  it('切换搜索', () => {
+    cy.visit('http://localhost:7777/')
+    cy.get('.search-input>input').eq(0).type('test')
+    cy.get('.search-result').should('contain', 'test')
+    cy.end()
+  })
+})
+

@@ -200,7 +200,7 @@ export default function () {
 		<div className="search inputing">
 			<div style={{ overflow: 'hidden' }}>
 				<div className="search-pre">
-					<div id="sChoiceBtn" onBlur={()=>{setSChoiceVis(false)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabIndex='1'></div>
+          <div id="sChoiceBtn" onBlur={() => {setTimeout(()=>setSChoiceVis(false),300)}} style={{ background: `url(${currentEngine.icon})` }} title="切换搜索引擎" className="sChoiceBtn" onClick={sChoiceBtnClick} tabIndex='1'></div>
 				</div>
 				<div className="search-input">
 					<input type="text" onBlur={()=>{setTimeout(()=>setSearchState(false),500)}} onFocus={() => setSearchState(true)} onInput={util.debounce(search, 500)} onKeyUp={onKeyUp} lang="zh-CN" placeholder="搜索" name="https://www.baidu.com/s?wd="
@@ -211,6 +211,7 @@ export default function () {
 			<div className="scBigBox" style={{ height: sChoiceVis ? '160px' : '0', display: sChoiceVis ? 'block' : 'none' }}>
 				{searchEngine.map(s =>
 					<div className="scSmallBox" key={s.name} onClick={() => {
+            console.log(1111)
 						selectSearchEngine(s)
 					}}><img src={s.icon} className="scImg"></img>
 						<span className="scName">{s.name}</span>
@@ -246,7 +247,7 @@ export default function () {
 					{searchRst.engine.map((el, i) =>
 						<li className={`${(activeRst.type === 'engine' && activeRst.index === i)
 							? 'active' : ''}`}
-							key={i + 'engine'} onClick={() => { window.open(currentEngine.searchUrl + el.Txt, '_blank') }}>
+							key={i + 'engine'} onClick={() => {console.log(1231230); window.open(currentEngine.searchUrl + el.Txt, '_blank') }}>
 							<div className="result-icon">
 								<i className="engine-icon" style={{ backgroundImage: 'url(img/searchBtn.png?v=2.0' }}></i>
 							</div>
