@@ -289,6 +289,7 @@ main {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content:center;
 }
 
 .header-title {
@@ -343,30 +344,18 @@ main {
   font-size: inherit !important;
 }
 
-
-.btn-git>a {
-  padding: 0.75em 1em 0.75em 2em;
-  border-radius: 2em;
-  transition: all 0.15s ease;
-  box-sizing: border-box;
-  position: relative;
-  background-color: #f6f6f6;
+.header-right>a {
+  /* align-self: right; */
+  margin-right:36px;
 }
 
-.btn-git>a>svg {
-  position: absolute;
-  left: 0.5em;
-  top: 0.4em;
-  width: 2em;
+.header-right>a>.iconfont {
+    font-size: 26px;
+    color: #686868;
 }
 
-.btn-lang {
-  float: right;
-  position: relative;
-  margin-right: 32px;
-  width: 50px;
-  height: 24px;
-  cursor: pointer;
+.header-right a .icon-blog {
+  font-size: 24px;
 }
 
 .btn-account {
