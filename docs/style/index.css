@@ -269,8 +269,6 @@ p {
 
 main {
   width: 100%;
-  height: auto;
-  min-height: 100%;
   min-height: 100vh;
   position: relative;
   background: #f1f5f8;
@@ -346,7 +344,9 @@ main {
 
 .header-right>a {
   /* align-self: right; */
-  margin-right:36px;
+  /* 使用margin会有一个页面抖动问题 */
+  /* margin-right:36px; */
+  padding:0 16px;
 }
 
 .header-right>a>.iconfont {
