@@ -1,4 +1,4 @@
-const getIconApiUrl = 'https://ico.mikelin.cn/'
+const getIconApiUrl = 'https://api.webmasterapi.com/v1/favicon/ENwLmFQiEWTLBzbU/'
 
 function getWebsiteIcon(img,url) {
 	if (img.src.indexOf(getIconApiUrl) >= 0) {

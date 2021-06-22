@@ -141,8 +141,8 @@ export default function () {
 		}
 		//按下下方向键
 		else if (event.which == 40) {
-
-			if (type !== 'txt' && index <= searchRst[type].length - 1) {
+			if (type !== 'txt' && index < searchRst[type].length - 1) {
+         // 如果当前不是txt，且未超出当前范围
 				index++
 			} else {
 				type = nextType(type)
@@ -153,7 +153,8 @@ export default function () {
 		else if (event.which == 38) {
 			if (index === 0) {
 				type = nextType(type, true)
-				index = searchRst[type].length
+        console.log(type)
+				index = searchRst[type].length-1
 			} else {
 				index--
 			}
@@ -170,7 +171,7 @@ export default function () {
 		let i = typeMap.findIndex(el => el === type)
 		while (true) {
 			if (prevFlag) {
-				i = i === 0 ? 2 : (i - 1)
+				i = (i === 0) ? 2 : (i-1)
 			} else {
 				i = (i + 1) % 3
 			}
@@ -211,7 +212,6 @@ export default function () {
 			<div className="scBigBox" style={{ height: sChoiceVis ? '160px' : '0', display: sChoiceVis ? 'block' : 'none' }}>
 				{searchEngine.map(s =>
 					<div className="scSmallBox" key={s.name} onClick={() => {
-            console.log(1111)
 						selectSearchEngine(s)
 					}}><img src={s.icon} className="scImg"></img>
 						<span className="scName">{s.name}</span>
