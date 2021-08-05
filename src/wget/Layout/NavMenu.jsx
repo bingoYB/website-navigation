@@ -13,7 +13,7 @@ export default function NavMenu() {
 		menuStore.dispatch({type: 'close'})
 	}
 
-	return <menu className={`${menuActive ? 'active' : ''}`}>
+	return <aside className={`${menuActive ? 'active' : ''}`}>
 		<div className="side"><a href="#" className="logo-link"><i className="iconfont icon-logo-slogan"></i></a>
 			<div className="logo"><i className="iconfont icon-logo-slogan"></i></div>
 			<div id="menu" className={`menu`}>
@@ -23,6 +23,6 @@ export default function NavMenu() {
 			<div className="btn-lang-side"><i className="iconfont icon-lang" style={{ fontSize: '28px', color: '#aaa' }}></i></div>
 		</div>
 		<div className="side-mask" onClick={closeMenu}></div>
-	</menu>
+	</aside>
 }
 
