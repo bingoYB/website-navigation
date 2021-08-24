@@ -1,4 +1,6 @@
-const getIconApiUrl = 'https://api.webmasterapi.com/v1/favicon/ENwLmFQiEWTLBzbU/'
+// const getIconApiUrl = 'https://api.webmasterapi.com/v1/favicon/ENwLmFQiEWTLBzbU/'
+const getIconApiUrl = 'https://api.clowntool.cn/getico/?url='
+// const getIconApiUrl = 'https://api.qqsuu.cn/api/favicon/get.php?url='
 
 function getWebsiteIcon(img,url) {
 	if (img.src.indexOf(getIconApiUrl) >= 0) {
