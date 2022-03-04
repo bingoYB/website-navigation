@@ -403,6 +403,36 @@
                 "name": "在线图表编辑",
                 "desc": "在线图表编辑_免费图表生成_HighCharts图表_前瞻数据库",
                 "disabled": false
+            },
+            {
+                "url": "https://cloudconvert.com/",
+                "name": "在线文件格式转化",
+                "desc": "在线文件格式转化",
+                "disabled": false
+            },
+            {
+                "url": "https://supabase.com/",
+                "name": "快速生成服务",
+                "desc": "Create a backend in less than 2 minutes. Start your project with a Postgres Database, Authentication, instant APIs, Realtime subscriptions and Storage.",
+                "disabled": false
+            },
+            {
+                "url": "https://www.suiyongsuiqi.com/zh/",
+                "name": "在线隐私保护工具",
+                "desc": "5年经验老司机69伙伴的随用随弃，永久免费提供临时手机号接码。一次性手机短信验证码接收服务，使用虚拟号码保护个人隐私、免除信息打扰。",
+                "disabled": false
+            },
+            {
+                "url": "https://www.clearcode.cn/",
+                "name": "无敌云短信",
+                "desc": "一个在线接收短信验证码的网站",
+                "disabled": false
+            },
+            {
+                "url": "https://cv.devtool.tech/app",
+                "name": "一纸简历",
+                "desc": "在线免费简历",
+                "disabled": false
             }
         ]
     },

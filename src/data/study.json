@@ -54,6 +54,41 @@
                 "disabled": false
             },
             {
+                "tag": "博客",
+                "url": "https://www.30secondsofcode.org/",
+                "name": "30秒代码学习",
+                "desc": "30秒的代码，满足您所有开发需求的短代码片段。30 seconds of code；",
+                "disabled": false
+            },
+            {
+                "tag": "教程",
+                "url": "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md",
+                "name": "JavaScript 算法与数据结构",
+                "desc": "JavaScript 算法与数据结构 github仓库。",
+                "disabled": false
+            },
+            {
+                "tag": "仓库",
+                "url": "https://github.com/ryanmcdermott/clean-code-javascript",
+                "name": "干净代码",
+                "desc": "干净代码clean-code-javascript。",
+                "disabled": false
+            },
+            {
+                "tag": "仓库",
+                "url": "https://github.com/sudheerj/javascript-interview-questions#table-of-contents",
+                "name": "javascript面试题（英文）",
+                "desc": "javascript-interview-questions 英文版，可以参考下国外的面试哪些内容",
+                "disabled": false
+            },
+            {
+                "tag": "仓库",
+                "url": "https://github.com/goldbergyoni/nodebestpractices",
+                "name": "node最佳实践",
+                "desc": "Node.js 最佳实践列表",
+                "disabled": false
+            },
+            {
                 "tag": "教程",
                 "url": "https://www.yuque.com/airing/canvas/readme",
                 "icon": "https://www.yuque.com/favicon.ico",
