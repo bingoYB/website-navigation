@@ -62,20 +62,6 @@ export default function () {
     localStorage.setItem("searchType", engine.name);
   }
 
-  // util.EA(document).onOtherOnce('click', '#sChoiceBtn', () => {
-  // 	// let box = document.getElementsByClassName('scBigBox')[0]
-  // 	// box.style['display'] = 'none'
-  // 	// box.style.height = '0'
-  // 	// 设置选项不可见
-  // 	setSChoiceVis(false)
-  // 	// TODO:虽然在执行后移除了这个事件，但是还是会存在执行多次的情况
-  // })
-  // 使用blur事件替代
-  // util.EA(document).onOtherOnce('click', '.search-result,.search-input', () => {
-  // 	// 设置搜索下拉不可见
-  // 	setSearchState(false)
-  // })
-
   function search(e) {
     let searchText = document.getElementById("search").value;
 
