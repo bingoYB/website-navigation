@@ -1,4 +1,4 @@
-import store, { menuStore } from '../../store'
+import store, { menuStore } from "../../store";
 
 const { useState } = React;
 export default function NavHeader() {
@@ -8,13 +8,17 @@ export default function NavHeader() {
     setPage(store.getState());
   });
 
-  function changeMenuActive() { 
-		menuStore.dispatch({type: 'open'})
-	}
+  function changeMenuActive() {
+    menuStore.dispatch({ type: "open" });
+  }
 
   return (
     <div className="header">
-      <div className="header-title" id="header-title" onClick={changeMenuActive}>
+      <div
+        className="header-title"
+        id="header-title"
+        onClick={changeMenuActive}
+      >
         <div className="header-title-icon">
           <i className={`iconfont ${page.icon}`}></i>
         </div>
@@ -25,16 +29,14 @@ export default function NavHeader() {
       </div>
       <div className="header-right">
         <a
-          className="hint--bottom hint--bounce hint--small"
-          aria-label="学习博客"
+          title="学习博客"
           href="https://bingoyb.github.io/learn-blog/dist"
           target="_blank"
         >
           <i className="iconfont icon-blog"></i>
         </a>
         <a
-          className="hint--bottom hint--bounce hint--small"
-          aria-label="项目Git地址"
+          title="项目Git地址"
           href="https://github.com/bingoYB/website-navigation"
           target="_blank"
         >
