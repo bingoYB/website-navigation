@@ -1,128 +1,5 @@
 [
     {
-        "title": "网盘搜索",
-        "icon": "icon-router",
-        "item": [
-            {
-                "url": "http://www.kengso.com/",
-                "icon": "http://www.kengso.com/favicon.ico",
-                "name": "坑搜网",
-                "desc": "百度云搜索引擎",
-                "disabled": false
-            },
-            {
-                "url": "https://www.xiaoso.net/",
-                "icon": "https://www.xiaoso.net/favicon.ico",
-                "name": "小不点搜索",
-                "desc": "专注于百度云网盘、微盘、文库、在线视频网站的资源嗅探和搜索",
-                "disabled": false
-            },
-            {
-                "url": "http://www.panduoduo.net/",
-                "icon": "http://www.panduoduo.net/favicon.ico",
-                "name": "盘多多",
-                "desc": "我们不生产资源，只做资源的搬运工。找资源，上盘多多！",
-                "disabled": true
-            },
-            {
-                "url": "https://wangpan007.com/",
-                "icon": "https://wangpan007.com/favicon.ico",
-                "name": "网盘007",
-                "desc": "网盘搜索服务",
-                "disabled": true
-            },
-            {
-                "url": "https://www.quzhuanpan.com/",
-                "icon": "https://www.quzhuanpan.com/media/image/logo/favicon.ico",
-                "name": "去转盘-我嚓哩-(Q站)",
-                "desc": "网盘搜索引擎，资源问答平台",
-                "disabled": false
-            },
-            {
-                "url": "https://www.panc.cc/",
-                "icon": "https://www.panc.cc/static/css/pancss/img/favicon.ico?v=20170226",
-                "name": "Panc.cc-胖次网盘搜索",
-                "desc": "网盘搜索 - 胖次分享社区",
-                "disabled": true
-            },
-            {
-                "url": "http://www.sobaidupan.com/",
-                "icon": "http://www.sobaidupan.com/favicon.ico",
-                "name": "搜百度盘",
-                "desc": "是基于百度云搜索，最大的百度云盘资源搜索中心",
-                "disabled": false
-            },
-            {
-                "url": "http://www.tebaidu.com/",
-                "icon": "http://www.tebaidu.com/favicon.ico",
-                "name": "特白度",
-                "desc": "白度网盘资源搜索和白度网盘资源下载的网站",
-                "disabled": true
-            },
-            {
-                "url": "http://www.xilinjie.com/",
-                "icon": "http://www.xilinjie.com/favicon.ico",
-                "name": "西林街搜索（X 站）",
-                "desc": "全网资源垂直搜索引擎，搜索资源更快、更专业",
-                "disabled": true
-            },
-            {
-                "url": "http://www.pansou.com/",
-                "icon": "http://www.pansou.com/favicon.ico",
-                "name": "盘搜",
-                "desc": "百度网盘就搜到-国内优秀百度网盘搜索引擎站",
-                "disabled": false
-            },
-            {
-                "url": "http://tansuo233.com/",
-                "icon": "http://tansuo233.com/favicon.ico",
-                "name": "探索搜",
-                "desc": "需要登录",
-                "disabled": true
-            },
-            {
-                "url": "https://pan.09l.me/",
-                "icon": "https://pan.09l.me/favicon.ico",
-                "name": "云盘恶魔",
-                "desc": "免费聚合类百度云网盘搜索站",
-                "disabled": false
-            },
-            {
-                "url": "https://www.xiaobaipan.com/",
-                "icon": "https://www.xiaobaipan.com/favicon.ico",
-                "name": "小白盘",
-                "desc": "小白盘百度网盘搜索",
-                "disabled": false
-            },
-            {
-                "url": "https://www.dashengpan.com/",
-                "name": "大圣盘",
-                "desc": "网盘搜索，就用大圣盘 - 最好用的百度网盘搜索引擎",
-                "disabled": false
-            }
-        ]
-    },
-    {
-        "title": "BT搜索",
-        "icon": "icon-router",
-        "item": [
-            {
-                "url": "http://www.btba.cc/",
-                "icon": "http://www.btba.cc/z204.png",
-                "name": "BT吧",
-                "desc": "收集全网所有电影电视剧-请大家收藏BT吧",
-                "disabled": true
-            },
-            {
-                "url": "http://www.acgsou.com/",
-                "icon": "http://www.acgsou.com/favicon.ico",
-                "name": "ACG搜",
-                "desc": "ACG資源|動漫種子|動漫BT下載",
-                "disabled": true
-            }
-        ]
-    },
-    {
         "title": "软件/插件",
         "icon": "icon-router",
         "item": [
@@ -175,13 +52,6 @@
                 "disabled": false
             },
             {
-                "url": "http://www.xsldh.vip/",
-                "icon": "http://www.xsldh.vip/favicon.ico",
-                "name": "小森林导航",
-                "desc": "收录600多实用网站，整合200多个搜索引擎，包括了电影资源，电视剧资源，音乐，阅读，模板素材，软件工具，知识文库等各大分类。页面清爽，酷炫，无广告，是一个类目齐全，功能强大，非常实用的导航网站",
-                "disabled": false
-            },
-            {
                 "url": "http://ilxdh.com/",
                 "icon": "http://ilxdh.com/favicon.ico",
                 "name": "龙轩导航",
@@ -196,20 +66,6 @@
                 "disabled": false
             },
             {
-                "url": "http://www.gkbang.cn/link/",
-                "icon": "http://www.gkbang.cn/favicon.ico",
-                "name": "果壳任意门",
-                "desc": "发现你最爱的网站",
-                "disabled": true
-            },
-            {
-                "url": "http://www.qkankan.com/index.html",
-                "icon": "http://www.qkankan.com/favicon.ico",
-                "name": "国外网站大全",
-                "desc": "提供实用且人性化的国外网址服务",
-                "disabled": true
-            },
-            {
                 "url": "http://www.1nami.com/",
                 "icon": "http://www.1nami.com/favicon.ico",
                 "name": "1纳米学习网站导航",
@@ -217,11 +73,10 @@
                 "disabled": false
             },
             {
-                "url": "http://guozhivip.com/nav/",
+                "url": "http://guozhivip.com/",
                 "icon": "http://guozhivip.com/favicon.ico",
                 "name": "果汁导航",
-                "desc": "果汁导航",
-                "disabled": true
+                "desc": "果汁导航"
             },
             {
                 "url": "http://hao.199it.com/",
@@ -254,11 +109,6 @@
                 "url": "https://www.remove.bg/zh",
                 "name": "图片背景消除",
                 "desc": "图片背景消除",
-                "disabled": false
-            },{
-                "url": "http://gitd.cc/",
-                "name": "github代下",
-                "desc": "Git克隆慢？外网源码包没速度？试试我",
                 "disabled": false
             },
             {
@@ -318,13 +168,6 @@
                 "disabled": false
             },
             {
-                "url": "http://www.nicetool.net/",
-                "icon": "http://www.nicetool.net/static/favicon.ico",
-                "name": "NICETOOL",
-                "desc": "好工具网致力于收集打造各种简单易用在线工具，网友无需注册和下载安装即可使用。",
-                "disabled": true
-            },
-            {
                 "url": "https://www.apowersoft.cn/free-online-screen-recorder",
                 "icon": "https://cdn.aoscdn.com/img/online-screen-recorder/logo.png?de85",
                 "name": "Apowersoft在线录屏",
@@ -337,13 +180,6 @@
                 "name": "图虫EXIF查看器",
                 "desc": "无需下载安装任何软件，直接上传图片即可查看EXIF",
                 "disabled": false
-            },
-            {
-                "url": "https://uzer.me/",
-                "icon": "https://uzer.me/favicon.ico",
-                "name": "UZER.ME--云端超级应用空间",
-                "desc": "UZER.ME云端超级应用空间！带给您全新的软件应用方式，提供的全部软件免安装！",
-                "disabled": true
             },
             {
                 "url": "https://carbon.now.sh/",
@@ -437,6 +273,45 @@
         ]
     },
     {
+        "title": "网盘搜索",
+        "icon": "icon-router",
+        "item": [
+            {
+                "url": "https://www.xiaoso.net/",
+                "icon": "https://www.xiaoso.net/favicon.ico",
+                "name": "小不点搜索",
+                "desc": "专注于百度云网盘、微盘、文库、在线视频网站的资源嗅探和搜索",
+                "disabled": false
+            },
+            {
+                "url": "https://www.laisoyixia.com/",
+                "name": "来搜一下-网盘搜索",
+                "desc": "网盘搜索引擎，资源问答平台",
+                "disabled": false
+            },
+            {
+                "url": "http://www.sobaidupan.com/",
+                "icon": "http://www.sobaidupan.com/favicon.ico",
+                "name": "搜百度盘",
+                "desc": "是基于百度云搜索，最大的百度云盘资源搜索中心",
+                "disabled": false
+            },
+            {
+                "url": "https://www.xiaobaipan.com/",
+                "icon": "https://www.xiaobaipan.com/favicon.ico",
+                "name": "小白盘",
+                "desc": "小白盘百度网盘搜索",
+                "disabled": false
+            },
+            {
+                "url": "https://www.dashengpan.com/",
+                "name": "大圣盘",
+                "desc": "网盘搜索，就用大圣盘 - 最好用的百度网盘搜索引擎",
+                "disabled": false
+            }
+        ]
+    },
+    {
         "title": "打字练习",
         "icon": "icon-router",
         "item": [
@@ -478,27 +353,17 @@
                 "url": "http://receivefreesms.com/",
                 "icon": "http://receivefreesms.com/favicon.ico",
                 "name": "Receive FREE SMS online",
-                "desc": "Receive FREE SMS online 国外手机号免费接收短信",
-                "disabled": true
+                "desc": "Receive FREE SMS online 国外手机号免费接收短信"
             },
             {
-                "url": "https://www.pdflibr.com/",
-                "icon": "https://www.pdflibr.com/favicon.ico",
-                "name": "在线短信接收",
-                "desc": "在线短信接收-国内+国外",
-                "disabled": false
-            },
-            {
-                "url": "http://www.linshiyouxiang.net/",
+                "url": "https://www.suiyongsuiqi.com/zh/mail/",
                 "name": "临时邮箱",
-                "desc": "提供临时邮箱，10分钟邮箱，临时邮，临时电子邮箱，24小时邮箱，一次性邮箱，匿名邮箱，安全邮箱",
-                "disabled": false
+                "desc": "临时邮箱、免费临时邮箱、临时十分钟邮箱、隐私邮箱、24小时邮箱"
             },
             {
-                "url": "https://10minutemail.net/readmail.html?mid=mbBKfH",
-                "name": "10分钟邮箱",
-                "desc": "10分钟邮箱: 安全免费的一次性临时电邮地址,以防止垃圾邮件骚扰",
-                "disabled": false
+                "url": "http://24mail.chacuo.net/",
+                "name": "临时邮箱chacuo",
+                "desc": "临时邮箱、免费临时邮箱、临时十分钟邮箱、隐私邮箱、24小时邮箱"
             },
             {
                 "url": "https://www.asklib.com/",
@@ -508,35 +373,15 @@
                 "disabled": false
             },
             {
-                "url": "http://ictclas.nlpir.org/nlpir/",
-                "icon": "http://ictclas.nlpir.org/nlpir/favicon.ico",
-                "name": "语义分析系统",
-                "desc": "语义分析系统",
-                "disabled": true
-            },
-            {
                 "url": "https://msdn.itellyou.cn/",
                 "name": "MSDN, 我告诉你",
                 "desc": "MSDN, 我告诉你",
                 "disabled": false
             },
             {
-                "url": "https://quickref.dev/",
-                "name": "Quickref",
-                "desc": "开发人员的实验性搜索引擎。搜索精选的网络子集：官方文档和社区驱动的资源。没有JS，Cookie，跟踪，外部请求或数据收集。",
-                "disabled": true
-            },
-            {
-                "url": "https://dfile.app/",
-                "name": "DFile",
-                "desc": "DFile：一种极简的文件上传模式",
-                "disabled": false
-            },
-            {
                 "url": "https://mijisou.com/",
                 "name": "秘迹搜索",
-                "desc": "这是一个 不追踪 你的搜索引擎",
-                "disabled": true
+                "desc": "这是一个 不追踪 你的搜索引擎"
             },
             {
                 "url": "https://carbon.now.sh/",

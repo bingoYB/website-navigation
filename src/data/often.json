@@ -1,65 +1,64 @@
 [
-    {
-        "title": "综合",
-        "icon": "icon-router",
-        "item": [
-            {
-                "tag": "资讯",
-                "url": "https://tophub.today/",
-                "icon": "https://tophub.today/favicon.ico",
-                "name": "今日热榜",
-                "desc": "今日热榜提供各站热点聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、华尔街见闻...全网新闻热点排行榜服务。",
-                "disabled": false
-            },
-            {
-                "url": "https://weibo.com/u/3816118370/home?topnav=1&wvr=6",
-                "icon": "https://weibo.com/favicon.ico",
-                "name": "微博",
-                "desc": "随时随地发现新鲜事",
-                "disabled": false
-            },
-            {
-                "url": "https://github.com/",
-                "icon": "https://github.githubassets.com/favicon.ico",
-                "name": "github",
-                "desc": "开源代码库",
-                "disabled": false
-            },
-            {
-                "url": "https://www.zhihu.com/",
-                "icon": "https://uploads.moulem.com/id0siteimg/z204.png",
-                "name": "知乎",
-                "desc": "有问题，上知乎",
-                "disabled": false
-            },
-            {
-                "url": "https://36kr.com/",
-                "icon": "https://36kr.com/favicon.ico",
-                "name": "36氪",
-                "desc": "36氪通过全面，独家的视角为用户深度剖析最前沿的资讯，致力于让一部分人先看到未来，内容涵盖快讯，科技，金融，投资，房产，汽车，互联网，股市，教育，生活，职场等，秉承着新商业媒体人的使命砥砺前行",
-                "disabled": false
-            },
-            {
-                "url": "https://juejin.im/timeline",
-                "icon": "https://b-gold-cdn.xitu.io/favicons/v2/favicon.ico",
-                "name": "掘金",
-                "desc": "前端社区",
-                "disabled": false
-            },
-            {
-                "url": "https://www.halihali.vip/",
-                "icon": "https://www.halihali.vip/favicon.ico",
-                "name": "哈哩哈哩(H站)",
-                "desc": "哈哩哈哩爱不离手的视频放映厅，二次元暖暖的综合视频站，拥有最新最全的电影,电视剧,综艺,动漫资源视频,全站无广告播放,完美支持电脑手机观看，赶快加入哈哩哈哩。",
-                "disabled": true
-            },
-            {
-                "url": "https://segmentfault.com/",
-                "icon": "https://segmentfault.com/favicon.ico",
-                "name": "SegmentFault思否",
-                "desc": "SegmentFault 思否 为开发者提供问答、学习与交流编程知识的平台，创造属于开发者的时代！",
-                "disabled": false
-            }
-        ]
-    }
+  {
+    "title": "综合",
+    "icon": "icon-router",
+    "item": [
+      {
+        "tag": "资讯",
+        "url": "https://tophub.today/",
+        "icon": "https://tophub.today/favicon.ico",
+        "name": "今日热榜",
+        "desc": "今日热榜提供各站热点聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、华尔街见闻...全网新闻热点排行榜服务。",
+        "disabled": false
+      },
+      {
+        "url": "https://weibo.com/u/3816118370/home?topnav=1&wvr=6",
+        "icon": "https://weibo.com/favicon.ico",
+        "name": "微博",
+        "desc": "随时随地发现新鲜事",
+        "disabled": false
+      },
+      {
+        "url": "https://github.com/",
+        "icon": "https://github.githubassets.com/favicon.ico",
+        "name": "github",
+        "desc": "开源代码库",
+        "disabled": false
+      },
+      {
+        "url": "https://www.zhihu.com/",
+        "icon": "https://uploads.moulem.com/id0siteimg/z204.png",
+        "name": "知乎",
+        "desc": "有问题，上知乎",
+        "disabled": false
+      },
+      {
+        "url": "https://36kr.com/",
+        "icon": "https://36kr.com/favicon.ico",
+        "name": "36氪",
+        "desc": "36氪通过全面，独家的视角为用户深度剖析最前沿的资讯，致力于让一部分人先看到未来，内容涵盖快讯，科技，金融，投资，房产，汽车，互联网，股市，教育，生活，职场等，秉承着新商业媒体人的使命砥砺前行",
+        "disabled": false
+      },
+      {
+        "url": "https://juejin.im/timeline",
+        "icon": "https://b-gold-cdn.xitu.io/favicons/v2/favicon.ico",
+        "name": "掘金",
+        "desc": "前端社区",
+        "disabled": false
+      },
+      {
+        "url": "https://www.dmxq.fun/",
+        "name": "大米星球",
+        "desc": "大米星球-最新Netflix新剧_韩国电影免费在线观看",
+        "disabled": false
+      },
+      {
+        "url": "https://segmentfault.com/",
+        "icon": "https://segmentfault.com/favicon.ico",
+        "name": "SegmentFault思否",
+        "desc": "SegmentFault 思否 为开发者提供问答、学习与交流编程知识的平台，创造属于开发者的时代！",
+        "disabled": false
+      }
+    ]
+  }
 ]

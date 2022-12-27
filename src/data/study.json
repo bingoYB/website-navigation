@@ -121,14 +121,6 @@
                 "disabled": false
             },
             {
-                "tag": "文章",
-                "url": "https://weekly.75team.com/",
-                "icon": "https://weekly.75team.com/favicon.ico",
-                "name": "奇舞周刊",
-                "desc": "我们收集每周前端精华文章，集结成册，每周五推送到微信公众号和知乎专栏。",
-                "disabled": true
-            },
-            {
                 "tag": "英文 文章",
                 "url": "https://www.notion.so/0ba81e1707ae479b8c2b9ec79fe3a3ce",
                 "icon": "https://weekly.75team.com/favicon.ico",
@@ -143,14 +135,6 @@
                 "name": "30秒 CSS 代码片段精选",
                 "desc": "您可以在30秒或更短时间内理解的有用CSS片段的精选。从基本元素(如clearfix )到渐变文本颜色和渐变光标跟踪，再到CSS缓动等等。",
                 "disabled": false
-            },
-            {
-                "tag": "框架资源",
-                "url": "https://www.awesomes.cn/",
-                "icon": "https://www.awesomes.cn/images/logo.png",
-                "name": "Awesomes",
-                "desc": "Web前端开发资源库",
-                "disabled": true
             },
             {
                 "tag": "模拟 联系",
@@ -213,13 +197,6 @@
                 "name": "前端进阶之道",
                 "desc": "内容涵盖计算机通识，前端等知识。完善你的知识体系，让你的面试如虎添翼！",
                 "tag": "面试",
-                "disabled": false
-            },
-            {
-                "url": "https://www.pianduan.fun/",
-                "name": "片段",
-                "desc": "代码片段,代码分享,Node.js教程,Flutter教程,代码托管",
-                "tag": "代码",
                 "disabled": false
             },
             {
