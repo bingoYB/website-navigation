@@ -53,10 +53,9 @@
         "disabled": false
       },
       {
-        "url": "https://segmentfault.com/",
-        "icon": "https://segmentfault.com/favicon.ico",
-        "name": "SegmentFault思否",
-        "desc": "SegmentFault 思否 为开发者提供问答、学习与交流编程知识的平台，创造属于开发者的时代！",
+        "url": "https://www.qweather.com/",
+        "name": "和风天气网",
+        "desc": "和风天气网",
         "disabled": false
       }
     ]

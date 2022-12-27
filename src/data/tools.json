@@ -112,6 +112,16 @@
                 "disabled": false
             },
             {
+                "url": "https://www.wenshushu.cn/",
+                "name": "文叔叔 - 传文件，找文叔叔（大文件、永不限速）",
+                "desc":"文叔叔，免费空间 40GB，一款永不限速的云存储产品。传文件、收文件、网盘，还支持历史记录等高级功能。"
+            },
+            {
+                "url": "https://www.wenshushu.cn/",
+                "name": "图表魔方",
+                "desc":"AntV 在线图表制作工具 拖拽之间快速搞定图表制作"
+            },
+            {
                 "url": "https://www.photopea.com/",
                 "icon": "https://www.photopea.com/promo/thumb256.png",
                 "name": "在线photoshop",
