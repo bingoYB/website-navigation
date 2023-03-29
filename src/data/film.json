@@ -62,6 +62,12 @@
         "name": "椅子电影网",
         "desc": "椅子电影网--好看的电影就在椅子电影",
         "disabled": false
+      },
+      {
+        "url":"https://www.ikandy.fun/",
+        "name": "爱看电影网",
+        "desc": "爱看电影网",
+        "disabled": false
       }
     ]
   },
