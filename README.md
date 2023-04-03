@@ -1,67 +1,38 @@
-# website-navigation
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-**个人网址导航**
+## Getting Started
 
-在线地址：https://bingoyb.github.io/website-navigation/
+First, run the development server:
 
-国内码云快速地址：https://bingoyyy.gitee.io/website-navigation/
-
-这个项目是我个人学习使用的项目，同时也是给自己写的网址导航，若有什么好的网址，欢迎提供！
-
-### 部署说明：
-此项目为纯前端项目，如果你想要自己部署，只需要有个能够提供静态页面服务的服务器就行【我就直接是挂在github-page上】
-
-前端相关命令（前提：你得安装了node）
-```
-# 下载依赖
-npm install
-# 前端编译
-npm run build
-```
-编译结果在docs里面，所以你只需要将这个文件夹的内容放到你的静态服务器里就行了；
-
-当然你可以自己fork去进行自定义的修改
-
-### 目录结构
----
-方便你理解我的代码结构
-
-```
-├── README.md
-├── package.json
-├── action                # gitaction相关脚本
-├── docs                  # 打包目录 实际页面访问目录
-├── public                # 静态资源
-├── src                   # 页面所有代码
-│   ├── data              # 数据文件
-│   ├── page              # 页面代码
-│   ├── wget              # 页面零部件
-│   ├── style             # 样式字体等
-│   ├── assets            # 样式资源
-│   ├── store             # redux全局状态
-│   ├── router            # 路由组件
-│   ├── main.jsx        # 页面入口文件
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 数据更新
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-若有好的网站收藏希望收录于网站上的，或者有其他问题，请提交 issue
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-提交数据格式
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-```json
-{
-    "url": "https://www.bilibili.com/",
-    "name": "B站",
-    "desc": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围。"
-}
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-联系方式
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-邮箱 binhdu@foxmail.com
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
