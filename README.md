@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# website-navigation
 
-## Getting Started
+**个人网址导航**
 
-First, run the development server:
+github地址：https://bingoyb.github.io/website-navigation/dcos/index.html
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+~~国内码云快速地址：https://bingoyyy.gitee.io/website-navigation/~~
+码云地址已不再更新内容
+
+
+目录结构
+---
+
+```
+目录结构已改成nextjs的基本结构
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 数据更新
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+若有好的网站收藏希望收录于网站上的，或者有其他问题，请提交 issue
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+提交数据格式
 
-## Learn More
+```json
+{
+    "url": "https://www.bilibili.com/",
+    "name": "B站",
+    "desc": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围。"
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+联系方式
+---
 
-## Deploy on Vercel
+邮箱 binhdu@foxmail.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+更新日志
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 架构重构，使用nextjs、zustand更新部分代码
