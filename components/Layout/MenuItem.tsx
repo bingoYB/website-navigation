@@ -15,39 +15,40 @@ export default function MenuItem(props) {
   function menuClick() {
     setSubActive(0);
     window.scrollTo(0, 0);
+    useAppStore.setState({ menuExpand: false });
   }
 
   function subItemClick(index, title) {
     setSubActive(index);
-    let scrollTop = (document.querySelector(
-      '[data-title="' + title + '"'
-    ) as HTMLElement).offsetTop;
+    let scrollTop = (
+      document.querySelector('[data-title="' + title + '"') as HTMLElement
+    ).offsetTop;
     window.scrollTo(0, scrollTop);
   }
 
   return navData.map((data, index) => (
     <div
       id={`menu-item-${data.id}`}
-      className={`item ${ currentTab === data.id ? "active" : ""}`}
+      className={`item ${currentTab === data.id ? "active" : ""}`}
       key={index}
     >
       <Link
-        href={`/nav/${data.id}`}
-        className="item-text zh"
+        href={data.id === "home" ? "/" : `/nav/${data.id}`}
+        className='item-text zh'
         onClick={(e) => menuClick()}
         key={data.title}
       >
-        <span className="item-icon">
+        <span className='item-icon'>
           <i className={`iconfont ${data.icon}`}></i>
         </span>
         <span>{data.title}</span>
       </Link>
       {data.sub && data.sub.length ? (
-        <div className="item-subs">
-          <div className="item-subs-wrapper">
-            <div className="positioner">
+        <div className='item-subs'>
+          <div className='item-subs-wrapper'>
+            <div className='positioner'>
               <div
-                className="nonius"
+                className='nonius'
                 style={{ top: `${subActive * 40}px` }}
               ></div>
             </div>
@@ -57,7 +58,7 @@ export default function MenuItem(props) {
                 key={el.title}
                 onClick={(e) => subItemClick(ii, el.title)}
               >
-                <div className="sub-item-text">{el.title}</div>
+                <div className='sub-item-text'>{el.title}</div>
               </div>
             ))}
           </div>

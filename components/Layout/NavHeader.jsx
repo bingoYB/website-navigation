@@ -3,9 +3,9 @@ import { useAppStore } from "@/state/app";
 import { useRouter } from "next/router";
 
 export default function NavHeader() {
-  const { tab: current } = useRouter().query;
+  const { tab: current="home" } = useRouter().query;
   const activePage = webData.navData.find(
-    (item) => item.tab === (current || "home")
+    (item) => item.id === (current || "home")
   );
 
   const changeMenuActive = () => {

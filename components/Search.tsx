@@ -89,6 +89,8 @@ export default function Search() {
           index: 0,
           type: "txt",
         });
+
+        setSearchState(true);
       });
     }, 300),
     []

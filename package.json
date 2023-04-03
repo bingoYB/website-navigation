@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start port 3009",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "export": "next export"
   },
   "dependencies": {
     "eslint": "8.36.0",

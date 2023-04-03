@@ -20,7 +20,7 @@ const rawData = [
   {
     title: "生活",
     icon: "icon-tubiaozhizuomobanyihuifu-",
-    id: "live",
+    id: "life",
     sub: life,
   },
   {

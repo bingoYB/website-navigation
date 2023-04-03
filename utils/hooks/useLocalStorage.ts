@@ -15,7 +15,11 @@ export function useLocalStorageState<T>(
   const defaultValue = deserializer(
     typeof window === "undefined" ? null : localStorage.getItem(key)
   );
-  const [state, setState] = useState<T>(defaultValue || options?.defaultValue);
+  const [state, setState] = useState<T>(options?.defaultValue);
+
+  useEffect(() => {
+    setState(defaultValue || options?.defaultValue);
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") {
