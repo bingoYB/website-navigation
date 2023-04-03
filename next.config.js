@@ -11,7 +11,6 @@ const nextConfig = {
   },
   reactStrictMode: true,
   output: "standalone",
-  distDir: "docs",
   images: {
     unoptimized: true,
     remotePatterns: [
