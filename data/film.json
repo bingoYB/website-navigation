@@ -4,52 +4,22 @@
     "icon": "icon-yingshi",
     "item": [
       {
+        "url": "https://www.bilibili.com/",
+        "icon": "https://www.bilibili.com/favicon.ico",
+        "name": "B站",
+        "desc": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围。",
+        "disabled": false
+      },
+      {
         "url": "https://www.dmxq.fun/",
         "name": "大米星球",
         "desc": "大米星球-最新Netflix新剧_韩国电影免费在线观看",
         "disabled": false
       },
       {
-        "url": "https://enlienli.com/",
-        "name": "嗯哩嗯哩",
-        "desc": "e站,enlienli,嗯哩嗯哩,嗯哩嗯哩追剧,弹幕视频,动画,好看动漫,动漫网站,新番,日本最新动漫,动漫下载",
-        "disabled": false
-      },
-      {
-        "url": "https://halihali7.com/",
-        "name": "哈哩哈哩",
-        "desc": "Halihali.tv: 哈哩哈哩-让你爱不离手的温馨小站(H站)",
-        "disabled": false
-      },
-      {
-        "url": "https://yanetflix.com/",
-        "name": "鸭奈飞影视",
-        "desc": "每天更新热门网飞下载资源",
-        "disabled": false
-      },
-      {
         "url": "https://www.btnull.org/",
         "name": "片库网",
         "desc": "BTNull - 无名小站",
-        "disabled": false
-      },
-      {
-        "url": "http://www.wuhaozhan.net",
-        "icon": "http://www.wuhaozhan.net/favicon.ico",
-        "name": "电影5号站",
-        "desc": "影视搜索引擎",
-        "disabled": false
-      },
-      {
-        "url": "https://www.tvccc.org/",
-        "name": "星辰影院",
-        "desc": "星辰影院 - 2022热播大片电视剧 - 高清无缓冲在线观看"
-      },
-      {
-        "url": "http://www.qishidy.net/",
-        "icon": "http://www.qishidy.net/favicon.ico",
-        "name": "骑士影院",
-        "desc": "提供全网视频支持电脑和手机在线观看。",
         "disabled": false
       },
       {
@@ -103,34 +73,9 @@
         "disabled": false
       },
       {
-        "url": "https://www.bilibili.com/",
-        "icon": "https://www.bilibili.com/favicon.ico",
-        "name": "B站",
-        "desc": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围。",
-        "disabled": false
-      },
-      {
-        "url": "http://www.cilicili.cc/",
-        "name": "C站",
-        "desc": "呲哩呲哩 - 最爱ACG (｡･ω･)ﾉ - 你的二次元导航姬",
-        "disabled": false
-      },
-      {
-        "url": "https://eilieili.cc/ptl.php?mb=ptl&pages=MTYxMTIxMDYyMA",
-        "name": "E站",
-        "desc": "吚哩吚哩 eilieili.cc 次元の物语",
-        "disabled": false
-      },
-      {
         "url": "http://www.milimili.tv/",
         "name": "M站2",
         "desc": "咪哩咪哩 - 好看的动漫,日本动漫和后宫动漫在线观看",
-        "disabled": false
-      },
-      {
-        "url": "http://qiliqili.ml/",
-        "name": "Q站",
-        "desc": "唭哩唭哩弹幕视频网 --兴趣使然的无名小站",
         "disabled": false
       },
       {
@@ -145,20 +90,6 @@
         "name": "蜜柑计划",
         "desc": "新一代的动漫下载站",
         "disabled": false
-      },
-      {
-        "url": "https://www.36dm.com/",
-        "icon": "https://www.36dm.com/favicon.ico?v=2",
-        "name": "简单动漫",
-        "desc": "BT下载|动漫下载|动画|漫画",
-        "disabled": false
-      },
-      {
-        "url": "http://www.ikanfan.com/",
-        "icon": "http://www.ikanfan.com/favicon.ico",
-        "name": "爱看番",
-        "desc": "小而美的动漫追番网站",
-        "disabled": false
       }
     ]
   },
@@ -170,13 +101,6 @@
         "url": "http://kmeiju7.com/",
         "name": "AG美剧",
         "desc": "在线免费观看高清美剧的中文美剧网，播放速度快，热门美剧第一时间更新，美剧迷们最喜欢的中文字幕在线免费观看美剧网站。",
-        "disabled": false
-      },
-      {
-        "url": "http://www.ttmeiju.me/",
-        "icon": "http://www.ttmeiju.me/favicon.ico",
-        "name": "天天美剧",
-        "desc": "您的高清美剧下载中心,美剧爱好者的天堂",
         "disabled": false
       },
       {
@@ -217,13 +141,6 @@
         "url": "https://www.dytt8.net/",
         "name": "电影天堂",
         "desc": "免费电影下载,电影下载,最新电影"
-      },
-      {
-        "url": "https://www.ygdy8.com/",
-        "icon": "https://www.ygdy8.com/favicon.ico",
-        "name": "阳光电影",
-        "desc": "免费电影下载,电影下载,最新电影。",
-        "disabled": false
       },
       {
         "url": "https://gaoqing.fm/",
