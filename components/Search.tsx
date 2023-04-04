@@ -1,6 +1,7 @@
 import webData from "@/data";
 import { getSearchSuggestions } from "@/service";
 import { debounce } from "@/utils/debounce";
+import { getWebsiteIcon } from "@/utils/getWebsiteIcon";
 import { useLocalStorageState } from "@/utils/hooks/useLocalStorage";
 import { isDown, isEnter, isUp } from "@/utils/keyBoard";
 import Image from "next/image";
@@ -53,7 +54,6 @@ export default function Search() {
   });
   const [searchState, setSearchState] = useState(false);
 
-  // const [sChoiceVis, setSChoiceVis] = useState(false)
   function sChoiceBtnClick() {
     setSChoiceVis(true);
   }
@@ -268,7 +268,7 @@ export default function Search() {
               <div className="result-icon">
                 <i
                   style={{
-                    backgroundImage: `url(https://ico.mikelin.cn/${el.url}),url(img/404-1.png)`,
+                    backgroundImage: `url(${getWebsiteIcon(el.url)}),url(img/404-1.png)`,
                   }}
                 ></i>
               </div>

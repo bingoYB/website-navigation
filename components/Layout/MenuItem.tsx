@@ -6,7 +6,7 @@ import { useState } from "react";
 
 let navData = data.navData;
 
-export default function MenuItem(props) {
+export default function MenuItem() {
   const router = useRouter();
   const currentTab = router.query.tab || "home";
 
@@ -26,46 +26,50 @@ export default function MenuItem(props) {
     window.scrollTo(0, scrollTop);
   }
 
-  return navData.map((data, index) => (
-    <div
-      id={`menu-item-${data.id}`}
-      className={`item ${currentTab === data.id ? "active" : ""}`}
-      key={index}
-    >
-      <Link
-        href={data.id === "home" ? "/" : `/nav/${data.id}`}
-        className='item-text zh'
-        onClick={(e) => menuClick()}
-        key={data.title}
-      >
-        <span className='item-icon'>
-          <i className={`iconfont ${data.icon}`}></i>
-        </span>
-        <span>{data.title}</span>
-      </Link>
-      {data.sub && data.sub.length ? (
-        <div className='item-subs'>
-          <div className='item-subs-wrapper'>
-            <div className='positioner'>
-              <div
-                className='nonius'
-                style={{ top: `${subActive * 40}px` }}
-              ></div>
-            </div>
-            {data.sub.map((el, ii) => (
-              <div
-                className={`sub-item ${subActive === ii ? "active" : ""}`}
-                key={el.title}
-                onClick={(e) => subItemClick(ii, el.title)}
-              >
-                <div className='sub-item-text'>{el.title}</div>
+  return (
+    <>
+      {navData.map((data, index) => (
+        <div
+          id={`menu-item-${data.id}`}
+          className={`item ${currentTab === data.id ? "active" : ""}`}
+          key={index}
+        >
+          <Link
+            href={data.id === "home" ? "/" : `/nav/${data.id}`}
+            className='item-text zh'
+            onClick={(e) => menuClick()}
+            key={data.title}
+          >
+            <span className='item-icon'>
+              <i className={`iconfont ${data.icon}`}></i>
+            </span>
+            <span>{data.title}</span>
+          </Link>
+          {data.sub && data.sub.length ? (
+            <div className='item-subs'>
+              <div className='item-subs-wrapper'>
+                <div className='positioner'>
+                  <div
+                    className='nonius'
+                    style={{ top: `${subActive * 40}px` }}
+                  ></div>
+                </div>
+                {data.sub.map((el, ii) => (
+                  <div
+                    className={`sub-item ${subActive === ii ? "active" : ""}`}
+                    key={el.title}
+                    onClick={(e) => subItemClick(ii, el.title)}
+                  >
+                    <div className='sub-item-text'>{el.title}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-      ) : (
-        ""
-      )}
-    </div>
-  ));
+      ))}
+    </>
+  );
 }
