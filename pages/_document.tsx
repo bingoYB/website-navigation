@@ -3,8 +3,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="zh-CN">
       <Head>
+        <meta name="referrer" content="strict-origin-when-cross-origin"></meta>
         <link rel="icon" type="image/png" href="/img/favicon.png" />
         <link
           href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
