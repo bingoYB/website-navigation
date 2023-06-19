@@ -8,6 +8,7 @@ export default function Document() {
     <Html lang="zh-CN">
       <Head>
         <meta name="referrer" content="strict-origin-when-cross-origin"></meta>
+        <meta property="og:image" content="/img/text.png" />
         <link rel="icon" type="image/png" href="/img/favicon.png" />
         <link
           href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
