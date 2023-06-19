@@ -35,7 +35,6 @@ export default function Document() {
         ></script>
       </Head>
       <body>
-        <Link href="/"><img src={"/img/text-back.png"} alt="logo" style={{ display: "none" }} /></Link>
         <img src={"/img/text.png"} alt="logo" style={{ display: "none" }} />
         <Main />
         <NextScript />
