@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import { Html, Head, Main, NextScript } from "next/document";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Document() {
   return (
@@ -34,7 +35,7 @@ export default function Document() {
         ></script>
       </Head>
       <body>
-        <a href="/"><Image src={"/img/text-back.png"} alt="logo" style={{ display: "none" }} /></a>
+        <Link href="/"><Image src={"/img/text-back.png"} alt="logo" style={{ display: "none" }} /></Link>
         <Image src={"/img/text.png"} alt="logo" style={{ display: "none" }} />
         <Main />
         <NextScript />
