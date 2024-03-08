@@ -651,7 +651,7 @@ main {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   /* float: left; */
-  background-image: url(/img/searchBtn.png?v=2.0);
+  background-image: url("img/searchBtn.png?v=2.0");
   background-position: 15px 13px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -684,7 +684,7 @@ main {
   height: 20px;
   margin: 13px auto 0 auto;
   cursor: pointer;
-  background-image: url(/img/scbaidu.png);
+  background-image: url("img/scbaidu.png");
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
