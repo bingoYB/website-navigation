@@ -50,7 +50,7 @@ p {
 }
 
 .icon-logo {
-  background-image: url(/img/text.png);
+  background-image: url(/website-navigation/img/text.png);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100px;
@@ -59,7 +59,7 @@ p {
 }
 
 .logo {
-  background-image: url(/img/text.png);
+  background-image: url(/website-navigation/img/text.png);
 }
 
 .side {
@@ -74,7 +74,7 @@ p {
 }
 
 .logo-link {
-  background-image: url(/img/text.png);
+  background-image: url(/website-navigation/img/text.png);
   background-size: 80% 65%;
   background-position: 30px 20px;
   background-repeat: no-repeat;
