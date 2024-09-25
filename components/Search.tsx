@@ -38,14 +38,16 @@ export default function Search() {
   const [sChoiceVis, setSChoiceVis] = useState(false);
 
   // 目前选取的搜索引擎
-  const [currentEngineName, setCurrentEngineName] = useLocalStorageState(
-    "searchType",
+  const [currentEngine, setCurrentEngine] = useLocalStorageState(
+    "search_engine",
     {
-      defaultValue: searchEngines[0].name,
+      defaultValue: {
+        engine: searchEngines[0].name
+      },
     }
   );
   const activeSearchEngine = searchEngines.find(
-    (engine) => engine.name === currentEngineName
+    (engine) => engine.name === currentEngine.engine
   );
 
   let [activeRst, setActiveRst] = useState({
@@ -59,7 +61,7 @@ export default function Search() {
   }
 
   function selectSearchEngine(engine) {
-    setCurrentEngineName(engine.name);
+    setCurrentEngine({engine: engine.name});
   }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
