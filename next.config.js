@@ -9,8 +9,8 @@ const nextConfig = {
       '/nav/tools': { page: '/nav/[tab]', query: { tab: 'tools' } },
     };
   },
-  basePath: "/",
-  assetPrefix: "/",
+  basePath: "",
+  assetPrefix: "",
   reactStrictMode: true,
   output: "standalone",
   images: {
