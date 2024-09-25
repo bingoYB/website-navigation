@@ -3,7 +3,7 @@
 **个人网址导航**
 
 github地址：https://bingoyb.github.io/website-navigation/dcos/index.html
-
+cloudflare page 地址：https://website-navigation-e4h.pages.dev
 
 ~~国内码云快速地址：https://bingoyyy.gitee.io/website-navigation/~~
 码云地址已不再更新内容

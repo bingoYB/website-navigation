@@ -10,17 +10,17 @@ import React, { DOMAttributes, useCallback, useRef, useState } from "react";
 const searchEngines = [
   {
     name: "百度",
-    icon: "/website-navigation/img/scbaidu.png",
+    icon: "/img/scbaidu.png",
     searchUrl: "https://www.baidu.com/s?wd=",
   },
   {
     name: "必应",
-    icon: "/website-navigation/img/scbing.png",
+    icon: "/img/scbing.png",
     searchUrl: "https://cn.bing.com/search?q=",
   },
   {
     name: "Google",
-    icon: "/website-navigation/img/scgoogle.png",
+    icon: "/img/scgoogle.png",
     searchUrl: "https://www.google.com/search?q=",
   },
 ];
