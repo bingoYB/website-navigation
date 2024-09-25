@@ -12,23 +12,30 @@ export function useLocalStorageState<T>(
 ): [T?, ((value?: T | ((previousState: T) => T)) => void)?] {
   const { serializer = JSON.stringify, deserializer = JSON.parse } = options;
 
-  const defaultValue = deserializer(
-    typeof window === "undefined" ? null : localStorage.getItem(key)
-  );
-  const [state, setState] = useState<T>(defaultValue || options?.defaultValue);
+  const [state, setState] = useState<T>(options?.defaultValue);
 
   useEffect(() => {
-    setState(defaultValue || options?.defaultValue);
+    const storedState = localStorage.getItem(key);
+
+    if (storedState) {
+      setState(deserializer(storedState));
+    } else if (options?.defaultValue) {
+      setState(options.defaultValue);
+    }
   }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") {
       return;
     }
+    
+    if(state === options.defaultValue){
+      return;
+    }
 
-    if(typeof state === "object"){
+    if (typeof state === "object") {
       localStorage.setItem(key, serializer(state));
-    }else {
+    } else {
       localStorage.setItem(key, state as string);
     }
   }, [key, serializer, state]);

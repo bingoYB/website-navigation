@@ -46,9 +46,12 @@ export default function Search() {
       },
     }
   );
+
+  console.log("Search - currentEngine:", currentEngine)
   const activeSearchEngine = searchEngines.find(
     (engine) => engine.name === currentEngine.engine
   );
+  console.log("Search - activeSearchEngine:", activeSearchEngine)
 
   let [activeRst, setActiveRst] = useState({
     index: 0,
@@ -168,20 +171,21 @@ export default function Search() {
 
     window.open(url, "_blank");
   }
+  console.log(activeSearchEngine.icon);
+  
   return (
     <div className="search inputing">
       <div style={{ overflow: "hidden" }}>
         <div className="search-pre">
           <div
-            id="sChoiceBtn"
             onBlur={() => {
               setTimeout(() => setSChoiceVis(false), 300);
             }}
-            style={{ background: `url(${activeSearchEngine.icon})` }}
             title="切换搜索引擎"
             className="sChoiceBtn"
             onClick={sChoiceBtnClick}
             tabIndex={1}
+            style={{ backgroundImage: `url(${activeSearchEngine.icon})` }}
           ></div>
         </div>
         <div className="search-input">
