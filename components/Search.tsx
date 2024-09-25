@@ -5,7 +5,7 @@ import { getWebsiteIcon } from "@/utils/getWebsiteIcon";
 import { useLocalStorageState } from "@/utils/hooks/useLocalStorage";
 import { isDown, isEnter, isUp } from "@/utils/keyBoard";
 import Image from "next/image";
-import React, { DOMAttributes, useCallback, useRef, useState } from "react";
+import React, { DOMAttributes, useCallback, useEffect, useRef, useState } from "react";
 
 const searchEngines = [
   {
@@ -47,11 +47,9 @@ export default function Search() {
     }
   );
 
-  console.log("Search - currentEngine:", currentEngine)
   const activeSearchEngine = searchEngines.find(
     (engine) => engine.name === currentEngine.engine
   );
-  console.log("Search - activeSearchEngine:", activeSearchEngine)
 
   let [activeRst, setActiveRst] = useState({
     index: 0,
@@ -171,7 +169,6 @@ export default function Search() {
 
     window.open(url, "_blank");
   }
-  console.log(activeSearchEngine.icon);
   
   return (
     <div className="search inputing">
