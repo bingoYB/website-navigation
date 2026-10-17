@@ -1,3 +1,0 @@
-# Serve the GitHub Pages base path on Cloudflare Pages.
-/website-navigation / 200
-/website-navigation/* /:splat 200

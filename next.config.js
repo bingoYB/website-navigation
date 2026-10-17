@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const nextConfig = {
   exportPathMap: async function() {
     return {
@@ -9,8 +11,8 @@ const nextConfig = {
       '/nav/tools': { page: '/nav/[tab]', query: { tab: 'tools' } },
     };
   },
-  basePath: "/website-navigation",
-  assetPrefix: "/website-navigation",
+  basePath,
+  assetPrefix: basePath,
   reactStrictMode: true,
   output: "standalone",
   images: {

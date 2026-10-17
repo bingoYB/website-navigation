@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-css-tags */
 import { Html, Head, Main, NextScript } from "next/document";
-import Image from "next/image";
-import Link from "next/link";
+import { assetPath } from "@/utils/assetPath";
 
 export default function Document() {
   return (
     <Html lang="zh-CN">
       <Head>
         <meta name="referrer" content="strict-origin-when-cross-origin"></meta>
-        <meta property="og:image" content="/website-navigation/img/text.png" />
-        <link rel="icon" type="image/png" href="/website-navigation/img/favicon.png" />
+        <meta property="og:image" content={assetPath("/img/text.png")} />
+        <link rel="icon" type="image/png" href={assetPath("/img/favicon.png")} />
         <link
           href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
           rel="stylesheet"
@@ -19,10 +18,10 @@ export default function Document() {
           rel="stylesheet"
           href="https://at.alicdn.com/t/font_1218740_b6bm55w3yga.css"
         />
-        <link rel="stylesheet" href="/website-navigation/style/pure.min.css" />
-        <link rel="stylesheet" href="/website-navigation/style/grids-responsive.min.css" />
-        <link rel="stylesheet" href="/website-navigation/style/nprogress.min.css" />
-        <link rel="stylesheet" href="/website-navigation/style/hint.min.css" />
+        <link rel="stylesheet" href={assetPath("/style/pure.min.css")} />
+        <link rel="stylesheet" href={assetPath("/style/grids-responsive.min.css")} />
+        <link rel="stylesheet" href={assetPath("/style/nprogress.min.css")} />
+        <link rel="stylesheet" href={assetPath("/style/hint.min.css")} />
         <script
           dangerouslySetInnerHTML={{
             __html: `var _hmt = _hmt || [];
@@ -36,7 +35,7 @@ export default function Document() {
         ></script>
       </Head>
       <body>
-        <img src={"/website-navigation/img/text.png"} alt="logo" style={{ display: "none" }} />
+        <img src={assetPath("/img/text.png")} alt="logo" style={{ display: "none" }} />
         <Main />
         <NextScript />
       </body>
