@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Options<T> {
   defaultValue?: T | (() => T);
@@ -12,33 +12,44 @@ export function useLocalStorageState<T>(
 ): [T?, ((value?: T | ((previousState: T) => T)) => void)?] {
   const { serializer = JSON.stringify, deserializer = JSON.parse } = options;
 
-  const [state, setState] = useState<T>(options?.defaultValue);
+  const [state, setState] = useState<T>(options.defaultValue);
+  const defaultValue = useRef(state);
+  const [loadedKey, setLoadedKey] = useState<string>();
 
   useEffect(() => {
-    const storedState = localStorage.getItem(key);
-
-    if (storedState) {
-      setState(deserializer(storedState));
-    } else if (options?.defaultValue) {
-      setState(options.defaultValue);
+    let value = defaultValue.current;
+    try {
+      const storedValue = window.localStorage.getItem(key);
+      if (storedValue !== null) {
+        try {
+          value = deserializer(storedValue) ?? defaultValue.current;
+        } catch {
+          // Earlier versions stored string values without JSON encoding.
+          if (typeof value === "string") value = storedValue as unknown as T;
+        }
+      }
+    } catch {
+      // Keep the default when browser storage is unavailable.
     }
-  }, []);
+    setState(() => value);
+    setLoadedKey(key);
+  }, [key, deserializer]);
 
   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    
-    if(state === options.defaultValue){
+    if (typeof window === "undefined" || loadedKey !== key) {
       return;
     }
 
-    if (typeof state === "object") {
-      localStorage.setItem(key, serializer(state));
-    } else {
-      localStorage.setItem(key, state as string);
+    try {
+      if (state === undefined) {
+        window.localStorage.removeItem(key);
+      } else {
+        window.localStorage.setItem(key, serializer(state));
+      }
+    } catch {
+      // The state remains usable when storage is blocked or full.
     }
-  }, [key, serializer, state]);
+  }, [key, serializer, state, loadedKey]);
 
   return [state, setState];
 }
