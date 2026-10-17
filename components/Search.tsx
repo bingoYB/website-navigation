@@ -1,26 +1,27 @@
 import webData from "@/data";
+import { assetPath } from "@/utils/assetPath";
 import { getSearchSuggestions } from "@/service";
 import { debounce } from "@/utils/debounce";
 import { getWebsiteIcon } from "@/utils/getWebsiteIcon";
 import { useLocalStorageState } from "@/utils/hooks/useLocalStorage";
 import { isDown, isEnter, isUp } from "@/utils/keyBoard";
 import Image from "next/image";
-import React, { DOMAttributes, useCallback, useRef, useState } from "react";
+import React, { DOMAttributes, useCallback, useEffect, useRef, useState } from "react";
 
 const searchEngines = [
   {
     name: "百度",
-    icon: "/website-navigation/img/scbaidu.png",
+    icon: assetPath("/img/scbaidu.png"),
     searchUrl: "https://www.baidu.com/s?wd=",
   },
   {
     name: "必应",
-    icon: "/website-navigation/img/scbing.png",
+    icon: assetPath("/img/scbing.png"),
     searchUrl: "https://cn.bing.com/search?q=",
   },
   {
     name: "Google",
-    icon: "/website-navigation/img/scgoogle.png",
+    icon: assetPath("/img/scgoogle.png"),
     searchUrl: "https://www.google.com/search?q=",
   },
 ];
@@ -38,14 +39,17 @@ export default function Search() {
   const [sChoiceVis, setSChoiceVis] = useState(false);
 
   // 目前选取的搜索引擎
-  const [currentEngineName, setCurrentEngineName] = useLocalStorageState(
-    "searchType",
+  const [currentEngine, setCurrentEngine] = useLocalStorageState(
+    "search_engine",
     {
-      defaultValue: searchEngines[0].name,
+      defaultValue: {
+        engine: searchEngines[0].name
+      },
     }
   );
+
   const activeSearchEngine = searchEngines.find(
-    (engine) => engine.name === currentEngineName
+    (engine) => engine.name === currentEngine.engine
   );
 
   let [activeRst, setActiveRst] = useState({
@@ -59,7 +63,7 @@ export default function Search() {
   }
 
   function selectSearchEngine(engine) {
-    setCurrentEngineName(engine.name);
+    setCurrentEngine({engine: engine.name});
   }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -166,20 +170,20 @@ export default function Search() {
 
     window.open(url, "_blank");
   }
+
   return (
     <div className="search inputing">
       <div style={{ overflow: "hidden" }}>
         <div className="search-pre">
           <div
-            id="sChoiceBtn"
             onBlur={() => {
               setTimeout(() => setSChoiceVis(false), 300);
             }}
-            style={{ background: `url(${activeSearchEngine.icon})` }}
             title="切换搜索引擎"
             className="sChoiceBtn"
             onClick={sChoiceBtnClick}
             tabIndex={1}
+            style={{ backgroundImage: `url(${activeSearchEngine.icon})` }}
           ></div>
         </div>
         <div className="search-input">
@@ -246,7 +250,7 @@ export default function Search() {
             <div className="result-icon">
               <i
                 className="engine-icon"
-                style={{ backgroundImage: "url(img/searchBtn.png?v=2.0" }}
+                style={{ backgroundImage: "url(" + assetPath("/img/searchBtn.png") + ")" }}
               ></i>
             </div>
             <div className="result-text">
@@ -268,7 +272,7 @@ export default function Search() {
               <div className="result-icon">
                 <i
                   style={{
-                    backgroundImage: `url(${getWebsiteIcon(el.url)}),url(img/404-1.png)`,
+                    backgroundImage: `url(${getWebsiteIcon(el.url)}),url(${assetPath("/img/404-1.png")})`,
                   }}
                 ></i>
               </div>
@@ -296,7 +300,7 @@ export default function Search() {
               <div className="result-icon">
                 <i
                   className="engine-icon"
-                  style={{ backgroundImage: "url(img/searchBtn.png?v=2.0" }}
+                  style={{ backgroundImage: "url(" + assetPath("/img/searchBtn.png") + ")" }}
                 ></i>
               </div>
               <div className="result-text">
